@@ -1,0 +1,3 @@
+dataset,n_rows,n_features,n_continuous,n_binary,n_categorical,pct_abnormal,n_duplicate_rows,n_heavy_skew_features,n_iso_outliers_in_normal
+NSL-KDD,30000,41,30,8,3,33.33,1,21,400
+UNSW-NB15,50000,42,38,1,3,30.0,0,31,700

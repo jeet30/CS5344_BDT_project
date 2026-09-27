@@ -1,0 +1,9 @@
+dataset,cluster_id,count,pct_of_abnormal,mean_duration,mean_src_bytes,mean_dst_bytes,mean_count,mean_serror_rate,mean_rerror_rate,top_service,top_flag,archetype,mean_dur,mean_sbytes,mean_dbytes,mean_rate,mean_sttl,mean_ct_dst_sport_ltm,top_proto,top_state
+NSL-KDD,0,6009,60.09,0.0,0.0,0.0,170.54,0.9983,0.0012,private,S0,SYN-Flood / DoS (high serror),,,,,,,,
+NSL-KDD,1,2230,22.3,1984.31,805217.79,766928.16,161.6,0.0176,0.9319,private,REJ,Rejection Scan / Port Sweep,,,,,,,,
+NSL-KDD,2,1011,10.11,1.44,8142.0,11413.65,188.63,0.0082,0.0108,ecr_i,SF,High-Volume Flood,,,,,,,,
+NSL-KDD,3,750,7.5,0.43,480.94,77.76,1.02,0.0062,0.0013,eco_i,SF,Stealth / Exploit / Content,,,,,,,,
+UNSW-NB15,0,3592,23.95,,,,,,,,,High-Rate DoS / Volumetric,0.8648,1311.71,278.81,191403.39,248.0,4.67,udp,INT
+UNSW-NB15,1,31,0.21,,,,,,,,,Remote Infiltration / Exploit,46.9287,6455390.29,32866.32,123.74,123.94,1.0,tcp,FIN
+UNSW-NB15,2,12,0.08,,,,,,,,,Low-and-Slow Attack,48.371,33434.0,6630283.58,118.84,62.0,1.08,tcp,CON
+UNSW-NB15,3,11365,75.77,,,,,,,,,Remote Infiltration / Exploit,1.6224,15967.5,14758.17,38.46,184.23,1.03,tcp,FIN

@@ -1,0 +1,20 @@
+.venv/
+__pycache__/
+.DS_Store
+*.pyc
+.claude/
+.ipython/
+.jupyter/
+CS5228*
+cheat_sheet*
+
+# Raw competition data (download from the Kaggle competition data page)
+train_nslkdd.csv
+train_unsw.csv
+cs-5344-data-augmentation-for-anomaly-detection-*.zip
+
+# Large regenerable pipeline outputs — re-derive via EDA.ipynb / Augmentation.ipynb.
+# Small summary artifacts (constraints json, cross_dataset_summary.csv,
+# local_proxy_results.csv) are kept and tracked.
+eda_outputs/*_scrubbed_normal.csv
+submissions/submission_*.csv

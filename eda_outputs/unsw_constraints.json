@@ -1,0 +1,149 @@
+{
+  "nonneg_traffic_features": {
+    "dur": {
+      "min": 0.0
+    },
+    "spkts": {
+      "min": 0.0
+    },
+    "dpkts": {
+      "min": 0.0
+    },
+    "sbytes": {
+      "min": 0.0
+    },
+    "dbytes": {
+      "min": 0.0
+    },
+    "rate": {
+      "min": 0.0
+    },
+    "sload": {
+      "min": 0.0
+    },
+    "dload": {
+      "min": 0.0
+    },
+    "sloss": {
+      "min": 0.0
+    },
+    "dloss": {
+      "min": 0.0
+    },
+    "sinpkt": {
+      "min": 0.0
+    },
+    "dinpkt": {
+      "min": 0.0
+    },
+    "sjit": {
+      "min": 0.0
+    },
+    "djit": {
+      "min": 0.0
+    },
+    "tcprtt": {
+      "min": 0.0
+    },
+    "synack": {
+      "min": 0.0
+    },
+    "ackdat": {
+      "min": 0.0
+    },
+    "smean": {
+      "min": 0.0
+    },
+    "dmean": {
+      "min": 0.0
+    },
+    "trans_depth": {
+      "min": 0.0
+    },
+    "response_body_len": {
+      "min": 0.0
+    },
+    "ct_srv_src": {
+      "min": 0.0
+    },
+    "ct_state_ttl": {
+      "min": 0.0
+    },
+    "ct_dst_ltm": {
+      "min": 0.0
+    },
+    "ct_src_dport_ltm": {
+      "min": 0.0
+    },
+    "ct_dst_sport_ltm": {
+      "min": 0.0
+    },
+    "ct_dst_src_ltm": {
+      "min": 0.0
+    },
+    "ct_ftp_cmd": {
+      "min": 0.0
+    },
+    "ct_flw_http_mthd": {
+      "min": 0.0
+    },
+    "ct_src_ltm": {
+      "min": 0.0
+    },
+    "ct_srv_dst": {
+      "min": 0.0
+    }
+  },
+  "ttl_byte_range": {
+    "sttl": {
+      "min": 0,
+      "max": 255
+    },
+    "dttl": {
+      "min": 0,
+      "max": 255
+    }
+  },
+  "tcp_window_observed_range": {
+    "swin": {
+      "min": 0,
+      "max": 255
+    },
+    "dwin": {
+      "min": 0,
+      "max": 255
+    }
+  },
+  "binary_flags_in_{0,1}": {
+    "is_sm_ips_ports": {
+      "allowed": [
+        0,
+        1
+      ]
+    }
+  },
+  "ftp_login_observed_range": {
+    "is_ftp_login": {
+      "min": 0,
+      "max": 4
+    },
+    "ct_ftp_cmd": {
+      "min": 0,
+      "max": 4
+    }
+  },
+  "state_known_set": {
+    "state": {
+      "allowed": [
+        "ACC",
+        "CON",
+        "ECO",
+        "FIN",
+        "INT",
+        "REQ",
+        "RST",
+        "URN"
+      ]
+    }
+  }
+}

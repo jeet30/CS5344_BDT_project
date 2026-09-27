@@ -1,0 +1,136 @@
+{
+  "rate_features_in_[0,1]": {
+    "serror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "srv_serror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "rerror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "srv_rerror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "same_srv_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "diff_srv_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "srv_diff_host_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_same_srv_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_diff_srv_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_same_src_port_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_srv_diff_host_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_serror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_srv_serror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_rerror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_srv_rerror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "non_negative_counters": {
+    "duration": {
+      "min": 0.0,
+      "max_observed_normal": 40504.0
+    },
+    "src_bytes": {
+      "min": 0.0,
+      "max_observed_normal": 89581520.0
+    },
+    "dst_bytes": {
+      "min": 0.0,
+      "max_observed_normal": 7028652.0
+    },
+    "count": {
+      "min": 0.0,
+      "max_observed_normal": 511.0
+    },
+    "srv_count": {
+      "min": 0.0,
+      "max_observed_normal": 511.0
+    },
+    "dst_host_count": {
+      "min": 0.0,
+      "max_observed_normal": 255.0
+    },
+    "dst_host_srv_count": {
+      "min": 0.0,
+      "max_observed_normal": 255.0
+    }
+  },
+  "binary_flags": {
+    "land": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "logged_in": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "root_shell": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "su_attempted": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "is_host_login": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "is_guest_login": {
+      "allowed": [
+        0,
+        1
+      ]
+    }
+  },
+  "constant_zero_columns": [
+    "num_outbound_cmds",
+    "is_host_login"
+  ]
+}

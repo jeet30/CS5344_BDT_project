@@ -1,0 +1,168 @@
+{
+  "rate_features_in_[0,1]": {
+    "serror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "srv_serror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "rerror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "srv_rerror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "same_srv_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "diff_srv_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "srv_diff_host_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_same_srv_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_diff_srv_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_same_src_port_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_srv_diff_host_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_serror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_srv_serror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_rerror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    },
+    "dst_host_srv_rerror_rate": {
+      "min": 0.0,
+      "max": 1.0
+    }
+  },
+  "binary_flags_in_{0,1}": {
+    "land": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "urgent": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "logged_in": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "root_shell": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "num_shells": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "is_guest_login": {
+      "allowed": [
+        0,
+        1
+      ]
+    }
+  },
+  "su_attempted_in_{0,1,2}": {
+    "su_attempted": {
+      "allowed": [
+        0,
+        1,
+        2
+      ]
+    }
+  },
+  "protocol_type_known_set": {
+    "protocol_type": {
+      "allowed": [
+        "icmp",
+        "tcp",
+        "udp"
+      ]
+    }
+  },
+  "nonneg_count_byte_duration_features": {
+    "duration": {
+      "min": 0.0
+    },
+    "src_bytes": {
+      "min": 0.0
+    },
+    "dst_bytes": {
+      "min": 0.0
+    },
+    "wrong_fragment": {
+      "min": 0.0
+    },
+    "hot": {
+      "min": 0.0
+    },
+    "num_failed_logins": {
+      "min": 0.0
+    },
+    "num_compromised": {
+      "min": 0.0
+    },
+    "num_root": {
+      "min": 0.0
+    },
+    "num_file_creations": {
+      "min": 0.0
+    },
+    "num_access_files": {
+      "min": 0.0
+    },
+    "count": {
+      "min": 0.0
+    },
+    "srv_count": {
+      "min": 0.0
+    },
+    "dst_host_count": {
+      "min": 0.0
+    },
+    "dst_host_srv_count": {
+      "min": 0.0
+    }
+  },
+  "drop_columns_zero_variance": [
+    "num_outbound_cmds",
+    "is_host_login"
+  ]
+}

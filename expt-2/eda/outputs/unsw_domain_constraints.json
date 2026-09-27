@@ -1,0 +1,99 @@
+{
+  "non_negative_metrics": {
+    "dur": {
+      "min": 0.0,
+      "max_observed_normal": 59.999985
+    },
+    "spkts": {
+      "min": 0.0,
+      "max_observed_normal": 690.0
+    },
+    "dpkts": {
+      "min": 0.0,
+      "max_observed_normal": 1716.0
+    },
+    "sbytes": {
+      "min": 0.0,
+      "max_observed_normal": 338904.0
+    },
+    "dbytes": {
+      "min": 0.0,
+      "max_observed_normal": 2249492.0
+    },
+    "rate": {
+      "min": 0.0,
+      "max_observed_normal": 1000000.003
+    },
+    "sload": {
+      "min": 0.0,
+      "max_observed_normal": 4368000000.0
+    },
+    "dload": {
+      "min": 0.0,
+      "max_observed_normal": 22422730.0
+    },
+    "sloss": {
+      "min": 0.0,
+      "max_observed_normal": 144.0
+    },
+    "dloss": {
+      "min": 0.0,
+      "max_observed_normal": 856.0
+    },
+    "sinpkt": {
+      "min": 0.0,
+      "max_observed_normal": 60009.992
+    },
+    "dinpkt": {
+      "min": 0.0,
+      "max_observed_normal": 57739.24
+    },
+    "sjit": {
+      "min": 0.0,
+      "max_observed_normal": 1483830.917
+    },
+    "djit": {
+      "min": 0.0,
+      "max_observed_normal": 289388.2697
+    }
+  },
+  "ttl_range_[0,255]": {
+    "sttl": {
+      "min": 0,
+      "max": 255
+    },
+    "dttl": {
+      "min": 0,
+      "max": 255
+    }
+  },
+  "binary_indicators": {
+    "is_sm_ips_ports": {
+      "allowed": [
+        0,
+        1
+      ]
+    },
+    "is_ftp_login": {
+      "allowed": [
+        0,
+        1
+      ]
+    }
+  },
+  "tcp_handshake_identity": {
+    "identity": "tcprtt == synack + ackdat",
+    "max_observed_tcprtt": 3.176115,
+    "max_observed_synack": 2.619885,
+    "max_observed_ackdat": 2.928778
+  },
+  "tcp_specific_zero_for_non_tcp": [
+    "swin",
+    "dwin",
+    "stcpb",
+    "dtcpb",
+    "tcprtt",
+    "synack",
+    "ackdat"
+  ]
+}
