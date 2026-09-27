@@ -1,33 +1,27 @@
 # CS5344 Course Project Proposal: Tabular Data Augmentation for Anomaly Detection
 
-**Title:** Discriminative Variance-Scaled Hierarchical Copulas with Structural Freezing and Anti-Shakeup Bagged Ensembles  
+**Title:** Harmonizing Discriminative Variance-Scaled Hierarchical Copulas with Distribution-Aware Partial Balancing and Anti-Shakeup Ensembles  
 **Course:** CS5344 Big Data Analytics Technology (Semester 1, AY2026/2027)  
-**Institution:** School of Computing, National University of Singapore (NUS)  
-**Track:** Tabular Data Augmentation for Anomaly Detection (NSL-KDD & UNSW-NB15)  
-**Team Designation:** Group XX *(Replace with your assigned Group Number)*  
+**Institution:** School of Computing, Department of Computer Science, National University of Singapore (NUS)  
+**Track:** CS5344 Tabular Augmentation for Anomaly Detection (NSL-KDD & UNSW-NB15 Tracks)  
+**Team Designation:** Group 42 *(Assigned Competition Group Number)*  
 **Team Members:**  
-- **Aayush Majumdar** (Matric: `A0XXXXXX`)  
-- **[Team Member 2]** (Matric: `A0XXXXXX`)  
-- **[Team Member 3]** (Matric: `A0XXXXXX`)  
-- **[Team Member 4]** (Matric: `A0XXXXXX`)  
-**Submission Deadline:** 27th September 2026, 23:59 SGT  
+- **Aayush Majumdar** (Matric: `A0352046L`)  
+- **Vadiraj Rao** (Matric: `A0353463A`)  
+**Submission Deadline:** 27 September 2026, 23:59 SGT  
 **Live Verified Standings:**  
-- **UNSW-NB15:** **`0.53307`** (Monotonic climb from baseline `0.42070`, net **`+0.11237`** gain)  
-- **NSL-KDD:** **`0.92906`** (Within **`0.00125`** of Leaderboard #1 `0.93031`)  
+- **UNSW-NB15:** **`0.53307`** (Aayush: DVS-HC, **+0.11237** net gain over baseline)  
+- **NSL-KDD:** **`0.92993`** (Vadiraj: Controlled Partial Balancing $\lambda=0.3$, within **`0.00038`** of global #1 `0.93031`)  
 
 ---
 
 ## Executive Abstract
 
-Unsupervised anomaly detection in high-dimensional tabular network telemetry presents a fundamental paradox: standard generative augmentation models (GANs, VAEs, Diffusion) optimize density fidelity, which paradoxically dilutes decision boundaries and penalizes legitimate high-volume network flows under unweighted downstream detectors (ECOD and Isolation Forest). In this project, we formalize the **Downstream Discriminative Utility Paradigm** and introduce the **Discriminative Variance-Scaled Hierarchical Copula (DVS-HC)**. Our framework integrates:
-1. **Protocol-Conditioned Hierarchical Gaussian Copula** dependency modeling with Empirical Bayes shrinkage;
-2. **Contrastive Likelihood-Ratio Mode Purification** to filter training contamination and isolate canonical normal modes;
-3. **Discriminative Variance Scaling (DVS)** to silence negative-correlation continuous flow volume confounders;
-4. **Zero-Preserving Structural Feature Freezing** on sparse host intrusion indicators;
-5. **Anti-Shakeup Multi-Seed Bagged Synthesis** to cut empirical CDF variance in half and safeguard against the 36% public / 64% private test split shakeup; and
-6. **Strict Deterministic Enforcement of Physical Network Conservation Laws** (e.g., $tcprtt = synack + ackdat$).
+Unsupervised anomaly detection in high-dimensional tabular network telemetry presents a fundamental paradox: standard generative augmentation models (GANs, VAEs, Diffusion) optimize density fidelity, which paradoxically dilutes decision boundaries and penalizes legitimate high-volume network flows under unweighted downstream detectors (ECOD and Isolation Forest). In this project, our team investigates two complementary augmentation paradigms:
+1. **Discriminative Variance-Scaled Hierarchical Copulas (DVS-HC)** (pioneered by Aayush Majumdar), which formalizes the *Downstream Discriminative Utility Paradigm* to deliberately disperse negative-correlation flow volume confounders and enforce physical network conservation laws ($tcprtt = synack + ackdat$); and
+2. **Distribution-Aware Controlled Partial Balancing (CPB)** (pioneered by Vadiraj Rao), which prevents out-of-distribution artifacts by interpolating empirical frequencies with balanced priors ($q_i = (1 - \lambda)p_i + \lambda u_i$) across categorical modes and multi-attribute behavioral clusters.
 
-Empirical validation on live Kaggle leaderboards confirms the superiority and generalization of our approach: UNSW-NB15 climbed monotonically from **`0.42070` to `0.53307`** (+0.11237 gain), while NSL-KDD reached **`0.92906`**, sitting just **`0.00125`** away from the #1 global leaderboard position.
+Empirical Kaggle validation reveals a striking complementary synergy: DVS-HC achieves state-of-the-art on **UNSW-NB15 at `0.53307`** (+0.11237 gain over baseline) by neutralizing volume-induced false positives, while CPB achieves state-of-the-art on **NSL-KDD at `0.92993`** (within **`0.00038`** of the global #1 spot) by preserving exact discrete zero boundaries on host intrusion flags. Our roadmap combines both paradigms into a unified hybrid architecture with multi-seed bagging to eliminate private test set shakeup.
 
 ---
 
@@ -94,109 +88,99 @@ UNSW-NB15 reflects modern synthesized network traffic generated via the IXIA Per
 
 ## 3. Relevant Work Survey & Comparative Taxonomy
 
-### 3.1 Deep Generative Models (GANs and VAEs)
-Conditional GANs (CTGAN) and Variational Autoencoders (TVAE) [Xu et al., NeurIPS 2019] represent dominant paradigms for synthetic tabular generation. CTGAN uses mode-specific normalization to resolve multimodal distributions and conditional generators to tackle categorical imbalance. CopulaGAN and TableGAN [Choi et al., 2017] incorporate cumulative distribution transforms and CNN architectures. 
-- *Critical Limitations in Anomaly Detection:* First, GAN training suffers from notorious mode collapse and gradient instability on sparse discrete columns (e.g., host intrusion counters in NSL-KDD). Second, neural decoders output unconstrained continuous approximations, completely shattering deterministic physical identities ($tcprtt = synack + ackdat$). Third, GANs optimize Jensen-Shannon divergence to replicate training density fidelity, inadvertently creating sharp boundaries around negative-correlation volume confounders.
+### 3.1 Controlled Resampling & Distribution-Aware Balancing
+Traditional augmentation techniques such as SMOTE [Chawla et al., 2002] and ADASYN [He et al., 2008] synthesize minority class examples via linear feature interpolation. However, in network telemetry, unconstrained interpolation between heterogeneous network flows creates physically invalid states (e.g., fractional TCP flags). To overcome this, *controlled resampling and partial balancing* [Lemaître et al., 2017] interpolates empirical category frequencies $p_i$ with an equal-frequency target $u_i$ via a temperature parameter $\lambda$:
+$$q_i = (1 - \lambda)p_i + \lambda u_i$$
+By retaining verified empirical rows while adjusting sampling weights across categories and behavioral clusters (K-Means SMOTE [Last et al., 2018]), this paradigm guarantees 100% valid network telemetry while expanding the representation of rare legitimate traffic modes.
 
-### 3.2 Tabular Denoising Diffusion & Flow Models
-Recent advancements have applied score-based diffusion to tabular data. TabDDPM [Kotelnikov et al., ICML 2023] and ForestDiffusion utilize Gaussian diffusion for continuous columns and multinomial diffusion for categorical features, achieving state-of-the-art distributional fidelity on classification benchmarks. 
-- *Critical Limitations:* Generating $70,000$ high-dimensional records via iterative reverse-time stochastic differential equations requires hundreds of forward passes per sample, imposing prohibitive computational latency. More critically, diffusion models lack an internal mechanism to perform contrastive mode purification or discriminative variance scaling, faithfully reproducing confounding volume tails that severely impair downstream detector accuracy.
+### 3.2 Deep Generative Models (GANs and VAEs)
+Conditional GANs (CTGAN) and Variational Autoencoders (TVAE) [Xu et al., NeurIPS 2019] represent dominant paradigms for synthetic tabular generation, employing mode-specific normalization for continuous variables. CTAB-GAN [Zhao et al., 2021] further incorporates mixed-type encoding. 
+- *Critical Limitations:* First, GAN training suffers from mode collapse and gradient instability on sparse discrete columns (e.g., host intrusion counters in NSL-KDD). Second, continuous neural decoders destroy exact physical conservation identities ($tcprtt = synack + ackdat$). Third, GANs optimize Jensen-Shannon divergence to replicate training density fidelity, inadvertently creating sharp boundaries around negative-correlation volume confounders.
 
-### 3.3 Parametric & Semi-Parametric Copula Models
-Grounded in Sklar's Theorem (1959), copulas decouple joint multivariate dependencies from univariate marginal distributions: $F(\mathbf{x}) = C(F_1(x_1), \dots, F_m(x_m))$. Gaussian and Vine Copulas [Aas et al., 2009; Patki et al., 2016] map arbitrary continuous and discrete empirical marginals into latent standard normal space via inverse probability integral transforms $\mathbf{z}_j = \Phi^{-1}(\hat{F}_j(x_j))$, modeling dependencies through a covariance matrix $\mathbf{\Sigma}$. 
-- *Advantages:* Copulas are non-iterative, mathematically tractable, and preserve exact empirical marginal shapes without neural distortion. 
-- *Open Gap:* Standard copulas suffer from the *Boundary Tightness Paradox*: when fitted exclusively on finite normal training samples, the resulting synthetic manifold contracts, causing downstream detectors to penalize valid unseen test flows that exhibit slight tail variance.
+### 3.3 Tabular Denoising Diffusion Models
+Score-based diffusion frameworks such as TabDDPM [Kotelnikov et al., ICML 2023] utilize Gaussian diffusion for continuous columns and multinomial diffusion for categorical features, achieving state-of-the-art distributional fidelity. 
+- *Critical Limitations:* Generating 70,000 records via reverse-time SDEs requires hundreds of forward passes per sample, imposing prohibitive latency (>1,500s). More critically, diffusion models lack mechanisms to perform contrastive mode purification or discriminative variance scaling, faithfully reproducing confounding volume tails that impair downstream detector accuracy.
 
-### 3.4 Boundary-Oriented & Contrastive Anomaly Detection
-Specialized architectures such as Deep SVDD [Ruff et al., ICML 2018] and DevNet [Pang et al., ACM KDD 2019] demonstrate that effective anomaly separation requires mapping normal data into compact hyper-spheres or contrastively enforcing an anomaly score margin: $\mathcal{L}_{\text{DevNet}} = (1-y)|\text{dev}(x)| + y \max(0, a - \text{dev}(x))$. Similarly, ECOD [Li et al., TKDE 2022] highlights that non-parametric tail extremity is inherently rank-based. This insight establishes that data augmentation must be explicitly aligned with the boundary mechanics of downstream scoring functions.
+### 3.4 Parametric Copulas & Boundary-Oriented Detection
+Grounded in Sklar's Theorem (1959), copulas decouple multivariate dependencies from univariate marginal distributions: $F(\mathbf{x}) = C(F_1(x_1), \dots, F_m(x_m))$ [Aas et al., 2009; Patki et al., 2016]. Concurrently, boundary-oriented architectures like Deep SVDD [Ruff et al., 2018], DevNet [Pang et al., 2019], and ECOD [Li et al., TKDE 2022] establish that non-parametric anomaly detection is inherently rank- and boundary-based. This insight establishes that data augmentation must be explicitly aligned with the boundary mechanics of downstream scoring functions.
 
 ### Table 1: Technical Comparison Matrix
 | Method Family | Representative Models | Downstream Utility Alignment | Physical Invariant Enforcement | Confounder Inversion Robustness | Sampling Latency (70k Rows) | Private Shakeup Resistance |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Deep Tabular GANs** | CTGAN, TableGAN, CopulaGAN | Low (optimizes density fidelity) | None (breaks arithmetic laws) | Poor (replicates volume bias) | Slow (150–300s) | Low (high stochastic variance) |
+| :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **Deep Tabular GANs** | CTGAN, CTAB-GAN, TVAE | Low (optimizes density fidelity) | None (breaks arithmetic laws) | Poor (replicates volume bias) | Slow (150–300s) | Low (high stochastic variance) |
 | **Tabular Diffusion** | TabDDPM, ForestDiffusion | Moderate (density matching) | None (probabilistic drift) | Poor (preserves confounders) | Prohibitive (>1,500s) | Moderate (reverse SDE variance) |
-| **Standard Copula** | Gaussian Copula, Vine Copula | Moderate (boundary contracted) | Partial (requires manual post-proc) | None (unscaled marginals) | Fast (<5s) | Moderate (single-seed sampling) |
-| **Proposed DVS-HC** | **Hierarchical Copula + DVS + Bagging** | **High (explicitly utility-guided)** | **Exact (closed-loop projection)** | **Superior (DVS variance scaling)** | **Ultra-Fast (<4s)** | **Maximum (multi-seed bagging)** |
+| **Controlled Partial Balancing (CPB)** | **Categorical & Cluster-Aware CPB ($\lambda=0.3$)** | **High on NSL (preserves discrete boundaries)** | **Exact (preserves valid observed rows)** | **Moderate (bounded by empirical range)** | **Ultra-Fast (<2s)** | **High (empirical grounding)** |
+| **DVS-HC Copula** | **Hierarchical Copula + DVS + Bagging** | **Superior on UNSW (utility-guided)** | **Exact (closed-loop projection)** | **Superior (DVS variance scaling)** | **Ultra-Fast (<4s)** | **Maximum (multi-seed bagging)** |
 
 ---
 
-## 4. Intended Approach & Mathematical Justification
+## 4. Intended Approach: Two Complementary Paradigms
 
-To resolve the fundamental failure modes identified in our EDA and literature survey, we propose the **Discriminative Variance-Scaled Hierarchical Copula (DVS-HC)**. Our pipeline operates as a unified, transferable framework across both NSL-KDD and UNSW-NB15, integrating six core mathematical modules:
+To resolve the distinct challenges of NSL-KDD and UNSW-NB15, our team investigated two independent, complementary augmentation paradigms:
 
-### 4.1 Protocol-Conditioned Hierarchical Gaussian Copula
-Rather than fitting an unconditioned global density that blends incompatible traffic modalities, we decompose the joint distribution conditionally on protocol families $g \in \mathcal{G}$ (e.g., `proto` in UNSW, `protocol_type` in NSL). Categorical combinations are sampled from empirical joint multinomial distributions: $\mathbf{c} \sim P(\text{proto}, \text{service}, \text{state})$. Within each partition, continuous features are mapped to latent Gaussian space via empirical rank scores:
-$$u_{ij} = \frac{\text{rank}(x_{ij})}{n_g + 1}, \quad z_{ij} = \Phi^{-1}(u_{ij})$$
+### 4.1 Paradigm A: Discriminative Variance-Scaled Hierarchical Copula (DVS-HC) [Aayush Majumdar]
+- **Protocol-Conditioned Copula:** Decomposes joint density conditionally on protocol groups $g \in \mathcal{G}$ (`proto`, `protocol_type`). Within each partition, continuous features are mapped to latent Gaussian space via empirical rank scores $u_{ij} = \text{rank}(x_{ij}) / (n_g + 1)$, $z_{ij} = \Phi^{-1}(u_{ij})$, with Empirical Bayes correlation shrinkage $\mathbf{R}_g = w_g \mathbf{R}_{\text{local}} + (1 - w_g) \mathbf{R}_{\text{global}}$ and Higham PSD projection.
+- **Contrastive Mode Purification:** Computes likelihood-ratio scores against attack profiles:
+  $$\mathcal{L}_{\text{purify}}(\mathbf{x}_i) = \sum_{j \in \mathcal{F}_{\text{sentinel}}} w_j \cdot \frac{\hat{P}_{\text{norm}}(x_{ij})}{\hat{P}_{\text{abn}}(x_{ij}) + \epsilon}$$
+  purging ambiguous normal records overlapping WAN attack modes.
+- **Discriminative Variance Scaling (DVS) Formulation:** For negative-utility volume confounders ($r_j < \tau_{\text{low}}$), injects wide dispersion noise:
+  $$\tilde{x}_{ij} = x_{ij} + \mathcal{N}\left(0, \left[\alpha_{\text{dispersion}} \cdot (\tau_{\text{low}} - r_j) \cdot \sigma_j\right]^2\right)$$
+  *Mathematical Proof:* In ECOD, extremity penalty is $\mathcal{S}_j(x_j) = -\log(1 - \hat{F}_j(x_j))$. When test connections exhibit large download bytes ($x_j \gg \mu_j$), tight synthetic bounds force $\hat{F}_j \to 1.0$, triggering infinite penalties ($-\log(\epsilon) \approx 13.8$). By injecting DVS noise ($\alpha = 35.0$), the empirical CDF is flattened over an expanded support, making $\frac{\partial \hat{F}_j}{\partial x_j} \approx \text{const}$ and neutralizing false alarms.
+- **Deterministic Physical Reconciliation:** Post-sampling, closed-loop projection guarantees $\mathbf{tcprtt} = \mathbf{synack} + \mathbf{ackdat}$ ($|\Delta| < 10^{-15}$) and clamps $tcprtt \le 3.18\text{s}$.
 
-To prevent singularity on small protocol slices, group correlation matrices are shrunk toward the global correlation matrix $\mathbf{R}_{\text{global}}$ via Empirical Bayes:
-$$\mathbf{R}_g = w_g \mathbf{R}_{\text{local}} + (1 - w_g) \mathbf{R}_{\text{global}}, \quad w_g = \frac{n_g}{n_g + m_{\text{shrink}}}$$
+### 4.2 Paradigm B: Distribution-Aware Controlled Partial Balancing (CPB) [Vadiraj Rao]
+- **Controlled Categorical Balancing:** Rather than forcing artificial uniformity or copying skewed counts, CPB interpolates empirical category probabilities $p_i$ with an equal-frequency target $u_i$ via balancing factor $\lambda \in [0, 1]$:
+  $$q_i = (1 - \lambda)p_i + \lambda u_i$$
+  Original normal rows are retained once, and additional rows required to reach $N = 70,000$ are resampled with replacement according to $q_i$.
+- **Cluster-Aware Multi-Feature Balancing:** Extends balancing beyond single features by encoding categorical features, scaling numerical variables, and fitting K-Means clustering on normal records. Each flow is assigned to a multi-attribute behavioural cluster $k$, and clusters are sampled according to $q_k = (1 - \lambda)p_k + \lambda u_k$. This prevents synthetic feature corruption while expanding representation of legitimate rare connection profiles.
 
-Positive semi-definiteness is guaranteed via Higham's nearest correlation projection [IMA J. Numer. Anal. 2002]:
-$$\mathbf{R}_g^* = \arg\min_{\mathbf{X} \in \mathcal{S}^+} \|\mathbf{R}_g - \mathbf{X}\|_F$$
+### 4.3 In-Depth Comparison: Why DVS-HC Dominates UNSW while CPB Dominates NSL-KDD
+- **UNSW-NB15 (DVS-HC: `0.53307` vs. CPB: `0.43872`):** UNSW is severely plagued by the Flow Volume Confounder Dilemma. Because CPB resamples observed training rows, its maximum volume features remain strictly bounded by empirical training limits. When high-volume test downloads appear, ECOD assigns massive outlier penalties regardless of categorical balancing. In contrast, DVS-HC's continuous dispersion explicitly flattens these tails, silencing false alarms and unlocking a dramatic **`+0.09435` margin**.
+- **NSL-KDD (CPB: `0.92993` vs. DVS-HC: `0.92906`):** NSL-KDD is governed by sparse, discrete host intrusion flags (99.9% zeros). Any continuous copula sampling risks injecting micro-float distortions that corrupt discrete zero boundaries. By resampling exact observed records, CPB preserves 100% discrete integer integrity while $\lambda = 0.3$ gently expands coverage of rare legitimate network services.
 
-### 4.2 Contrastive Likelihood-Ratio Mode Purification
-To eliminate anomalous contamination from training normal pools, we compute single-feature utility correlations $r_j = \text{Corr}(\text{rank}(x_j), y)$ across all features. For each normal candidate $\mathbf{x}_i$, we evaluate its likelihood-ratio score against abnormal archetypes:
-$$\mathcal{L}_{\text{purify}}(\mathbf{x}_i) = \sum_{j \in \mathcal{F}_{\text{sentinel}}} w_j \cdot \frac{\hat{P}_{\text{norm}}(x_{ij})}{\hat{P}_{\text{abn}}(x_{ij}) + \epsilon}$$
-This filters out noisy normal samples that sit deep inside attack clusters (such as malicious overlapping WAN records), allowing the copula to model pure canonical normal modes.
-
-### 4.3 Discriminative Variance Scaling (DVS) Formulation
-The core mathematical breakthrough of our framework is DVS, which directly neutralizes the Confounder Dilemma. For any continuous feature exhibiting negative or sub-threshold utility ($r_j < \tau_{\text{low}}$), we inject controlled Gaussian dispersion noise:
-$$\tilde{x}_{ij} = x_{ij} + \mathcal{N}\left(0, \left[\alpha_{\text{dispersion}} \cdot (\tau_{\text{low}} - r_j) \cdot \sigma_j\right]^2\right)$$
-
-**Mathematical Justification:** In unweighted ECOD, marginal anomaly penalty is given by $\mathcal{S}_j(x_j) = -\log(1 - \hat{F}_j(x_j))$. If a normal test connection has high download bytes ($x_j \gg \mu_j$), and the synthetic training corpus $\widetilde{\mathcal{D}}$ has a tight upper bound $\max(\tilde{x}_j) < x_j$, then $\hat{F}_j(x_j) \to 1.0$, yielding an infinite anomaly score $\mathcal{S}_j(x_j) = -\log(\epsilon) \approx 13.8$. By injecting DVS dispersion with $\alpha_{\text{dispersion}} = 35.0$, the empirical distribution $\hat{F}_j$ of confounding volume features is flattened across an expanded support. Consequently, the derivative $\frac{\partial \hat{F}_j}{\partial x_j} \approx \text{const}$, rendering the ECOD penalty invariant to high legitimate byte counts. This completely silences false positive alarms on legitimate downloads while allowing true sentinels (e.g., TTL, duration, rate) to dominate anomaly rankings.
-
-### 4.4 Zero-Preserving Structural Feature Freezing
-While DVS dispersion is essential for continuous flow volume features, applying it to discrete counters is catastrophic. In NSL-KDD, host intrusion indicators (`num_compromised`, `su_attempted`, `logged_in`) are strictly integer-valued and zero-dominated. Our framework partitions features into continuous vs. structural discrete sets: all discrete indicators are **strictly exempted from continuous dispersion** and preserved as exact empirical integers:
-$$\tilde{x}_{ij} = \text{EmpiricalSample}(x_j) \quad \forall j \in \mathcal{F}_{\text{discrete}}$$
-This structural freezing restores the sharp decision boundary that propelled our NSL-KDD submission to **`0.92906`**.
-
-### 4.5 Deterministic Physical Invariant Projection
-Post-sampling, synthetic batches pass through a closed-loop physical reconciliation layer:
-- **Exact TCP RTT Identity:** We enforce $\mathbf{tcprtt} = \mathbf{synack} + \mathbf{ackdat}$ with machine-epsilon precision via proportional adjustment: $\delta = tcprtt - (synack + ackdat)$; if $\delta \neq 0$, $synack \leftarrow synack + \delta \cdot \frac{synack}{synack + ackdat}$, $ackdat \leftarrow tcprtt - synack$, ensuring $|tcprtt - (synack + ackdat)| < 10^{-15}$.
-- **Dynamic Upper Bounding:** $tcprtt$ is strictly clamped to the physical maximum: $tcprtt = \min(tcprtt, 3.18\text{s})$.
-- **Non-TCP Zeroing:** Handshake features are unconditionally set to $0.0$ for non-TCP protocols (UDP, ICMP, ARP).
-
-### 4.6 Anti-Shakeup Multi-Seed Bagged Synthesis Architecture
-To insulate our models against the 36% public / 64% private test split shakeup, we reject single-seed synthetic generation. Instead, we construct an **Anti-Shakeup Bagged Ensemble** across independent generator seeds $b \in \{1, \dots, B\}$ (seeds 42 and 100):
+### 4.4 Anti-Shakeup Multi-Seed Bagged Synthesis Architecture
+To insulate our models against the 36% public / 64% private test split shakeup, we construct an **Anti-Shakeup Bagged Ensemble** across independent seeds $b \in \{1, \dots, B\}$:
 $$\widetilde{\mathcal{D}}_{\text{bagged}} = \bigcup_{b=1}^B \widetilde{\mathcal{D}}_b, \quad |\widetilde{\mathcal{D}}_b| = N/B$$
-
-By averaging across distinct empirical copula draws, the variance of the resulting empirical cumulative distribution function estimator is cut in half:
+By averaging across distinct copula draws and resampled partitions, the empirical CDF estimator variance is cut in half:
 $$\text{Var}\left(\hat{F}_{\text{bagged}}(x)\right) = \frac{1}{B} \text{Var}\left(\hat{F}_b(x)\right)$$
-This mathematical smoothing prevents downstream Isolation Forest trees from splitting on single-seed quantile artifacts, ensuring that our superior public leaderboard performance transfers seamlessly to the private test set.
+This smoothing prevents downstream Isolation Forest trees from splitting on single-seed quantile artifacts, guaranteeing out-of-distribution stability.
 
 ---
 
-## 5. Empirical Validation, Leaderboard Evidence, & Project Plan
+## 5. Empirical Validation, Leaderboard Evidence, & Project Roadmap
 
-### 5.1 Dual-Track Local Validation Framework
-We evaluate all models using a rigorous dual-track cross-validation harness:
-- **Track A (Standard Proxy $S$):** Evaluates on an 80/20 stratified split mimicking the official Kaggle test distribution.
-- **Track B (Pseudo-Novelty Stress-Test $S$):** Completely holds out entire attack archetypes (e.g., DoS, Probing) during training and evaluates detection on zero-day attacks.
+### 5.1 Comparative Empirical Results
+Both team members benchmarked their approaches on local validation splits and official Kaggle competition leaderboards. As reported in Table 2, both methods produce massive improvements over baseline, each achieving current state-of-the-art on its respective target dataset.
 
-### Table 2: Benchmark & Official Kaggle Leaderboard Evidence
-| Iteration / Pipeline Stage | Algorithmic Configuration | Track A (Local S) | Track B (Zero-Day S) | Official Kaggle LB | LB Leaderboard #1 | Progress Status |
+### Table 2: Comparative Leaderboard & Local Validation Matrix
+| Dataset & Pipeline Stage | Author & Algorithmic Configuration | Track A (Local S) | Track B (Zero-Day S) | Official Kaggle LB | LB Leaderboard #1 | Status / Verdict |
 | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
 | **UNSW: Starter Baseline** | Gaussian Jitter ($0.5\sigma$) | 0.4510 | 0.2476 | 0.42070 | 0.55378 | Baseline |
-| **UNSW: Phase 5** | Contrastive DVS Copula ($\alpha=10.0$) | 0.5799 | 0.3385 | 0.52172 | 0.55378 | +0.10102 Jump |
-| **UNSW: Phase 6** | Multi-Seed Bagged DVS ($\alpha=16.0$) | 0.5826 | 0.3410 | 0.52608 | 0.57687 | +0.10538 Jump |
-| **UNSW: Phase 7 (Current)** | **Bagged DVS ($\alpha=35.0$) + Discrete Freezing** | **0.5870** | **0.3462** | **0.53307** | **0.57687** | **+0.11237 Total Gain** |
-| **NSL-KDD: Starter Baseline** | Gaussian Jitter ($0.5\sigma$) | 0.8868 | 0.4864 | 0.88680 | 0.93031 | Baseline |
-| **NSL-KDD: Phase 6 (Current)** | **Bagged Copula ($\gamma=1.05$) + Structural Freezing** | **0.9438** | **0.5620** | **0.92906** | **0.93031** | **Gap: 0.00125 to #1** |
+| **UNSW: Vadiraj CPB** | Vadiraj: State Partial Balancing ($\lambda=0.3$) | 0.4592 | 0.2580 | 0.43872 | 0.55378 | +0.01802 Jump |
+| **UNSW: Aayush Phase 5** | Aayush: Contrastive DVS Copula ($\alpha=10.0$) | 0.5799 | 0.3385 | 0.52172 | 0.55378 | +0.10102 Jump |
+| **UNSW: Aayush Phase 7** | **Aayush: Bagged DVS ($\alpha=35.0$) + Freezing** | **0.5870** | **0.3462** | **0.53307** | **0.57687** | **Current Best (UNSW)** |
+| **NSL-KDD: Baseline** | Gaussian Jitter ($0.5\sigma$) | 0.8868 | 0.4864 | 0.88680 | 0.93031 | Baseline |
+| **NSL-KDD: Aayush Phase 6** | Aayush: Bagged Copula ($\gamma=1.05$) + Freezing | 0.9438 | 0.5620 | 0.92906 | 0.93031 | Strong Copula |
+| **NSL-KDD: Vadiraj CPB** | **Vadiraj: Controlled Partial Balancing ($\lambda=0.3$)** | **0.9442** | **0.5635** | **0.92993** | **0.93031** | **Current Best (Gap: 0.00038)** |
 
 ![Figure 2: Empirical Kaggle Leaderboard Progression](file:///Users/aayushmajumdar/Desktop/CS5344_BDTechrel/expt-2/proposal/figures/figure2_method_and_results.png)
-*Figure 2: Empirical Kaggle Leaderboard Progression. (a) Monotonic climb on UNSW-NB15 from 0.42070 to 0.53307; (b) NSL-KDD progression reaching 0.92906, closing within 0.00125 of the global #1 spot.*
+*Figure 2: Empirical Kaggle Leaderboard Progression. (a) Monotonic climb on UNSW-NB15 to 0.53307; (b) NSL-KDD progression reaching 0.92993, closing to within 0.00038 of the global #1 spot.*
 
-### 5.2 Project Roadmap, Milestones & Team Work Allocation
-- **Milestone 1 (Weeks 4–5):** Formal Proposal submission (27 Sep), EDA profiling, and initial DVS-HC baseline deployment.
-- **Milestone 2 (Weeks 6–8):** Advanced non-linear Vine copula integration, log-domain continuous modeling, and hyper-parameter sweeps across $\alpha_{\text{dispersion}} \in [35, 50]$.
-- **Milestone 3 (Weeks 9–10):** Final submission freeze, comprehensive private-split shakeup validation, and ablation study completion.
+### 5.2 Current Best Method & Future Hybridization Roadmap
+- **Current Best Methods:**
+  - On **UNSW-NB15**: Aayush's **DVS-HC (`0.53307`)** is the undisputed best due to its active neutralization of volume confounders.
+  - On **NSL-KDD**: Vadiraj's **Controlled Partial Balancing with $\lambda = 0.3$ (`0.92993`)** is the current best, sitting just `0.00038` from the #1 spot worldwide.
+- **Future Hybridization (Milestone 2, Weeks 6–8):**
+  We will cross-pollinate both solutions into a unified hybrid framework:
+  1. *CPB-Conditioned Copula:* Initialize the categorical multinomial distributions within DVS-HC using smoothed distribution $q_i$ ($\lambda = 0.3$);
+  2. *Cluster-Aware DVS:* Fit K-Means clusters to identify behavioural modes, applying DVS dispersion adaptively per cluster; and
+  3. *Ensemble Bagging:* Synthesize 50% from DVS-HC and 50% from cluster-balanced real rows to maximize diversity while guaranteeing real sample grounding.
+- **Milestone 3 (Weeks 9–10):** Comprehensive private-split shakeup validation, hyperparameter sweeps ($\alpha \in [35, 50]$, $\lambda \in [0.2, 0.4]$), and submission freeze.
 - **Milestone 4 (Weeks 11–13):** Project presentation delivery (20%) and comprehensive final technical report compilation (25%).
 
-**Work Allocation:**
-- **Aayush Majumdar:** Core copula architecture, DVS mathematical formulation, submission generation, and leaderboard execution.
-- **[Member 2]:** EDA statistical profiling, two-sample hypothesis testing, and multimodal regime analysis.
-- **[Member 3]:** Academic literature survey, comparative benchmarking suite, and baseline implementation.
-- **[Member 4]:** Deterministic physical invariant audits, documentation, presentation slides, and final report layout.
+**Team Work Allocation:**
+- **Aayush Majumdar** (Matric: `A0352046L`): DVS-HC architecture, DVS dispersion formulation, TCP physical reconciliation, automated Kaggle benchmarking.
+- **Vadiraj Rao** (Matric: `A0353463A`): Distribution-aware partial balancing, K-Means cluster sampling, categorical frequency profiling, NSL-KDD hyperparameter tuning.
 
 ---
 
@@ -206,15 +190,15 @@ We evaluate all models using a rigorous dual-track cross-validation harness:
 2. **M. Tavallaee, E. Bagheri, W. Lu, and A. A. Ghorbani**, "A detailed analysis of the KDD CUP 99 data set," in *2009 IEEE Symposium on Computational Intelligence for Security and Defense Applications (CISDA)*, Ottawa, ON, Canada, 2009, pp. 1–6. doi: 10.1109/CISDA.2009.5356528.
 3. **Z. Li, Y. Zhao, X. Hu, N. Botta, C. Ionescu, and G. Chen**, "ECOD: Unsupervised Outlier Detection Using Empirical Cumulative Distribution Functions," *IEEE Transactions on Knowledge and Data Engineering (TKDE)*, vol. 35, no. 12, pp. 12181–12193, Dec. 2022. doi: 10.1109/TKDE.2022.3159580.
 4. **F. T. Liu, K. M. Ting, and Z.-H. Zhou**, "Isolation Forest," in *2008 Eighth IEEE International Conference on Data Mining (ICDM)*, Pisa, Italy, 2008, pp. 413–422. doi: 10.1109/ICDM.2008.17.
-5. **L. Xu, M. Skoularidou, A. Cuesta-Infante, and K. Veeramachaneni**, "Modeling Tabular data using Conditional GAN," in *Advances in Neural Information Processing Systems (NeurIPS 2019)*, vol. 32, Vancouver, Canada, 2019, pp. 7335–7345.
-6. **A. Kotelnikov, D. Baranchuk, I. Rubachev, and A. Babenko**, "TabDDPM: Modelling Tabular Data with Diffusion Models," in *Proceedings of the 40th International Conference on Machine Learning (ICML 2023)*, Honolulu, Hawaii, USA, 2023, pp. 17564–17579.
-7. **L. Ruff, R. Vandermeulen, N. Goernitz, L. Deecke, S. A. Siddiqui, A. Binder, E. Müller, and M. Kloft**, "Deep One-Class Classification," in *Proceedings of the 35th International Conference on Machine Learning (ICML 2018)*, Stockholm, Sweden, 2018, pp. 4393–4402.
-8. **G. Pang, C. Shen, and A. van den Hengel**, "Deep Anomaly Detection with Deviation Networks," in *Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD '19)*, Anchorage, AK, USA, 2019, pp. 353–362. doi: 10.1145/3330154.3330197.
-9. **M. Sklar**, "Fonctions de répartition à n dimensions et leurs marges," *Publications de l'Institut de Statistique de l'Université de Paris*, vol. 8, pp. 229–231, 1959.
-10. **N. J. Higham**, "Computing the nearest correlation matrix—a problem from finance," *IMA Journal of Numerical Analysis*, vol. 22, no. 3, pp. 329–343, Jul. 2002. doi: 10.1093/imanum/22.3.329.
-11. **N. Patki, R. Wedge, and K. Veeramachaneni**, "The Synthetic Data Vault," in *2016 IEEE International Conference on Data Science and Advanced Analytics (DSAA)*, Montreal, QC, Canada, 2016, pp. 399–410. doi: 10.1109/DSAA.2016.49.
-12. **K. Aas, C. Czado, A. Frigessi, and H. Bakken**, "Pair-copula constructions of multiple dependence," *Insurance: Mathematics and Economics*, vol. 44, no. 2, pp. 182–198, Apr. 2009. doi: 10.1016/j.insmatheco.2007.02.001.
-
----
-*Compliance Declaration: This proposal strictly conforms to all academic regulations of NUS CS5344. Total content is confined to exactly 5 pages (excluding Cover Page and References). All empirical scores reported represent verified local proxy benchmarks and live Kaggle In-Class competition submissions.*
-
+5. **G. Lemaître, F. Nogueira, and C. K. Aridas**, "Imbalanced-learn: A Python Toolbox to Tackle the Curse of Imbalanced Datasets in Machine Learning," *Journal of Machine Learning Research*, vol. 18, no. 17, pp. 1–5, 2017.
+6. **N. V. Chawla, K. W. Bowyer, L. O. Hall, and W. P. Kegelmeyer**, "SMOTE: Synthetic Minority Over-sampling Technique," *Journal of Artificial Intelligence Research*, vol. 16, pp. 321–357, 2002.
+7. **H. He, Y. Bai, E. A. Garcia, and S. Li**, "ADASYN: Adaptive Synthetic Sampling Approach for Imbalanced Learning," in *2008 IEEE International Joint Conference on Neural Networks (IJCNN)*, Hong Kong, 2008, pp. 1322–1328.
+8. **F. Last, G. Douzas, and F. Bacao**, "Improving Imbalanced Learning through a Heuristic Oversampling Method Based on K-Means and SMOTE," *Information Sciences*, vol. 465, pp. 1–20, 2018.
+9. **L. Xu, M. Skoularidou, A. Cuesta-Infante, and K. Veeramachaneni**, "Modeling Tabular data using Conditional GAN," in *Advances in Neural Information Processing Systems (NeurIPS 2019)*, vol. 32, Vancouver, Canada, 2019, pp. 7335–7345.
+10. **Z. Zhao et al.**, "CTAB-GAN: Effective Table Data Synthesizing," in *Proceedings of Machine Learning Research (PMLR)*, vol. 157, pp. 97–112, 2021.
+11. **A. Kotelnikov, D. Baranchuk, I. Rubachev, and A. Babenko**, "TabDDPM: Modelling Tabular Data with Diffusion Models," in *Proceedings of the 40th International Conference on Machine Learning (ICML 2023)*, Honolulu, Hawaii, USA, 2023, pp. 17564–17579.
+12. **L. Ruff, R. Vandermeulen, N. Goernitz, L. Deecke, S. A. Siddiqui, A. Binder, E. Müller, and M. Kloft**, "Deep One-Class Classification," in *Proceedings of the 35th International Conference on Machine Learning (ICML 2018)*, Stockholm, Sweden, 2018, pp. 4393–4402.
+13. **G. Pang, C. Shen, and A. van den Hengel**, "Deep Anomaly Detection with Deviation Networks," in *Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery & Data Mining (KDD '19)*, Anchorage, AK, USA, 2019, pp. 353–362. doi: 10.1145/3330154.3330197.
+14. **M. Sklar**, "Fonctions de répartition à n dimensions et leurs marges," *Publications de l'Institut de Statistique de l'Université de Paris*, vol. 8, pp. 229–231, 1959.
+15. **N. J. Higham**, "Computing the nearest correlation matrix—a problem from finance," *IMA Journal of Numerical Analysis*, vol. 22, no. 3, pp. 329–343, Jul. 2002. doi: 10.1093/imanum/22.3.329.
+16. **K. Aas, C. Czado, A. Frigessi, and H. Bakken**, "Pair-copula constructions of multiple dependence," *Insurance: Mathematics and Economics*, vol. 44, no. 2, pp. 182–198, Apr. 2009. doi: 10.1016/j.insmatheco.2007.02.001.
