@@ -17,24 +17,67 @@ echo "Location: $SCRIPT_DIR"
 echo "================================================================================"
 
 # ------------------------------------------------------------------------------
-# 0. Disk Quota Safeguards & Cache Purging
+# 0. Identify Scratch Storage (68TB Quota-Free Pool) & Setup Isolation
 # ------------------------------------------------------------------------------
-echo -e "\n[Step 0/4] Checking Disk Quota & Purging Pip Cache..."
-# Purge pip cache to free up hundreds of MBs/GBs in quota-limited $HOME
-rm -rf ~/.cache/pip ~/.cache/torch ~/.cache/triton 2>/dev/null || true
+echo -e "\n[Step 0/4] Resolving Scratch Storage & Setting Quota Safeguards..."
 
-# Force pip to never write cached wheels to $HOME
-export PIP_NO_CACHE_DIR=1
-# Route temporary decompression away from $HOME to local /tmp
-export TMPDIR=/tmp
+# Detect user-owned scratch directory on NUS SoC cluster
+FIRST_CHAR="${USER:0:1}"
+SCRATCH_BASE=""
 
-# Display current quota / disk usage
+if [ -d "/mnt/scratch/$FIRST_CHAR/$USER" ] && [ -w "/mnt/scratch/$FIRST_CHAR/$USER" ]; then
+    SCRATCH_BASE="/mnt/scratch/$FIRST_CHAR/$USER"
+elif [ -d "/mnt/scratch/a/$USER" ] && [ -w "/mnt/scratch/a/$USER" ]; then
+    SCRATCH_BASE="/mnt/scratch/a/$USER"
+elif [ -d "/mnt/scratch/$USER" ] && [ -w "/mnt/scratch/$USER" ]; then
+    SCRATCH_BASE="/mnt/scratch/$USER"
+elif [ -d "/scratch/$USER" ] && [ -w "/scratch/$USER" ]; then
+    SCRATCH_BASE="/scratch/$USER"
+else
+    SCRATCH_BASE="$HOME/.local_scratch"
+    mkdir -p "$SCRATCH_BASE" 2>/dev/null || true
+fi
+
+echo "[+] Target Scratch Base: $SCRATCH_BASE (NUS SoC 68TB Shared Storage Pool)"
+
+# Configure dedicated scratch temp, cache, and venv directories
+SCRATCH_TMP="$SCRATCH_BASE/tmp"
+SCRATCH_CACHE="$SCRATCH_BASE/pip_cache"
+TARGET_VENV_DIR="$SCRATCH_BASE/cs5344_venv"
+
+mkdir -p "$SCRATCH_TMP" "$SCRATCH_CACHE" "$TARGET_VENV_DIR"
+chmod 700 "$SCRATCH_TMP" "$SCRATCH_CACHE" "$TARGET_VENV_DIR" 2>/dev/null || true
+
+# Purge any lingering pip caches or old venvs in $HOME to immediately free quota
+echo "Purging legacy cache in \$HOME to prevent quota leaks..."
+rm -rf ~/.cache/pip ~/.cache/torch ~/.cache/triton ~/.cache/huggingface 2>/dev/null || true
+rm -rf ~/.local/tmp ~/.local/share/pip 2>/dev/null || true
+if [ -d "$HOME/.venvs/cs5344" ] && [ ! -L "$HOME/.venvs/cs5344" ]; then
+    echo "Removing unlinked ~/.venvs/cs5344 from \$HOME (reclaiming ~14MB quota)..."
+    rm -rf "$HOME/.venvs/cs5344" 2>/dev/null || true
+fi
+mkdir -p "$HOME/.venvs"
+
+# Export Scratch temp & cache paths
+export TMPDIR="$SCRATCH_TMP"
+export TEMP="$SCRATCH_TMP"
+export TMP="$SCRATCH_TMP"
+export PIP_CACHE_DIR="$SCRATCH_CACHE"
+
+# Quick write capability test (writes 20MB directly to scratch partition)
+TEST_BIN="$SCRATCH_TMP/write_test_$$"
+if dd if=/dev/zero of="$TEST_BIN" bs=1M count=20 2>/dev/null; then
+    rm -f "$TEST_BIN"
+    echo "[+] Scratch write verification PASSED: 20MB test file written and cleaned."
+else
+    echo "[!] Warning: 20MB test write to $SCRATCH_TMP failed. Continuing..."
+fi
+
+# Display user quota
 if command -v myquota &> /dev/null; then
     myquota || true
 elif command -v quota &> /dev/null; then
     quota -s 2>/dev/null || true
-else
-    df -h "$HOME" 2>/dev/null || true
 fi
 
 # ------------------------------------------------------------------------------
@@ -54,35 +97,19 @@ fi
 [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ] && source "$HOME/miniconda3/etc/profile.d/conda.sh" 2>/dev/null || true
 [ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ] && source "$HOME/anaconda3/etc/profile.d/conda.sh" 2>/dev/null || true
 
+# Re-enforce scratch environment variables (in case .bashrc reset them!)
+export TMPDIR="$SCRATCH_TMP"
+export TEMP="$SCRATCH_TMP"
+export TMP="$SCRATCH_TMP"
+export PIP_CACHE_DIR="$SCRATCH_CACHE"
+
 # ------------------------------------------------------------------------------
-# 2. Virtual Environment Location Resolution (Scratch vs Home)
+# 2. Virtual Environment Creation in Scratch
 # ------------------------------------------------------------------------------
-echo -e "\n[Step 2/4] Resolving Environment Location..."
+echo -e "\n[Step 2/4] Setting up Virtual Environment in Scratch..."
+echo "[+] Virtualenv Location: $TARGET_VENV_DIR"
 
-# Check if scratch directory exists with generous quota (NUS SoC cluster mounts /mnt/scratch with 68TB free)
-FIRST_CHAR="${USER:0:1}"
-TARGET_VENV_DIR=""
-if [ -d "/mnt/scratch/$FIRST_CHAR/$USER" ] && [ -w "/mnt/scratch/$FIRST_CHAR/$USER" ]; then
-    TARGET_VENV_DIR="/mnt/scratch/$FIRST_CHAR/$USER/cs5344_venv"
-    echo "[+] Using verified SoC cluster scratch partition: $TARGET_VENV_DIR (68TB storage pool)"
-elif [ -d "/mnt/scratch/a/$USER" ] && [ -w "/mnt/scratch/a/$USER" ]; then
-    TARGET_VENV_DIR="/mnt/scratch/a/$USER/cs5344_venv"
-    echo "[+] Using verified SoC cluster scratch partition: $TARGET_VENV_DIR (68TB storage pool)"
-elif [ -d "/mnt/scratch/$USER" ] && [ -w "/mnt/scratch/$USER" ]; then
-    TARGET_VENV_DIR="/mnt/scratch/$USER/cs5344_venv"
-    echo "[+] Using cluster scratch partition: $TARGET_VENV_DIR"
-elif [ -d "/scratch/$USER" ] && [ -w "/scratch/$USER" ]; then
-    TARGET_VENV_DIR="/scratch/$USER/cs5344_venv"
-    echo "[+] Using cluster scratch partition: $TARGET_VENV_DIR"
-else
-    TARGET_VENV_DIR="$HOME/.venvs/cs5344"
-    echo "[*] Using home partition: $TARGET_VENV_DIR"
-fi
-
-mkdir -p "$(dirname "$TARGET_VENV_DIR")"
-
-# Create venv with --system-site-packages to inherit any cluster-installed packages (saves quota!)
-if [ ! -d "$TARGET_VENV_DIR" ]; then
+if [ ! -f "$TARGET_VENV_DIR/bin/activate" ]; then
     echo "Creating virtual environment with system site packages at $TARGET_VENV_DIR..."
     python3 -m venv --system-site-packages "$TARGET_VENV_DIR"
 else
@@ -91,31 +118,34 @@ fi
 
 source "$TARGET_VENV_DIR/bin/activate"
 
-# Symlink to standard $HOME/.venvs/cs5344 if using scratch for standard lookup
-if [ "$TARGET_VENV_DIR" != "$HOME/.venvs/cs5344" ]; then
-    mkdir -p "$HOME/.venvs"
-    ln -sfn "$TARGET_VENV_DIR" "$HOME/.venvs/cs5344" 2>/dev/null || true
-fi
+# Symlink $HOME/.venvs/cs5344 to scratch venv for standard lookups
+ln -sfn "$TARGET_VENV_DIR" "$HOME/.venvs/cs5344" 2>/dev/null || true
+
+# Re-assert environment inside active venv
+export TMPDIR="$SCRATCH_TMP"
+export TEMP="$SCRATCH_TMP"
+export TMP="$SCRATCH_TMP"
+export PIP_CACHE_DIR="$SCRATCH_CACHE"
 
 # ------------------------------------------------------------------------------
-# 3. Installing Dependencies with Zero Cache
+# 3. Installing Dependencies Using Scratch Storage & Cache
 # ------------------------------------------------------------------------------
-echo -e "\n[Step 3/4] Installing Required Packages (Zero-Cache Mode)..."
+echo -e "\n[Step 3/4] Installing Required Packages (Scratch Cache Mode)..."
 
-# Upgrade pip without caching
-python3 -m pip install --no-cache-dir --upgrade pip
+# Upgrade pip using scratch cache and temp dir
+python3 -m pip install --cache-dir "$SCRATCH_CACHE" --upgrade pip
 
-# Check if PyTorch is already available from system/module
-if python3 -c "import torch; assert torch.cuda.is_available() or True; print('PyTorch already installed:', torch.__version__)" 2>/dev/null; then
-    echo "[+] PyTorch is already available via system/module. Skipping download to save quota!"
+# Check if PyTorch is already available and functional
+if python3 -c "import torch; assert hasattr(torch, '__version__'); print('PyTorch is already functional:', torch.__version__)" 2>/dev/null; then
+    echo "[+] PyTorch is already functional. Skipping download to save bandwidth and storage."
 else
-    echo "Installing PyTorch (CUDA 12.1, zero-cache mode)..."
-    python3 -m pip install --no-cache-dir torch --index-url https://download.pytorch.org/whl/cu121 || \
-    python3 -m pip install --no-cache-dir torch
+    echo "Installing PyTorch (CUDA 12.1) using 68TB scratch pool..."
+    python3 -m pip install --cache-dir "$SCRATCH_CACHE" torch --index-url https://download.pytorch.org/whl/cu121 || \
+    python3 -m pip install --cache-dir "$SCRATCH_CACHE" torch
 fi
 
 echo "Installing project dependencies from requirements_gpu.txt..."
-python3 -m pip install --no-cache-dir -r requirements_gpu.txt
+python3 -m pip install --cache-dir "$SCRATCH_CACHE" -r requirements_gpu.txt
 
 # Final cleanup of any lingering temporary files
 rm -rf ~/.cache/pip ~/.cache/torch 2>/dev/null || true

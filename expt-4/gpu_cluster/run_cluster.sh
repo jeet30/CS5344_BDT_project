@@ -83,6 +83,22 @@ for target_dir in "logs" "checkpoints" "../submissions" "../../submissions"; do
     fi
 done
 
+# Configure Scratch temporary storage (NUS SoC 68TB pool)
+FIRST_CHAR="${USER:0:1}"
+SCRATCH_BASE=""
+if [ -d "/mnt/scratch/$FIRST_CHAR/$USER" ] && [ -w "/mnt/scratch/$FIRST_CHAR/$USER" ]; then
+    SCRATCH_BASE="/mnt/scratch/$FIRST_CHAR/$USER"
+elif [ -d "/mnt/scratch/a/$USER" ] && [ -w "/mnt/scratch/a/$USER" ]; then
+    SCRATCH_BASE="/mnt/scratch/a/$USER"
+fi
+
+if [ -n "$SCRATCH_BASE" ]; then
+    export TMPDIR="$SCRATCH_BASE/tmp"
+    export TEMP="$SCRATCH_BASE/tmp"
+    export TMP="$SCRATCH_BASE/tmp"
+    mkdir -p "$SCRATCH_BASE/tmp" 2>/dev/null || true
+fi
+
 # Matplotlib cache isolation
 export MPLCONFIGDIR="${TMPDIR:-/tmp}/mpl_${USER:-cs5344}_${SLURM_JOB_ID:-local}"
 mkdir -p "$MPLCONFIGDIR" 2>/dev/null || true

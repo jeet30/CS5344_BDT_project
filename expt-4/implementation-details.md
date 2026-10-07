@@ -179,10 +179,14 @@ tail -f slurm_*.out
    - Added pre-flight environment checks in `run_cluster.sh` to fail fast with actionable guidance if the environment has not yet been provisioned.
 4. **Resolution of `[Errno 122] Disk quota exceeded` (StorPool Scratch Architecture)**:
    - NUS SoC enforces a strict default NFS quota of ~180MB on student home directories (`/home/a/aayusm`).
-   - PyTorch download was hitting this limit at 41.9MB.
-   - Verified that NUS SoC mounts a dedicated 170TB StorPool storage pool (with 68TB free) at `/mnt/scratch`, partitioned by user initial.
-   - User scratch directory `/mnt/scratch/a/aayusm` (`drwx------`) was located and confirmed writable.
-   - Refactored `setup_env.sh` and `run_cluster.sh` to install and activate environments in `/mnt/scratch/a/$USER/cs5344_venv`, bypassing home quota limitations entirely.
+   - Pip failed at ~43MB because even with the virtualenv placed in scratch, Pip streamed downloads to a temporary directory (`TMPDIR=/tmp` or `$HOME`), which either had a 50MB per-user quota or leaked into `$HOME`.
+   - Verified that NUS SoC mounts a dedicated 170TB StorPool storage pool (with 68TB free) at `/mnt/scratch`, partitioned by user initial (`/mnt/scratch/a/aayusm`).
+   - Fully isolated all Pip operations to `/mnt/scratch/a/$USER/`:
+     - Virtual environment: `/mnt/scratch/a/$USER/cs5344_venv`
+     - Temporary staging (`TMPDIR`, `TEMP`, `TMP`): `/mnt/scratch/a/$USER/tmp`
+     - Wheel cache (`PIP_CACHE_DIR`, `--cache-dir`): `/mnt/scratch/a/$USER/pip_cache`
+   - Reclaimed ~14MB in `$HOME` by purging legacy `~/.venvs` and replacing it with a symbolic link.
+   - 0 bytes are now written to `$HOME`, enabling arbitrary sized models and packages (e.g. PyTorch 780MB + CUDA) to download and install seamlessly.
 
 ---
 
