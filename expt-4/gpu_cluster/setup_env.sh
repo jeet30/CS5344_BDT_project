@@ -128,24 +128,47 @@ export TMP="$SCRATCH_TMP"
 export PIP_CACHE_DIR="$SCRATCH_CACHE"
 
 # ------------------------------------------------------------------------------
-# 3. Installing Dependencies Using Scratch Storage & Cache
+# 3. Installing Dependencies Using Scratch Storage & Cache (uv Accelerated)
 # ------------------------------------------------------------------------------
 echo -e "\n[Step 3/4] Installing Required Packages (Scratch Cache Mode)..."
 
 # Upgrade pip using scratch cache and temp dir
 python3 -m pip install --cache-dir "$SCRATCH_CACHE" --upgrade pip
 
+# Setup uv acceleration (10-20x faster downloads & parallel wheel extraction)
+USE_UV=false
+export UV_CACHE_DIR="$SCRATCH_BASE/uv_cache"
+export UV_LINK_MODE="copy"
+mkdir -p "$UV_CACHE_DIR" 2>/dev/null || true
+
+if command -v uv &> /dev/null; then
+    USE_UV=true
+else
+    echo "Attempting to bootstrap uv in scratch environment for fast installation..."
+    if python3 -m pip install --cache-dir "$SCRATCH_CACHE" uv 2>/dev/null; then
+        USE_UV=true
+    fi
+fi
+
+if [ "$USE_UV" = true ]; then
+    echo "[+] Using uv for lightning-fast multi-threaded installation."
+    INSTALL_CMD="uv pip install --cache-dir $UV_CACHE_DIR --link-mode copy"
+else
+    echo "[*] Using standard pip with scratch caching."
+    INSTALL_CMD="python3 -m pip install --cache-dir $SCRATCH_CACHE"
+fi
+
 # Check if PyTorch is already available and functional
 if python3 -c "import torch; assert hasattr(torch, '__version__'); print('PyTorch is already functional:', torch.__version__)" 2>/dev/null; then
     echo "[+] PyTorch is already functional. Skipping download to save bandwidth and storage."
 else
     echo "Installing PyTorch (CUDA 12.1) using 68TB scratch pool..."
-    python3 -m pip install --cache-dir "$SCRATCH_CACHE" torch --index-url https://download.pytorch.org/whl/cu121 || \
-    python3 -m pip install --cache-dir "$SCRATCH_CACHE" torch
+    $INSTALL_CMD torch --index-url https://download.pytorch.org/whl/cu121 || \
+    $INSTALL_CMD torch
 fi
 
 echo "Installing project dependencies from requirements_gpu.txt..."
-python3 -m pip install --cache-dir "$SCRATCH_CACHE" -r requirements_gpu.txt
+$INSTALL_CMD -r requirements_gpu.txt
 
 # Final cleanup of any lingering temporary files
 rm -rf ~/.cache/pip ~/.cache/torch 2>/dev/null || true
