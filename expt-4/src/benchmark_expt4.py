@@ -27,9 +27,24 @@ from generators.stratified_cpb_v2 import ControlledPartialBalancingV2Generator
 PROJECT_ROOT = SRC_DIR.parent.parent
 SUBMISSIONS_DIR = SRC_DIR.parent / "submissions"
 SUBMISSIONS_DIR.mkdir(parents=True, exist_ok=True)
+(PROJECT_ROOT / "submissions").mkdir(parents=True, exist_ok=True)
 
 TARGET_N_NSL = 40000
 TARGET_N_UNSW = 70000
+
+
+def find_dataset(filename: str) -> Path:
+    candidates = [
+        PROJECT_ROOT / filename,
+        Path.cwd() / filename,
+        Path.cwd().parent / filename,
+        Path.cwd().parent.parent / filename,
+        SRC_DIR.parent.parent / filename,
+    ]
+    for c in candidates:
+        if c.exists():
+            return c.resolve()
+    raise FileNotFoundError(f"Dataset {filename} not found in any candidate path: {candidates}")
 
 
 def run_benchmark():
@@ -41,7 +56,7 @@ def run_benchmark():
     # 1. NSL-KDD Pipeline: Controlled Partial Balancing (CPB v2)
     # -------------------------------------------------------------
     print("\n>>> [1/2] Processing NSL-KDD...")
-    nsl_path = PROJECT_ROOT / "train_nslkdd.csv"
+    nsl_path = find_dataset("train_nslkdd.csv")
     df_nsl = pd.read_csv(nsl_path)
     print(f"Loaded NSL-KDD: {df_nsl.shape[0]} rows, {df_nsl.shape[1]} cols")
 
@@ -87,7 +102,7 @@ def run_benchmark():
     # 2. UNSW-NB15 Pipeline: Contrastive DVS-Copula v2
     # -------------------------------------------------------------
     print("\n>>> [2/2] Processing UNSW-NB15...")
-    unsw_path = PROJECT_ROOT / "train_unsw.csv"
+    unsw_path = find_dataset("train_unsw.csv")
     df_unsw = pd.read_csv(unsw_path)
     print(f"Loaded UNSW-NB15: {df_unsw.shape[0]} rows, {df_unsw.shape[1]} cols")
 

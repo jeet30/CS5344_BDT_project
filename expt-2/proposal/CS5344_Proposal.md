@@ -202,3 +202,9 @@ Both team members benchmarked their approaches on local validation splits and of
 14. **M. Sklar**, "Fonctions de répartition à n dimensions et leurs marges," *Publications de l'Institut de Statistique de l'Université de Paris*, vol. 8, pp. 229–231, 1959.
 15. **N. J. Higham**, "Computing the nearest correlation matrix—a problem from finance," *IMA Journal of Numerical Analysis*, vol. 22, no. 3, pp. 329–343, Jul. 2002. doi: 10.1093/imanum/22.3.329.
 16. **K. Aas, C. Czado, A. Frigessi, and H. Bakken**, "Pair-copula constructions of multiple dependence," *Insurance: Mathematics and Economics*, vol. 44, no. 2, pp. 182–198, Apr. 2009. doi: 10.1016/j.insmatheco.2007.02.001.
+
+---
+
+## 7. Declaration on the Use of Generative AI
+
+We used Google Antigravity / Gemini to generate ideas, format paragraphs, analyse effectiveness, produce drafts, refine, and/or finalise our assignment. We are responsible for the content and quality of the submitted work.

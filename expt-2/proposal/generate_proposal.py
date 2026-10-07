@@ -704,6 +704,26 @@ def build_pdf(filename="Group42Proposal.pdf"):
     for r in refs:
         story.append(Paragraph(r, ref_style))
 
+    story.append(Spacer(1, 14))
+    story.append(Paragraph("Declaration on the Use of Generative AI", sec_heading))
+    story.append(HRFlowable(width="100%", thickness=1, color=c_primary, spaceBefore=2, spaceAfter=8))
+    
+    ai_decl_text = (
+        "We used Google Antigravity / Gemini to generate ideas, format paragraphs, analyse effectiveness, "
+        "produce drafts, refine, and/or finalise our assignment. We are responsible for the content and quality "
+        "of the submitted work."
+    )
+    t_ai = Table([[Paragraph(ai_decl_text, body_style)]], colWidths=[523])
+    t_ai.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,-1), colors.HexColor('#f7fafc')),
+        ('BOX', (0,0), (-1,-1), 1, c_secondary),
+        ('TOPPADDING', (0,0), (-1,-1), 8),
+        ('BOTTOMPADDING', (0,0), (-1,-1), 8),
+        ('LEFTPADDING', (0,0), (-1,-1), 12),
+        ('RIGHTPADDING', (0,0), (-1,-1), 12),
+    ]))
+    story.append(t_ai)
+
     doc.build(story, canvasmaker=NumberedCanvas)
     print(f"Proposal PDF built successfully: {filename} ({os.path.getsize(filename):,} bytes)")
 

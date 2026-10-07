@@ -367,11 +367,14 @@ class TabSynDiffusionPipeline:
 
         for b in range(n_batches):
             cur_n = min(batch_size, n_samples - b * batch_size)
+            if b % 5 == 0 or b == n_batches - 1:
+                print(f"  Sampling batch {b + 1}/{n_batches} ({cur_n} rows)...")
             z_sampled = self.diffusion.sample(self.diffusion_net, (cur_n, self.latent_dim))
             recon_cont, recon_cat = self.vae.decode(z_sampled)
 
             recon_cont_np = recon_cont.cpu().numpy()
             recon_cont_orig = self.scaler.inverse_transform(recon_cont_np)
+            recon_cont_orig = np.nan_to_num(recon_cont_orig, nan=0.0, posinf=1e6, neginf=-1e6)
             synth_cont_list.append(recon_cont_orig)
 
             for idx, col in enumerate(self.cat_cols):
@@ -386,7 +389,8 @@ class TabSynDiffusionPipeline:
         for col in self.cat_cols:
             df_out[col] = synth_cat_list[col]
 
-        return df_out
+        feature_order = self.num_cols + self.cat_cols
+        return df_out[feature_order].fillna(0.0)
 
     def save_checkpoint(self, path: Path):
         path.parent.mkdir(parents=True, exist_ok=True)
@@ -400,6 +404,20 @@ class TabSynDiffusionPipeline:
             "latent_dim": self.latent_dim,
         }, str(path))
         print(f"Checkpoint saved -> {path}")
+
+
+def find_dataset(filename: str) -> Path:
+    candidates = [
+        PROJECT_ROOT / filename,
+        Path.cwd() / filename,
+        Path.cwd().parent / filename,
+        Path.cwd().parent.parent / filename,
+        CLUSTER_DIR.parent.parent / filename,
+    ]
+    for c in candidates:
+        if c.exists():
+            return c.resolve()
+    raise FileNotFoundError(f"Dataset {filename} not found in any candidate path: {candidates}")
 
 
 # ---------------------------------------------------------------------------
@@ -432,7 +450,7 @@ def main():
     # 1. NSL-KDD: Train -> Holdout Benchmark -> Checkpoint -> 40k Submission
     # -----------------------------------------------------------------------
     print("\n>>> [1/2] NSL-KDD Pipeline: Tabular VAE + Latent DDPM...")
-    df_nsl = pd.read_csv(PROJECT_ROOT / "train_nslkdd.csv")
+    df_nsl = pd.read_csv(find_dataset("train_nslkdd.csv"))
     train_nsl, val_nsl = train_test_split(df_nsl, test_size=0.2, stratify=df_nsl["is_anomaly"], random_state=42)
 
     cat_cols_nsl = [
@@ -485,7 +503,7 @@ def main():
     # 2. UNSW-NB15: Train -> Holdout Benchmark -> Checkpoint -> 70k Submission
     # -----------------------------------------------------------------------
     print("\n>>> [2/2] UNSW-NB15 Pipeline: Tabular VAE + Latent DDPM...")
-    df_unsw = pd.read_csv(PROJECT_ROOT / "train_unsw.csv")
+    df_unsw = pd.read_csv(find_dataset("train_unsw.csv"))
     train_unsw, val_unsw = train_test_split(df_unsw, test_size=0.2, stratify=df_unsw["is_anomaly"], random_state=42)
 
     cat_cols_unsw = [

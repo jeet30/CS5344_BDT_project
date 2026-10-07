@@ -6,7 +6,7 @@ Track B: Pseudo-novelty stress-testing (unsupervised attack clustering to test n
 from __future__ import annotations
 
 import os
-from typing import Dict, List, Tuple, Any
+from typing import Dict, List, Tuple, Any, Optional
 import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
@@ -112,6 +112,9 @@ def evaluate_pseudo_novelty(
     continuous_cols: List[str],
     n_attack_clusters: int = 4,
     random_state: int = 42,
+    base_res: Optional[Dict[str, Any]] = None,
+    X_train: Optional[np.ndarray] = None,
+    X_test: Optional[np.ndarray] = None,
 ) -> Dict[str, Any]:
     """
     Evaluate synthetic data against both:
@@ -119,10 +122,12 @@ def evaluate_pseudo_novelty(
     2. Per-attack-cluster AUPRC (measuring performance across distinct attack modes)
     """
     y_holdout = real_holdout[LABEL_COL].to_numpy()
-    X_train, X_test, _ = build_feature_matrices(synthetic_train, real_holdout, numeric_cols, cat_cols)
+    if X_train is None or X_test is None:
+        X_train, X_test, _ = build_feature_matrices(synthetic_train, real_holdout, numeric_cols, cat_cols)
     
     # Base evaluation
-    base_res = score_detectors(X_train, X_test, y_holdout)
+    if base_res is None:
+        base_res = score_detectors(X_train, X_test, y_holdout)
     
     # Cluster abnormal holdout
     abnormal_mask = y_holdout == 1
@@ -169,6 +174,7 @@ def evaluate_pseudo_novelty(
         "overall": base_res,
         "attack_clusters": cluster_scores,
         "mean_cluster_s": mean_cluster_s,
+        "pseudo_novelty_S": mean_cluster_s,
         "mean_cluster_auprc_ecod": mean_cluster_ecod,
         "mean_cluster_auprc_iforest": mean_cluster_ifo,
     }

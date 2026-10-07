@@ -152,6 +152,14 @@ squeue -u $USER
 tail -f slurm_*.out
 ```
 
+### 4.3 Slurm Environment Hardening & Forensic Fixes (Job 917948 Audit)
+1. **Working Directory Resolution (`$SLURM_SUBMIT_DIR`)**:
+   Slurm copies batch scripts to a local spool directory (`/var/lib/slurm/slurmd/job<ID>/slurm_script`). Relying on `BASH_SOURCE[0]` redirected the working directory away from the project repository. `run_cluster.sh` now dynamically binds to `$SLURM_SUBMIT_DIR` and traverses into `expt-4/gpu_cluster`.
+2. **Defensive `nvidia-smi` & Module Loading**:
+   On GPU nodes where device access is subject to environment modules or driver configuration (e.g. `xgpe2`), raw `nvidia-smi` returned exit code 6 ("No devices were found"), which triggered `set -e` failure. `run_cluster.sh` now loads `cuda` and `python` modules, wraps `nvidia-smi` with non-fatal fallbacks, inspects `CUDA_VISIBLE_DEVICES`, and probes PyTorch device availability directly.
+3. **Offline Node Safety**:
+   `pip install` operations are guarded to prevent failure if compute nodes lack outbound internet connectivity.
+
 ---
 
 ## 5. Submission Artifact Verification

@@ -35,8 +35,35 @@ notify_exit() {
 }
 trap notify_exit EXIT
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-cd "$SCRIPT_DIR"
+# ------------------------------------------------------------------------------
+# Robust Working Directory Resolution
+# ------------------------------------------------------------------------------
+# In Slurm execution, sbatch copies the script to a daemon spool folder (/var/lib/slurm/...),
+# so ${BASH_SOURCE[0]} evaluates to the spool path instead of the repository directory.
+# SLURM_SUBMIT_DIR contains the directory where sbatch was invoked.
+
+if [ -n "$SLURM_SUBMIT_DIR" ] && [ -d "$SLURM_SUBMIT_DIR" ]; then
+    cd "$SLURM_SUBMIT_DIR"
+elif [ -n "${BASH_SOURCE[0]}" ] && [ -f "${BASH_SOURCE[0]}" ] && [[ "${BASH_SOURCE[0]}" != *"/slurm"* ]]; then
+    cd "$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+fi
+
+# Ensure we are operating from within expt-4/gpu_cluster
+if [ -d "expt-4/gpu_cluster" ]; then
+    cd "expt-4/gpu_cluster"
+elif [ ! -f "train_tabsyn_diffusion.py" ] && [ -f "../../expt-4/gpu_cluster/train_tabsyn_diffusion.py" ]; then
+    cd "../../expt-4/gpu_cluster"
+fi
+
+# Defensive search fallback if submitted from an unexpected root
+if [ ! -f "train_tabsyn_diffusion.py" ]; then
+    FOUND_LOC="$(find "$HOME" -maxdepth 5 -type f -name "train_tabsyn_diffusion.py" 2>/dev/null | head -n 1)"
+    if [ -n "$FOUND_LOC" ]; then
+        cd "$(dirname "$FOUND_LOC")"
+    fi
+fi
+
+SCRIPT_DIR="$(pwd)"
 
 echo "================================================================================"
 echo "CS5344 EXPERIMENT 4: ALL-IN-ONE BENCHMARK & SUBMISSION ENGINE"
@@ -52,28 +79,86 @@ for target_dir in "logs" "checkpoints" "../submissions" "../../submissions"; do
     fi
 done
 
+# Matplotlib cache isolation
+export MPLCONFIGDIR="${TMPDIR:-/tmp}/mpl_${USER:-cs5344}_${SLURM_JOB_ID:-local}"
+mkdir -p "$MPLCONFIGDIR" 2>/dev/null || true
+
 # 1. Environment Detection & Dependency Setup
 echo -e "\n>>> [Stage 0/4] Environment & Hardware Inspection..."
-if command -v nvidia-smi &> /dev/null; then
-    nvidia-smi
-else
-    echo "Notice: nvidia-smi not in PATH, checking torch CUDA availability..."
+
+# Module loading for HPC environments (NUS SoC clusters)
+if command -v module &> /dev/null || type module &> /dev/null; then
+    echo "Loading cluster environment modules..."
+    module load cuda 2>/dev/null || module load cuda/12.1 2>/dev/null || module load cuda/11.8 2>/dev/null || true
+    module load python 2>/dev/null || module load python/3.10 2>/dev/null || module load miniconda3 2>/dev/null || true
 fi
 
+echo "SLURM_JOB_ID:         ${SLURM_JOB_ID:-<local>}"
+echo "SLURM_JOB_NODELIST:   ${SLURM_JOB_NODELIST:-$(hostname)}"
+echo "CUDA_VISIBLE_DEVICES: ${CUDA_VISIBLE_DEVICES:-<not set by Slurm>}"
+echo "SLURM_JOB_GPUS:       ${SLURM_JOB_GPUS:-<not set>}"
+
+# Check nvidia-smi with non-zero protection (exit code 6 must never crash set -e)
+if command -v nvidia-smi &> /dev/null; then
+    echo "Querying nvidia-smi..."
+    nvidia-smi 2>&1 || echo "Notice: nvidia-smi returned non-zero (exit code $?). Proceeding with PyTorch runtime checks..."
+else
+    echo "Notice: nvidia-smi not in PATH. Proceeding with PyTorch runtime checks..."
+fi
+
+# Source profile and conda initializers if available (vital for Slurm non-interactive shells)
+[ -f /etc/profile.d/conda.sh ] && source /etc/profile.d/conda.sh 2>/dev/null || true
+[ -f "$HOME/.bashrc" ] && source "$HOME/.bashrc" 2>/dev/null || true
+[ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ] && source "$HOME/miniconda3/etc/profile.d/conda.sh" 2>/dev/null || true
+[ -f "$HOME/anaconda3/etc/profile.d/conda.sh" ] && source "$HOME/anaconda3/etc/profile.d/conda.sh" 2>/dev/null || true
+
+# Limit CPU threading to Slurm allocation (prevents CPU thread contention and joblib memory thrashing)
+export SLURM_CPUS_PER_TASK=${SLURM_CPUS_PER_TASK:-8}
+export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export MKL_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export OPENBLAS_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export VECLIB_MAXIMUM_THREADS=$SLURM_CPUS_PER_TASK
+export NUMEXPR_NUM_THREADS=$SLURM_CPUS_PER_TASK
+export LOKY_MAX_CPU_COUNT=$SLURM_CPUS_PER_TASK
+
+# Conda / virtual environment activation
 if command -v conda &> /dev/null; then
     echo "Activating conda environment 'cs5344' if available..."
-    eval "$(conda shell.bash hook)"
-    conda activate cs5344 || true
+    eval "$(conda shell.bash hook)" 2>/dev/null || true
+    conda activate cs5344 2>/dev/null || true
 elif [ -d "../../.venv" ]; then
     echo "Activating project venv..."
     source ../../.venv/bin/activate
 elif [ -d "venv" ]; then
     echo "Activating local venv..."
     source venv/bin/activate
+elif [ -d "$HOME/miniconda3/envs/cs5344" ]; then
+    echo "Activating miniconda cs5344 venv..."
+    source "$HOME/miniconda3/bin/activate" cs5344 2>/dev/null || true
 fi
 
-echo "Verifying Python GPU dependencies..."
-pip install -r requirements_gpu.txt --quiet
+# Probe PyTorch runtime hardware device
+echo -e "\nChecking Python & PyTorch hardware support:"
+python3 -c "
+import sys
+print(f'Python executable: {sys.executable}')
+print(f'Python version:    {sys.version.split()[0]}')
+try:
+    import torch
+    print(f'PyTorch version:   {torch.__version__}')
+    cuda_avail = torch.cuda.is_available()
+    print(f'CUDA available:    {cuda_avail}')
+    if cuda_avail:
+        print(f'CUDA Device count: {torch.cuda.device_count()}')
+        print(f'CUDA Device name:  {torch.cuda.get_device_name(0)}')
+    else:
+        print('CUDA not detected by PyTorch: TabSyn will operate in CPU-optimized mode.')
+except ImportError:
+    print('Notice: PyTorch not found in current environment. Will install via requirements_gpu.txt...')
+" 2>/dev/null || true
+
+echo -e "\nVerifying Python dependencies..."
+pip install -r requirements_gpu.txt --quiet 2>/dev/null || echo "Notice: Offline cluster node or requirements already satisfied. Continuing..."
 
 # 2. Stage 1: Fast Analytical Track (CPB v2 + Contrastive DVS-Copula v2)
 echo -e "\n>>> [Stage 1/4] Running Track 2: Contrastive DVS-Copula + CPB v2 (CPU)..."
