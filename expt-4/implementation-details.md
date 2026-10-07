@@ -162,6 +162,24 @@ tail -f slurm_*.out
 
 ---
 
+### 4.4 Resolution of ModuleNotFoundError & SoC GPU Topology (Job 918010 Audit)
+1. **Root Cause of `ModuleNotFoundError: No module named 'sklearn'`**:
+   - NUS SoC HPC compute nodes (`xgph*`, `xgpe*`, `xgpd*`) are completely offline (firewalled from outbound internet access) for cluster security.
+   - When jobs are scheduled, any `pip install` executed on a compute node fails silently.
+   - Without an activated virtual environment / conda environment created beforehand on login node `xlogin2`, the script falls back to `/usr/bin/python3`, which lacks third-party packages (`sklearn`, `pyod`, `torch`).
+2. **Turnkey Resolution (`setup_env.sh`)**:
+   - Because user home directories (`/home/a/aayusm`) reside on an NFS network-mounted filesystem shared across all login and compute nodes, installing dependencies once on `xlogin2` makes them immediately accessible to all compute jobs.
+   - Created `setup_env.sh` to automate environment creation (`conda` or `.venv`), PyTorch CUDA 12.1 installation, and dependency verification.
+3. **GPU Gres Resource Targeting**:
+   - Querying `sinfo -p gpu -O "NodeList:12,Partition:8,Gres:20,StateCompact:8"` revealed:
+     - `xgph[0,7]` with `gpu:a100-80:1` (NVIDIA A100 80GB VRAM) are **idle**.
+     - `xgpd[0-1,3-7]` with `gpu:nv:2` are **idle**.
+     - Generic `--gres=gpu:1` previously routed jobs to `xgpe2` (an unconfigured node with exit code 6).
+   - Configured `#SBATCH --gres=gpu:a100-80:1` to directly allocate the idle 80GB A100 GPU nodes with pre-configured CUDA drivers.
+   - Added pre-flight environment checks in `run_cluster.sh` to fail fast with actionable guidance if the environment has not yet been provisioned.
+
+---
+
 ## 5. Submission Artifact Verification
 
 All generated submission CSV files have been rigorously validated against competition integrity requirements:
@@ -174,4 +192,5 @@ All generated submission CSV files have been rigorously validated against compet
 | `submissions/submission_unsw.csv` | UNSW-NB15 (Root) | 70,000 | 43 | `id` (0..69999) | 0 | 0 | **Verified Valid** |
 
 Both submission files are ready for immediate upload to the Kaggle In-Class competition.
+
 

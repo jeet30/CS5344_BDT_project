@@ -10,7 +10,11 @@
 #SBATCH --output=slurm_%j.out
 #SBATCH --error=slurm_%j.err
 #SBATCH --partition=gpu
-#SBATCH --gres=gpu:1
+# Target high-performance GPU with preconfigured CUDA drivers
+# On NUS SoC:
+#   xgph[0,7] are currently idle NVIDIA A100 (80GB VRAM) -> gpu:a100-80:1
+#   Alternative options: gpu:a100-40:1, gpu:h100-96:2, or gpu:1
+#SBATCH --gres=gpu:a100-80:1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=32G
 #SBATCH --time=04:00:00
@@ -121,28 +125,67 @@ export VECLIB_MAXIMUM_THREADS=$SLURM_CPUS_PER_TASK
 export NUMEXPR_NUM_THREADS=$SLURM_CPUS_PER_TASK
 export LOKY_MAX_CPU_COUNT=$SLURM_CPUS_PER_TASK
 
-# Conda / virtual environment activation
+# ------------------------------------------------------------------------------
+# Robust Python Environment Activation (Conda / Virtualenv)
+# ------------------------------------------------------------------------------
+ACT_SUCCESS=false
+
+# 1. Try Conda environment 'cs5344'
 if command -v conda &> /dev/null; then
-    echo "Activating conda environment 'cs5344' if available..."
     eval "$(conda shell.bash hook)" 2>/dev/null || true
-    conda activate cs5344 2>/dev/null || true
-elif [ -d "../../.venv" ]; then
-    echo "Activating project venv..."
-    source ../../.venv/bin/activate
-elif [ -d "venv" ]; then
-    echo "Activating local venv..."
-    source venv/bin/activate
-elif [ -d "$HOME/miniconda3/envs/cs5344" ]; then
-    echo "Activating miniconda cs5344 venv..."
-    source "$HOME/miniconda3/bin/activate" cs5344 2>/dev/null || true
+    if conda activate cs5344 2>/dev/null; then
+        if python3 -c "import sklearn, pyod" 2>/dev/null; then
+            echo "[+] Successfully activated Conda environment 'cs5344'."
+            ACT_SUCCESS=true
+        fi
+    fi
 fi
 
+# 2. Try Standard Virtualenv Locations if conda didn't succeed
+if [ "$ACT_SUCCESS" = false ]; then
+    VENV_CANDIDATES=(
+        "$HOME/.venvs/cs5344/bin/activate"
+        "$HOME/cs5344_env/bin/activate"
+        "$SCRIPT_DIR/venv/bin/activate"
+        "$SCRIPT_DIR/../../.venv/bin/activate"
+        "$HOME/.local/share/virtualenvs/cs5344/bin/activate"
+    )
+    for venv_path in "${VENV_CANDIDATES[@]}"; do
+        if [ -f "$venv_path" ]; then
+            source "$venv_path" 2>/dev/null || true
+            if python3 -c "import sklearn, pyod" 2>/dev/null; then
+                echo "[+] Successfully activated virtualenv at $venv_path."
+                ACT_SUCCESS=true
+                break
+            fi
+        fi
+    done
+fi
+
+# 3. Explicit Pre-Flight Environment Verification
+if ! python3 -c "import sklearn, pyod, pandas, numpy" 2>/dev/null; then
+    echo "================================================================================"
+    echo "[-] FATAL ERROR: Required packages (sklearn, pyod, pandas, numpy) not found!"
+    echo "[-] Node: $(hostname) | Active Python: $(which python3 2>/dev/null) ($(python3 --version 2>&1))"
+    echo "[-] Notice: Compute nodes have NO internet access to install packages dynamically."
+    echo ""
+    echo "[-] ONE-STEP REMEDY:"
+    echo "    On your login node (aayusm@xlogin2), run the following command once:"
+    echo "        cd ~/CS5344_BDT_project/expt-4/gpu_cluster"
+    echo "        bash setup_env.sh"
+    echo "    Once setup completes, resubmit your job:"
+    echo "        sbatch run_cluster.sh"
+    echo "================================================================================"
+    exit 1
+fi
+
+PYTHON_BIN="$(which python3)"
+echo "[+] Active Python interpreter: $PYTHON_BIN"
+
 # Probe PyTorch runtime hardware device
-echo -e "\nChecking Python & PyTorch hardware support:"
-python3 -c "
+echo -e "\nChecking PyTorch hardware acceleration:"
+"$PYTHON_BIN" -c "
 import sys
-print(f'Python executable: {sys.executable}')
-print(f'Python version:    {sys.version.split()[0]}')
 try:
     import torch
     print(f'PyTorch version:   {torch.__version__}')
@@ -151,22 +194,20 @@ try:
     if cuda_avail:
         print(f'CUDA Device count: {torch.cuda.device_count()}')
         print(f'CUDA Device name:  {torch.cuda.get_device_name(0)}')
+        print(f'CUDA Memory:       {torch.cuda.get_device_properties(0).total_memory / (1024**3):.2f} GB')
     else:
-        print('CUDA not detected by PyTorch: TabSyn will operate in CPU-optimized mode.')
+        print('Notice: CUDA not detected by PyTorch. TabSyn will run on multi-threaded CPU.')
 except ImportError:
-    print('Notice: PyTorch not found in current environment. Will install via requirements_gpu.txt...')
-" 2>/dev/null || true
-
-echo -e "\nVerifying Python dependencies..."
-pip install -r requirements_gpu.txt --quiet 2>/dev/null || echo "Notice: Offline cluster node or requirements already satisfied. Continuing..."
+    print('Warning: PyTorch not installed in active environment.')
+"
 
 # 2. Stage 1: Fast Analytical Track (CPB v2 + Contrastive DVS-Copula v2)
 echo -e "\n>>> [Stage 1/4] Running Track 2: Contrastive DVS-Copula + CPB v2 (CPU)..."
-python ../src/benchmark_expt4.py
+"$PYTHON_BIN" ../src/benchmark_expt4.py
 
 # 3. Stage 2: Deep Generative Track (TabSyn Latent DDPM on GPU)
 echo -e "\n>>> [Stage 2/4] Running Track 1: TabSyn Latent Diffusion (GPU)..."
-python train_tabsyn_diffusion.py \
+"$PYTHON_BIN" train_tabsyn_diffusion.py \
     --epochs_vae 100 \
     --epochs_diff 150 \
     --batch_size 512 \
@@ -178,7 +219,7 @@ python train_tabsyn_diffusion.py \
 
 # 4. Stage 3: Master Benchmark Compilation & Integrity Verification
 echo -e "\n>>> [Stage 3/4] Compiling Master Benchmark Report & Verifying Submissions..."
-python - << 'EOF'
+"$PYTHON_BIN" - << 'EOF'
 import os
 import shutil
 import pandas as pd
