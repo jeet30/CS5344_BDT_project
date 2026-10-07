@@ -47,6 +47,7 @@ TARGET_VENV_DIR="$SCRATCH_BASE/cs5344_venv"
 
 mkdir -p "$SCRATCH_TMP" "$SCRATCH_CACHE" "$TARGET_VENV_DIR"
 chmod 700 "$SCRATCH_TMP" "$SCRATCH_CACHE" "$TARGET_VENV_DIR" 2>/dev/null || true
+rm -rf "$SCRATCH_TMP"/* "$SCRATCH_BASE/uv_cache" 2>/dev/null || true
 
 # Purge any lingering pip caches or old venvs in $HOME to immediately free quota
 echo "Purging legacy cache in \$HOME to prevent quota leaks..."
@@ -128,50 +129,38 @@ export TMP="$SCRATCH_TMP"
 export PIP_CACHE_DIR="$SCRATCH_CACHE"
 
 # ------------------------------------------------------------------------------
-# 3. Installing Dependencies Using Scratch Storage & Cache (uv Accelerated)
+# 3. Installing Dependencies Using Scratch Storage & Cache
 # ------------------------------------------------------------------------------
 echo -e "\n[Step 3/4] Installing Required Packages (Scratch Cache Mode)..."
 
 # Upgrade pip using scratch cache and temp dir
-python3 -m pip install --cache-dir "$SCRATCH_CACHE" --upgrade pip
-
-# Setup uv acceleration (10-20x faster downloads & parallel wheel extraction)
-USE_UV=false
-export UV_CACHE_DIR="$SCRATCH_BASE/uv_cache"
-export UV_LINK_MODE="copy"
-mkdir -p "$UV_CACHE_DIR" 2>/dev/null || true
-
-if command -v uv &> /dev/null; then
-    USE_UV=true
-else
-    echo "Attempting to bootstrap uv in scratch environment for fast installation..."
-    if python3 -m pip install --cache-dir "$SCRATCH_CACHE" uv 2>/dev/null; then
-        USE_UV=true
-    fi
-fi
-
-if [ "$USE_UV" = true ]; then
-    echo "[+] Using uv for lightning-fast multi-threaded installation."
-    INSTALL_CMD="uv pip install --cache-dir $UV_CACHE_DIR --link-mode copy"
-else
-    echo "[*] Using standard pip with scratch caching."
-    INSTALL_CMD="python3 -m pip install --cache-dir $SCRATCH_CACHE"
-fi
+python3 -m pip install \
+    --cache-dir "$SCRATCH_CACHE" \
+    --default-timeout=1000 \
+    --no-warn-script-location \
+    --upgrade pip
 
 # Check if PyTorch is already available and functional
 if python3 -c "import torch; assert hasattr(torch, '__version__'); print('PyTorch is already functional:', torch.__version__)" 2>/dev/null; then
     echo "[+] PyTorch is already functional. Skipping download to save bandwidth and storage."
 else
     echo "Installing PyTorch (CUDA 12.1) using 68TB scratch pool..."
-    $INSTALL_CMD torch --index-url https://download.pytorch.org/whl/cu121 || \
-    $INSTALL_CMD torch
+    python3 -m pip install \
+        --cache-dir "$SCRATCH_CACHE" \
+        --default-timeout=1000 \
+        --no-warn-script-location \
+        torch --index-url https://download.pytorch.org/whl/cu121
 fi
 
 echo "Installing project dependencies from requirements_gpu.txt..."
-$INSTALL_CMD -r requirements_gpu.txt
+python3 -m pip install \
+    --cache-dir "$SCRATCH_CACHE" \
+    --default-timeout=1000 \
+    --no-warn-script-location \
+    -r requirements_gpu.txt
 
 # Final cleanup of any lingering temporary files
-rm -rf ~/.cache/pip ~/.cache/torch 2>/dev/null || true
+rm -rf ~/.cache/pip ~/.cache/torch "$SCRATCH_TMP"/* 2>/dev/null || true
 
 # ------------------------------------------------------------------------------
 # 4. Final Environment Verification
