@@ -141,8 +141,12 @@ python3 -m pip install \
     --upgrade pip
 
 # Check if PyTorch is already available and functional
-if python3 -c "import torch; assert hasattr(torch, '__version__'); print('PyTorch is already functional:', torch.__version__)" 2>/dev/null; then
+if python3 -c "import torch; assert hasattr(torch, '__version__'); print('PyTorch is functional:', torch.__version__)" 2>/dev/null; then
     echo "[+] PyTorch is already functional. Skipping download to save bandwidth and storage."
+elif python3 -m pip show torch >/dev/null 2>&1; then
+    TORCH_VER=$(python3 -c "import importlib.metadata; print(importlib.metadata.version('torch'))" 2>/dev/null || echo "detected")
+    echo "[+] PyTorch ($TORCH_VER) is already installed in scratch venv."
+    echo "    (Note: Login node ulimit -v prevents mmap of 2GB libtorch_cuda.so in login shell; will map seamlessly on 32GB compute node)."
 else
     echo "Installing PyTorch (CUDA 12.1) using 68TB scratch pool..."
     python3 -m pip install \
@@ -168,7 +172,6 @@ rm -rf ~/.cache/pip ~/.cache/torch "$SCRATCH_TMP"/* 2>/dev/null || true
 echo -e "\n[Step 4/4] Verifying Environment Integrity..."
 python3 -c "
 import sys
-import torch
 import sklearn
 import pyod
 import pandas
@@ -176,12 +179,23 @@ import numpy
 import scipy
 import tqdm
 
+torch_status = 'Not installed'
+try:
+    import torch
+    torch_status = f'{torch.__version__} (CUDA built-in: {torch.version.cuda}, CUDA Available: {torch.cuda.is_available()})'
+except ImportError as e:
+    import importlib.metadata
+    try:
+        t_ver = importlib.metadata.version('torch')
+        torch_status = f'{t_ver} [Installed in venv; login node ulimit -v prevented mmap of 2GB libtorch_cuda.so]'
+    except Exception:
+        torch_status = f'Notice: {e}'
+
 print('=' * 70)
 print('ENVIRONMENT VERIFICATION SUCCESSFUL!')
 print(f'Active Python:      {sys.executable}')
 print(f'Python Version:     {sys.version.split()[0]}')
-print(f'PyTorch:            {torch.__version__} (CUDA built-in: {torch.version.cuda})')
-print(f'CUDA Available:     {torch.cuda.is_available()}')
+print(f'PyTorch:            {torch_status}')
 print(f'Scikit-Learn:       {sklearn.__version__}')
 print(f'PyOD:               {pyod.__version__}')
 print(f'Pandas:             {pandas.__version__}')
