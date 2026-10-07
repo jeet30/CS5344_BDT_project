@@ -143,8 +143,12 @@ fi
 
 # 2. Try Standard Virtualenv Locations if conda didn't succeed
 if [ "$ACT_SUCCESS" = false ]; then
+    FIRST_CHAR="${USER:0:1}"
     VENV_CANDIDATES=(
+        "/mnt/scratch/$FIRST_CHAR/$USER/cs5344_venv/bin/activate"
+        "/mnt/scratch/a/$USER/cs5344_venv/bin/activate"
         "$HOME/.venvs/cs5344/bin/activate"
+        "/mnt/scratch/$USER/cs5344_venv/bin/activate"
         "/scratch/$USER/cs5344_venv/bin/activate"
         "/scratch/a/$USER/cs5344_venv/bin/activate"
         "$HOME/cs5344_env/bin/activate"

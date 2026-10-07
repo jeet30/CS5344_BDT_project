@@ -177,6 +177,12 @@ tail -f slurm_*.out
      - Generic `--gres=gpu:1` previously routed jobs to `xgpe2` (an unconfigured node with exit code 6).
    - Configured `#SBATCH --gres=gpu:a100-80:1` to directly allocate the idle 80GB A100 GPU nodes with pre-configured CUDA drivers.
    - Added pre-flight environment checks in `run_cluster.sh` to fail fast with actionable guidance if the environment has not yet been provisioned.
+4. **Resolution of `[Errno 122] Disk quota exceeded` (StorPool Scratch Architecture)**:
+   - NUS SoC enforces a strict default NFS quota of ~180MB on student home directories (`/home/a/aayusm`).
+   - PyTorch download was hitting this limit at 41.9MB.
+   - Verified that NUS SoC mounts a dedicated 170TB StorPool storage pool (with 68TB free) at `/mnt/scratch`, partitioned by user initial.
+   - User scratch directory `/mnt/scratch/a/aayusm` (`drwx------`) was located and confirmed writable.
+   - Refactored `setup_env.sh` and `run_cluster.sh` to install and activate environments in `/mnt/scratch/a/$USER/cs5344_venv`, bypassing home quota limitations entirely.
 
 ---
 

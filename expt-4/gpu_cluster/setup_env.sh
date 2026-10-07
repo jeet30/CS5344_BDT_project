@@ -59,14 +59,21 @@ fi
 # ------------------------------------------------------------------------------
 echo -e "\n[Step 2/4] Resolving Environment Location..."
 
-# Check if a scratch directory exists with generous quota
+# Check if scratch directory exists with generous quota (NUS SoC cluster mounts /mnt/scratch with 68TB free)
+FIRST_CHAR="${USER:0:1}"
 TARGET_VENV_DIR=""
-if [ -d "/scratch/$USER" ] && [ -w "/scratch/$USER" ]; then
+if [ -d "/mnt/scratch/$FIRST_CHAR/$USER" ] && [ -w "/mnt/scratch/$FIRST_CHAR/$USER" ]; then
+    TARGET_VENV_DIR="/mnt/scratch/$FIRST_CHAR/$USER/cs5344_venv"
+    echo "[+] Using verified SoC cluster scratch partition: $TARGET_VENV_DIR (68TB storage pool)"
+elif [ -d "/mnt/scratch/a/$USER" ] && [ -w "/mnt/scratch/a/$USER" ]; then
+    TARGET_VENV_DIR="/mnt/scratch/a/$USER/cs5344_venv"
+    echo "[+] Using verified SoC cluster scratch partition: $TARGET_VENV_DIR (68TB storage pool)"
+elif [ -d "/mnt/scratch/$USER" ] && [ -w "/mnt/scratch/$USER" ]; then
+    TARGET_VENV_DIR="/mnt/scratch/$USER/cs5344_venv"
+    echo "[+] Using cluster scratch partition: $TARGET_VENV_DIR"
+elif [ -d "/scratch/$USER" ] && [ -w "/scratch/$USER" ]; then
     TARGET_VENV_DIR="/scratch/$USER/cs5344_venv"
-    echo "[+] Using cluster scratch partition: $TARGET_VENV_DIR (quota-free)"
-elif [ -d "/scratch/a/$USER" ] && [ -w "/scratch/a/$USER" ]; then
-    TARGET_VENV_DIR="/scratch/a/$USER/cs5344_venv"
-    echo "[+] Using cluster scratch partition: $TARGET_VENV_DIR (quota-free)"
+    echo "[+] Using cluster scratch partition: $TARGET_VENV_DIR"
 else
     TARGET_VENV_DIR="$HOME/.venvs/cs5344"
     echo "[*] Using home partition: $TARGET_VENV_DIR"
