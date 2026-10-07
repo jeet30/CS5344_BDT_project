@@ -26,7 +26,7 @@ from generators.stratified_cpb_v2 import ControlledPartialBalancingV2Generator
 
 PROJECT_ROOT = SRC_DIR.parent.parent
 SUBMISSIONS_DIR = SRC_DIR.parent / "submissions"
-SUBMISSIONS_DIR.mkdir(exist_ok=True)
+SUBMISSIONS_DIR.mkdir(parents=True, exist_ok=True)
 
 TARGET_N_NSL = 40000
 TARGET_N_UNSW = 70000

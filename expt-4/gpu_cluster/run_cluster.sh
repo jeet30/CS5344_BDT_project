@@ -7,8 +7,8 @@
 # ==============================================================================
 
 #SBATCH --job-name=cs5344_expt4_all
-#SBATCH --output=logs/slurm_%j.out
-#SBATCH --error=logs/slurm_%j.err
+#SBATCH --output=slurm_%j.out
+#SBATCH --error=slurm_%j.err
 #SBATCH --partition=gpu
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
@@ -21,6 +21,12 @@ set -e
 
 notify_exit() {
     local rc=$?
+    # Ensure logs folder exists and archive slurm logs
+    [ ! -d "logs" ] && mkdir -p logs 2>/dev/null || true
+    if [ -n "$SLURM_JOB_ID" ]; then
+        cp "slurm_${SLURM_JOB_ID}.out" logs/ 2>/dev/null || true
+        cp "slurm_${SLURM_JOB_ID}.err" logs/ 2>/dev/null || true
+    fi
     if [ $rc -eq 0 ]; then
         echo -e "\n[SUCCESS] Slurm Job ${SLURM_JOB_ID:-LOCAL} finished successfully with exit code 0 at $(date)."
     else
@@ -39,7 +45,12 @@ echo "Host: $(hostname)"
 echo "Date: $(date)"
 echo "Working Directory: $SCRIPT_DIR"
 
-mkdir -p logs checkpoints ../submissions
+# Defensive, idempotent directory creation (never trips set -e)
+for target_dir in "logs" "checkpoints" "../submissions" "../../submissions"; do
+    if [ ! -d "$target_dir" ]; then
+        mkdir -p "$target_dir" 2>/dev/null || true
+    fi
+done
 
 # 1. Environment Detection & Dependency Setup
 echo -e "\n>>> [Stage 0/4] Environment & Hardware Inspection..."
@@ -90,7 +101,8 @@ from pathlib import Path
 
 submissions_dir = Path("../submissions").resolve()
 root_submissions_dir = Path("../../submissions").resolve()
-root_submissions_dir.mkdir(exist_ok=True)
+submissions_dir.mkdir(parents=True, exist_ok=True)
+root_submissions_dir.mkdir(parents=True, exist_ok=True)
 
 # 1. Load and merge benchmark results
 p_track2 = submissions_dir / "local_proxy_results_expt4.csv"

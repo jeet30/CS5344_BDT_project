@@ -149,7 +149,7 @@ sbatch run_cluster.sh
 To monitor the job:
 ```bash
 squeue -u $USER
-tail -f logs/slurm_*.out
+tail -f slurm_*.out
 ```
 
 ---
