@@ -145,6 +145,8 @@ fi
 if [ "$ACT_SUCCESS" = false ]; then
     VENV_CANDIDATES=(
         "$HOME/.venvs/cs5344/bin/activate"
+        "/scratch/$USER/cs5344_venv/bin/activate"
+        "/scratch/a/$USER/cs5344_venv/bin/activate"
         "$HOME/cs5344_env/bin/activate"
         "$SCRIPT_DIR/venv/bin/activate"
         "$SCRIPT_DIR/../../.venv/bin/activate"
