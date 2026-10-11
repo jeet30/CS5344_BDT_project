@@ -1,0 +1,11 @@
+================================================================================
+CS5344 EXPERIMENT 4: ALL-IN-ONE BENCHMARK & SUBMISSION ENGINE
+================================================================================
+Host: xgpe2
+Date: Wed Oct  7 04:21:00 PM +08 2026
+Working Directory: /var/lib/slurm/slurmd/job917948
+
+>>> [Stage 0/4] Environment & Hardware Inspection...
+No devices were found
+
+[FAILURE] Slurm Job 917948 failed with exit code 6 at Wed Oct  7 04:21:00 PM +08 2026.

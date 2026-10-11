@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/home/a/aayusm/CS5344_BDT_project/expt-4/gpu_cluster/../src/benchmark_expt4.py", line 187, in <module>
+    run_benchmark()
+  File "/home/a/aayusm/CS5344_BDT_project/expt-4/gpu_cluster/../src/benchmark_expt4.py", line 59, in run_benchmark
+    nsl_path = find_dataset("train_nslkdd.csv")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/a/aayusm/CS5344_BDT_project/expt-4/gpu_cluster/../src/benchmark_expt4.py", line 47, in find_dataset
+    raise FileNotFoundError(f"Dataset {filename} not found in any candidate path: {candidates}")
+FileNotFoundError: Dataset train_nslkdd.csv not found in any candidate path: [PosixPath('/home/a/aayusm/CS5344_BDT_project/train_nslkdd.csv'), PosixPath('/home/a/aayusm/CS5344_BDT_project/expt-4/gpu_cluster/train_nslkdd.csv'), PosixPath('/home/a/aayusm/CS5344_BDT_project/expt-4/train_nslkdd.csv'), PosixPath('/home/a/aayusm/CS5344_BDT_project/train_nslkdd.csv'), PosixPath('/home/a/aayusm/CS5344_BDT_project/train_nslkdd.csv')]

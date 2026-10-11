@@ -1,0 +1,27 @@
+================================================================================
+CS5344 EXPERIMENT 4: ALL-IN-ONE BENCHMARK & SUBMISSION ENGINE
+================================================================================
+Host: xgpe2
+Date: Wed Oct  7 04:39:13 PM +08 2026
+Working Directory: /home/a/aayusm/CS5344_BDT_project/expt-4/gpu_cluster
+
+>>> [Stage 0/4] Environment & Hardware Inspection...
+SLURM_JOB_ID:         918010
+SLURM_JOB_NODELIST:   xgpe2
+CUDA_VISIBLE_DEVICES: 0
+SLURM_JOB_GPUS:       0
+Querying nvidia-smi...
+No devices were found
+Notice: nvidia-smi returned non-zero (exit code 6). Proceeding with PyTorch runtime checks...
+
+Checking Python & PyTorch hardware support:
+Python executable: /usr/bin/python3
+Python version:    3.12.3
+Notice: PyTorch not found in current environment. Will install via requirements_gpu.txt...
+
+Verifying Python dependencies...
+Notice: Offline cluster node or requirements already satisfied. Continuing...
+
+>>> [Stage 1/4] Running Track 2: Contrastive DVS-Copula + CPB v2 (CPU)...
+
+[FAILURE] Slurm Job 918010 failed with exit code 1 at Wed Oct  7 04:39:15 PM +08 2026.

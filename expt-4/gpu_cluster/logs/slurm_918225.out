@@ -1,0 +1,49 @@
+================================================================================
+CS5344 EXPERIMENT 4: ALL-IN-ONE BENCHMARK & SUBMISSION ENGINE
+================================================================================
+Host: xgph9
+Date: Wed Oct  7 09:04:01 PM +08 2026
+Working Directory: /home/a/aayusm/CS5344_BDT_project/expt-4/gpu_cluster
+
+>>> [Stage 0/4] Environment & Hardware Inspection...
+SLURM_JOB_ID:         918225
+SLURM_JOB_NODELIST:   xgph9
+CUDA_VISIBLE_DEVICES: 0
+SLURM_JOB_GPUS:       0
+Querying nvidia-smi...
+Wed Oct  7 21:04:01 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 580.178.04             Driver Version: 580.178.04     CUDA Version: 13.0     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100 80GB PCIe          Off |   00000000:98:00.0 Off |                    0 |
+| N/A   62C    P0             80W /  300W |       0MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[+] Successfully activated virtualenv at /mnt/scratch/a/aayusm/cs5344_venv/bin/activate.
+[+] Active Python interpreter: /mnt/scratch/a/aayusm/cs5344_venv/bin/python3
+
+Checking PyTorch hardware acceleration:
+PyTorch version:   2.5.1+cu121
+CUDA available:    True
+CUDA Device count: 1
+CUDA Device name:  NVIDIA A100 80GB PCIe
+CUDA Memory:       79.25 GB
+
+>>> [Stage 1/4] Running Track 2: Contrastive DVS-Copula + CPB v2 (CPU)...
+================================================================================
+EXPERIMENT 4: BENCHMARK & SUBMISSION ENGINE (RESTORED OPTIMAL TRACK 2)
+================================================================================
+
+>>> [1/2] Processing NSL-KDD...
