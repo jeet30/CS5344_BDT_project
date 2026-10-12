@@ -1,0 +1,67 @@
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'bootstrap', 'ecod': 0.9176124331920318, 'iforest': 0.9647345636184009, 'S': 0.9411734984052164} 5s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'evt_bootstrap_1', 'ecod': 0.9147515700653596, 'iforest': 0.9633763333435614, 'S': 0.9390639517044606} 4s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'evt_bootstrap_3', 'ecod': 0.9147436115791125, 'iforest': 0.9634221716165795, 'S': 0.939082891597846} 3s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'evt_bootstrap_10', 'ecod': 0.9147432467676726, 'iforest': 0.9633315802709556, 'S': 0.939037413519314} 9s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'evt_bootstrap_30', 'ecod': 0.9147394292966424, 'iforest': 0.9633846242152774, 'S': 0.93906202675596} 4s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.8510559840072762, 'iforest': 0.9902638880787693, 'S': 0.9206599360430228} 3s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'evt_bootstrap_1', 'ecod': 0.8476611584117766, 'iforest': 0.9895953161763492, 'S': 0.9186282372940628} 6s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'evt_bootstrap_3', 'ecod': 0.8476659950159795, 'iforest': 0.9895920726252743, 'S': 0.9186290338206269} 4s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'evt_bootstrap_10', 'ecod': 0.8476702231280566, 'iforest': 0.9895622978522242, 'S': 0.9186162604901404} 4s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'evt_bootstrap_30', 'ecod': 0.8476714744511902, 'iforest': 0.9895928571254204, 'S': 0.9186321657883053} 4s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.9478881291869345, 'iforest': 0.9787415483856936, 'S': 0.9633148387863141} 3s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'evt_bootstrap_1', 'ecod': 0.9456771064787509, 'iforest': 0.9754369559705486, 'S': 0.9605570312246497} 3s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'evt_bootstrap_3', 'ecod': 0.9456790429339941, 'iforest': 0.9754819632553238, 'S': 0.9605805030946589} 3s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'evt_bootstrap_10', 'ecod': 0.9456783118037515, 'iforest': 0.9753752339159814, 'S': 0.9605267728598664} 3s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'evt_bootstrap_30', 'ecod': 0.9456771465101467, 'iforest': 0.97542430481873, 'S': 0.9605507256644383} 4s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.892525025244869, 'iforest': 0.954989623960222, 'S': 0.9237573246025454} 4s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'evt_bootstrap_1', 'ecod': 0.890066256116079, 'iforest': 0.9560081450717131, 'S': 0.923037200593896} 4s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'evt_bootstrap_3', 'ecod': 0.8900510386436457, 'iforest': 0.9560566282554951, 'S': 0.9230538334495704} 5s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'evt_bootstrap_10', 'ecod': 0.890057256458071, 'iforest': 0.9559975454496028, 'S': 0.9230274009538368} 5s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'evt_bootstrap_30', 'ecod': 0.8900565188053852, 'iforest': 0.9560454915417211, 'S': 0.9230510051735532} 4s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.8201878785694051, 'iforest': 0.8865123898248815, 'S': 0.8533501341971432} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'evt_bootstrap_1', 'ecod': 0.8159415249619383, 'iforest': 0.8719523561329271, 'S': 0.8439469405474327} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'evt_bootstrap_3', 'ecod': 0.8159418177932932, 'iforest': 0.8714473847317832, 'S': 0.8436946012625381} 4s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'evt_bootstrap_10', 'ecod': 0.8159329775022148, 'iforest': 0.8693104577861233, 'S': 0.842621717644169} 5s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'evt_bootstrap_30', 'ecod': 0.8159003743485556, 'iforest': 0.8693005268803485, 'S': 0.842600450614452} 5s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.9066929076782209, 'iforest': 0.9601854138972289, 'S': 0.9334391607877248} 6s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'evt_bootstrap_1', 'ecod': 0.9047277089264799, 'iforest': 0.9521339062821524, 'S': 0.9284308076043162} 4s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'evt_bootstrap_3', 'ecod': 0.9047302026144551, 'iforest': 0.9510914442937017, 'S': 0.9279108234540785} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'evt_bootstrap_10', 'ecod': 0.904731469439845, 'iforest': 0.9504486573314294, 'S': 0.9275900633856371} 5s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'evt_bootstrap_30', 'ecod': 0.9047274278186137, 'iforest': 0.9505043771746422, 'S': 0.927615902496628} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.8705374584824015, 'iforest': 0.960290984874701, 'S': 0.9154142216785512} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'evt_bootstrap_1', 'ecod': 0.8674943257557524, 'iforest': 0.9598050899528602, 'S': 0.9136497078543062} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'evt_bootstrap_3', 'ecod': 0.8674914679294106, 'iforest': 0.9595194200276046, 'S': 0.9135054439785075} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'evt_bootstrap_10', 'ecod': 0.8674896387413392, 'iforest': 0.9593274464434821, 'S': 0.9134085425924107} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'evt_bootstrap_30', 'ecod': 0.8674872483253029, 'iforest': 0.9592713033549151, 'S': 0.9133792758401089} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.7162587187681243, 'iforest': 0.7234649147135234, 'S': 0.7198618167408238} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'evt_bootstrap_1', 'ecod': 0.7162587187681243, 'iforest': 0.7234649147135234, 'S': 0.7198618167408238} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'evt_bootstrap_3', 'ecod': 0.7162587187681243, 'iforest': 0.7234649147135234, 'S': 0.7198618167408238} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'evt_bootstrap_10', 'ecod': 0.7162587187681243, 'iforest': 0.7234649147135234, 'S': 0.7198618167408238} 4s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'evt_bootstrap_30', 'ecod': 0.7162587187681243, 'iforest': 0.7234649147135234, 'S': 0.7198618167408238} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.9036196184565125, 'iforest': 0.9396561017370013, 'S': 0.921637860096757} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'evt_bootstrap_1', 'ecod': 0.9002196180205921, 'iforest': 0.9341527204862339, 'S': 0.917186169253413} 4s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'evt_bootstrap_3', 'ecod': 0.900203136742924, 'iforest': 0.9342770949445409, 'S': 0.9172401158437324} 4s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'evt_bootstrap_10', 'ecod': 0.9001991114549421, 'iforest': 0.9343547802820291, 'S': 0.9172769458684856} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'evt_bootstrap_30', 'ecod': 0.9001977194986435, 'iforest': 0.934234362096421, 'S': 0.9172160407975323} 3s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'bootstrap', 'ecod': 0.820101543009139, 'iforest': 0.8958465757352584, 'S': 0.8579740593721987} 3s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'evt_bootstrap_1', 'ecod': 0.8183013181073847, 'iforest': 0.8793973846382478, 'S': 0.8488493513728163} 3s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'evt_bootstrap_3', 'ecod': 0.8182741703611849, 'iforest': 0.8798192350321586, 'S': 0.8490467026966717} 3s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'evt_bootstrap_10', 'ecod': 0.8182663193126897, 'iforest': 0.8800114489837437, 'S': 0.8491388841482167} 3s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'evt_bootstrap_30', 'ecod': 0.818264621740399, 'iforest': 0.880026001332406, 'S': 0.8491453115364025} 3s
+                  mean_S  worst_S     atk     sig     std    tail      LB
+gen                                                                      
+bootstrap         0.8951   0.7199  0.9359  0.8687  0.9412  0.8580  0.9292
+evt_bootstrap_1   0.8913   0.7199  0.9341  0.8646  0.9391  0.8488     NaN
+evt_bootstrap_10  0.8911   0.7199  0.9341  0.8642  0.9390  0.8491     NaN
+evt_bootstrap_3   0.8913   0.7199  0.9341  0.8644  0.9391  0.8490     NaN
+evt_bootstrap_30  0.8911   0.7199  0.9341  0.8641  0.9391  0.8491     NaN
+Spearman vs LB: {'mean_S': nan, 'worst_S': nan, 'std': nan, 'atk': nan, 'sig': nan, 'tail': nan}
+
+robust summary
+                     mean   worst   cvar3
+gen                                     
+bootstrap         0.8951  0.7199  0.8104
+evt_bootstrap_1   0.8913  0.7199  0.8042
+evt_bootstrap_10  0.8911  0.7199  0.8039
+evt_bootstrap_3   0.8913  0.7199  0.8042
+evt_bootstrap_30  0.8911  0.7199  0.8039

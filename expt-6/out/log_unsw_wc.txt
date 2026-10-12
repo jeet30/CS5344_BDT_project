@@ -1,0 +1,509 @@
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'dvs', 'ecod': 0.5550132042416155, 'iforest': 0.6065980840505026, 'S': 0.5808056441460591} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'wc_m02_t05', 'ecod': 0.5505342685476652, 'iforest': 0.5561560612853709, 'S': 0.553345164916518} 14s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'wc_m05_t05', 'ecod': 0.5547155639285446, 'iforest': 0.5306768579871591, 'S': 0.5426962109578519} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'wc_m10_t05', 'ecod': 0.5574491593027715, 'iforest': 0.5213014184704088, 'S': 0.5393752888865901} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'wc_m05_t02', 'ecod': 0.5574615921984847, 'iforest': 0.5391266814896624, 'S': 0.5482941368440735} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'wc_m10_t02', 'ecod': 0.5621043999054799, 'iforest': 0.5407259088594848, 'S': 0.5514151543824823} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'wc_m05_t05_keep', 'ecod': 0.5544929865976436, 'iforest': 0.572938178970469, 'S': 0.5637155827840563} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'wc_m10_t02_keep', 'ecod': 0.5604631235499761, 'iforest': 0.6031856829322922, 'S': 0.5818244032411342} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'wc_m05_t05_r1', 'ecod': 0.5548887190737917, 'iforest': 0.5587322531654594, 'S': 0.5568104861196255} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.597803146736322, 'iforest': 0.7003586492952141, 'S': 0.6490808980157681} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'wc_m02_t05', 'ecod': 0.5931024428848579, 'iforest': 0.6991636793056387, 'S': 0.6461330610952483} 10s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'wc_m05_t05', 'ecod': 0.5870607481436393, 'iforest': 0.686107964728826, 'S': 0.6365843564362326} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'wc_m10_t05', 'ecod': 0.5744919033584615, 'iforest': 0.682260858301326, 'S': 0.6283763808298937} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'wc_m05_t02', 'ecod': 0.5870471720032346, 'iforest': 0.6858897537360938, 'S': 0.6364684628696642} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'wc_m10_t02', 'ecod': 0.5753742627022183, 'iforest': 0.6859211205963495, 'S': 0.6306476916492838} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'wc_m05_t05_keep', 'ecod': 0.58252756921317, 'iforest': 0.6650382918872357, 'S': 0.6237829305502028} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'wc_m10_t02_keep', 'ecod': 0.5657881804128075, 'iforest': 0.6351888195140111, 'S': 0.6004884999634093} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'wc_m05_t05_r1', 'ecod': 0.5848064816716205, 'iforest': 0.6752923368947436, 'S': 0.6300494092831821} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.580374715931885, 'iforest': 0.7114076915724691, 'S': 0.6458912037521771} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'wc_m02_t05', 'ecod': 0.5833531651144391, 'iforest': 0.6680349359737962, 'S': 0.6256940505441176} 14s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'wc_m05_t05', 'ecod': 0.584403463556744, 'iforest': 0.6122524868534541, 'S': 0.5983279752050991} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'wc_m10_t05', 'ecod': 0.5816661003901944, 'iforest': 0.5764558167339812, 'S': 0.5790609585620878} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'wc_m05_t02', 'ecod': 0.5842091445014902, 'iforest': 0.6035988698265496, 'S': 0.5939040071640199} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'wc_m10_t02', 'ecod': 0.5813739390695224, 'iforest': 0.5899941786595498, 'S': 0.5856840588645361} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'wc_m05_t05_keep', 'ecod': 0.5826511802539815, 'iforest': 0.6620384993828969, 'S': 0.6223448398184392} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'wc_m10_t02_keep', 'ecod': 0.5760396742010297, 'iforest': 0.6496332436204146, 'S': 0.6128364589107222} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'wc_m05_t05_r1', 'ecod': 0.5838806406799193, 'iforest': 0.6511641644271734, 'S': 0.6175224025535464} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.7058513063417359, 'iforest': 0.7700630528662019, 'S': 0.7379571796039689} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'wc_m02_t05', 'ecod': 0.706756499680924, 'iforest': 0.7579179358953737, 'S': 0.7323372177881489} 11s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'wc_m05_t05', 'ecod': 0.7087906934343419, 'iforest': 0.7581071254973315, 'S': 0.7334489094658367} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'wc_m10_t05', 'ecod': 0.7104102749079505, 'iforest': 0.7639442856971984, 'S': 0.7371772803025745} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'wc_m05_t02', 'ecod': 0.7078823509610709, 'iforest': 0.7677600694708483, 'S': 0.7378212102159596} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'wc_m10_t02', 'ecod': 0.7078276862730726, 'iforest': 0.7710169539957944, 'S': 0.7394223201344334} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'wc_m05_t05_keep', 'ecod': 0.707447442065382, 'iforest': 0.6887549595198329, 'S': 0.6981012007926075} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'wc_m10_t02_keep', 'ecod': 0.7031027156876797, 'iforest': 0.7065924124719126, 'S': 0.7048475640797962} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'wc_m05_t05_r1', 'ecod': 0.7082108373047329, 'iforest': 0.7107732213727398, 'S': 0.7094920293387363} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.26446128602044505, 'iforest': 0.26195854381290146, 'S': 0.2632099149166732} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'wc_m02_t05', 'ecod': 0.2663347334466222, 'iforest': 0.29229386329491547, 'S': 0.2793142983707688} 8s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'wc_m05_t05', 'ecod': 0.2680128574689172, 'iforest': 0.29691582693790336, 'S': 0.28246434220341027} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'wc_m10_t05', 'ecod': 0.2709914638555015, 'iforest': 0.30016385900723846, 'S': 0.28557766143137} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'wc_m05_t02', 'ecod': 0.26811903843129187, 'iforest': 0.28921520782252713, 'S': 0.2786671231269095} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'wc_m10_t02', 'ecod': 0.2713516800469048, 'iforest': 0.2985218065122106, 'S': 0.2849367432795577} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'wc_m05_t05_keep', 'ecod': 0.2673345833848838, 'iforest': 0.29925505051389045, 'S': 0.28329481694938713} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'wc_m10_t02_keep', 'ecod': 0.2702593803408045, 'iforest': 0.3002585772987587, 'S': 0.2852589788197816} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'wc_m05_t05_r1', 'ecod': 0.267706291690487, 'iforest': 0.2985792466094632, 'S': 0.2831427691499751} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.4049972339369928, 'iforest': 0.5807134513835487, 'S': 0.49285534266027076} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'wc_m02_t05', 'ecod': 0.3991500317274536, 'iforest': 0.35371129219750513, 'S': 0.3764306619624794} 15s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'wc_m05_t05', 'ecod': 0.40467491325656496, 'iforest': 0.30015609195492465, 'S': 0.35241550260574483} 4s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'wc_m10_t05', 'ecod': 0.4092291652987702, 'iforest': 0.281136900236642, 'S': 0.3451830327677061} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'wc_m05_t02', 'ecod': 0.41183555573393654, 'iforest': 0.3044067978105566, 'S': 0.35812117677224653} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'wc_m10_t02', 'ecod': 0.41872484502877144, 'iforest': 0.29039029311574716, 'S': 0.3545575690722593} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'wc_m05_t05_keep', 'ecod': 0.40347012316976416, 'iforest': 0.3954238684184726, 'S': 0.39944699579411835} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'wc_m10_t02_keep', 'ecod': 0.4159536925040587, 'iforest': 0.33053233853129244, 'S': 0.3732430155176756} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'wc_m05_t05_r1', 'ecod': 0.40437136225504217, 'iforest': 0.3984625016991612, 'S': 0.4014169319771017} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.5114742012183425, 'iforest': 0.6006841969572069, 'S': 0.5560791990877747} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'wc_m02_t05', 'ecod': 0.5075262497585894, 'iforest': 0.5466095771725168, 'S': 0.5270679134655532} 17s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'wc_m05_t05', 'ecod': 0.5088642348583066, 'iforest': 0.5259105770130074, 'S': 0.5173874059356569} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'wc_m10_t05', 'ecod': 0.5082925180986437, 'iforest': 0.5059054190597616, 'S': 0.5070989685792027} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'wc_m05_t02', 'ecod': 0.5101117594933583, 'iforest': 0.5494051109873294, 'S': 0.5297584352403438} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'wc_m10_t02', 'ecod': 0.5108740955547045, 'iforest': 0.5300998411029787, 'S': 0.5204869683288416} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'wc_m05_t05_keep', 'ecod': 0.5079119772377102, 'iforest': 0.5573583025742379, 'S': 0.5326351399059741} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'wc_m10_t02_keep', 'ecod': 0.5073456600141691, 'iforest': 0.6023806783601483, 'S': 0.5548631691871587} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'wc_m05_t05_r1', 'ecod': 0.5086684285963802, 'iforest': 0.5629842435501594, 'S': 0.5358263360732698} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.27217113880231414, 'iforest': 0.21185224683870682, 'S': 0.2420116928205105} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'wc_m02_t05', 'ecod': 0.2756999167347229, 'iforest': 0.20697445566044784, 'S': 0.24133718619758537} 16s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'wc_m05_t05', 'ecod': 0.27365433198504086, 'iforest': 0.22945377314781226, 'S': 0.25155405256642654} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'wc_m10_t05', 'ecod': 0.26981472811195867, 'iforest': 0.18938999987453564, 'S': 0.22960236399324715} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'wc_m05_t02', 'ecod': 0.27364904366658604, 'iforest': 0.22553480027218611, 'S': 0.24959192196938607} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'wc_m10_t02', 'ecod': 0.26992785839909805, 'iforest': 0.19802284276331786, 'S': 0.23397535058120794} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'wc_m05_t05_keep', 'ecod': 0.2715010294173438, 'iforest': 0.2849457878746466, 'S': 0.27822340864599515} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'wc_m10_t02_keep', 'ecod': 0.2654817268444878, 'iforest': 0.26182643968253866, 'S': 0.26365408326351325} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'wc_m05_t05_r1', 'ecod': 0.27253556813032864, 'iforest': 0.29053586536282233, 'S': 0.2815357167465755} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.5394947519596954, 'iforest': 0.5761837052358902, 'S': 0.5578392285977929} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'wc_m02_t05', 'ecod': 0.5350189601791825, 'iforest': 0.5092284369113182, 'S': 0.5221236985452504} 16s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'wc_m05_t05', 'ecod': 0.5410351697742409, 'iforest': 0.4916339571636981, 'S': 0.5163345634689696} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'wc_m10_t05', 'ecod': 0.543868337791845, 'iforest': 0.4658928957302026, 'S': 0.5048806167610238} 4s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'wc_m05_t02', 'ecod': 0.5448701762093084, 'iforest': 0.48180055080196243, 'S': 0.5133353635056355} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'wc_m10_t02', 'ecod': 0.5500100073250801, 'iforest': 0.4818444620015105, 'S': 0.5159272346632953} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'wc_m05_t05_keep', 'ecod': 0.5400879755587539, 'iforest': 0.5782974534118265, 'S': 0.5591927144852902} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'wc_m10_t02_keep', 'ecod': 0.5461727171303355, 'iforest': 0.5725370929594559, 'S': 0.5593549050448957} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'wc_m05_t05_r1', 'ecod': 0.5409138052317904, 'iforest': 0.5908715553903238, 'S': 0.5658926803110571} 4s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.47264244351651363, 'iforest': 0.5427247217237788, 'S': 0.5076835826201462} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'wc_m02_t05', 'ecod': 0.4774439977244235, 'iforest': 0.5012118825939201, 'S': 0.4893279401591718} 15s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'wc_m05_t05', 'ecod': 0.4817484013048855, 'iforest': 0.4952805331226399, 'S': 0.4885144672137627} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'wc_m10_t05', 'ecod': 0.4845755396238375, 'iforest': 0.49744324514059457, 'S': 0.491009392382216} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'wc_m05_t02', 'ecod': 0.4814978017977979, 'iforest': 0.5070149872109893, 'S': 0.49425639450439357} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'wc_m10_t02', 'ecod': 0.4842091621769587, 'iforest': 0.4906740114830479, 'S': 0.48744158683000327} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'wc_m05_t05_keep', 'ecod': 0.48099586253755733, 'iforest': 0.53195378414068, 'S': 0.5064748233391186} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'wc_m10_t02_keep', 'ecod': 0.4804121739937911, 'iforest': 0.5408144542152327, 'S': 0.5106133141045119} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'wc_m05_t05_r1', 'ecod': 0.4818496281883388, 'iforest': 0.5346946959706577, 'S': 0.5082721620794982} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'dvs', 'ecod': 0.42356649191385115, 'iforest': 0.3501781751236424, 'S': 0.3868723335187468} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'wc_m02_t05', 'ecod': 0.42807404868986476, 'iforest': 0.3474614062613209, 'S': 0.38776772747559285} 15s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'wc_m05_t05', 'ecod': 0.43075151873886147, 'iforest': 0.34875541669451743, 'S': 0.38975346771668945} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'wc_m10_t05', 'ecod': 0.431863633793667, 'iforest': 0.33763410742848077, 'S': 0.3847488706110739} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'wc_m05_t02', 'ecod': 0.43125567113431207, 'iforest': 0.3344636897895616, 'S': 0.38285968046193686} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'wc_m10_t02', 'ecod': 0.4314031982711752, 'iforest': 0.3303972787851286, 'S': 0.3809002385281519} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'wc_m05_t05_keep', 'ecod': 0.42864902060353377, 'iforest': 0.3798048884034324, 'S': 0.4042269545034831} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'wc_m10_t02_keep', 'ecod': 0.42554047381398685, 'iforest': 0.37198776478909085, 'S': 0.3987641193015389} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'wc_m05_t05_r1', 'ecod': 0.4300446732918174, 'iforest': 0.38737687215579025, 'S': 0.40871077272380385} 3s
+                 mean_S  worst_S     atk     sig     std    tail      LB
+gen                                                                     
+dvs              0.5109   0.2420  0.6776  0.4366  0.5808  0.3869  0.5331
+wc_m02_t05       0.4892   0.2413  0.6681  0.4059  0.5533  0.3878     NaN
+wc_m05_t02       0.4839   0.2496  0.6561  0.4040  0.5483  0.3829     NaN
+wc_m05_t05       0.4827   0.2516  0.6561  0.4014  0.5427  0.3898     NaN
+wc_m05_t05_keep  0.4974   0.2782  0.6481  0.4265  0.5637  0.4042     NaN
+wc_m05_t05_r1    0.4999   0.2815  0.6524  0.4293  0.5568  0.4087     NaN
+wc_m10_t02       0.4805   0.2340  0.6519  0.3996  0.5514  0.3809     NaN
+wc_m10_t02_keep  0.4951   0.2637  0.6394  0.4245  0.5818  0.3988     NaN
+wc_m10_t05       0.4756   0.2296  0.6482  0.3939  0.5394  0.3847     NaN
+Spearman vs LB: {'mean_S': nan, 'worst_S': nan, 'std': nan, 'atk': nan, 'sig': nan, 'tail': nan}

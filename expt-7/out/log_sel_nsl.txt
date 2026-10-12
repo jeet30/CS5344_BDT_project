@@ -1,0 +1,16 @@
+
+[nslkdd] held-out effect of neutralising features chosen from OTHER folds (10 folds)
+            n_sel    mean   worst   cvar3  improved
+rule                                               
+v1_thr.003    0.9  0.0002 -0.0230 -0.0130         6
+v1_thr0      10.0  0.0144 -0.0101 -0.0022         8
+v2_thr.003    0.0  0.0000  0.0000  0.0000         0
+v2_thr0       1.0  0.0018 -0.0043 -0.0011         9
+
+full-data selections:
+  v1_thr.003  ['service']
+  v2_thr.003  []
+  v1_thr0     ['num_failed_logins', 'logged_in', 'num_compromised', 'su_attempted', 'num_file_creations', 'num_access_files', 'rerror_rate', 'srv_rerror_rate', 'diff_srv_rate', 'dst_host_srv_count', 'service']
+  v2_thr0     ['logged_in']
+
+protected by sparse-support guard (dominant value >= 90% of normals): ['land', 'wrong_fragment', 'urgent', 'hot', 'num_failed_logins', 'num_compromised', 'root_shell', 'su_attempted', 'num_root', 'num_file_creations', 'num_shells', 'num_access_files', 'num_outbound_cmds', 'is_host_login', 'is_guest_login', 'serror_rate', 'srv_serror_rate', 'rerror_rate', 'srv_rerror_rate', 'same_srv_rate', 'diff_srv_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate', 'dst_host_srv_rerror_rate', 'flag']

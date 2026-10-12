@@ -1,0 +1,39 @@
+std base 0.9389
+atk0 base 0.9197
+atk1 base 0.9622
+atk2 base 0.9211
+sig_service0 base 0.8649
+sig_service1 base 0.9338
+sig_service2 base 0.9158
+sig_flag0 base 0.7284
+sig_flag1 base 0.9206
+tail base 0.856
+
+held-out fold: base -> after constant-ing features selected from OTHER folds
+        fold   thr  n_sel   base  after   delta
+         std 0.000      9 0.9389 0.9491  0.0102
+         std 0.003      1 0.9389 0.9448  0.0060
+        atk0 0.000     10 0.9197 0.9289  0.0092
+        atk0 0.003      1 0.9197 0.9279  0.0082
+        atk1 0.000      9 0.9622 0.9703  0.0081
+        atk1 0.003      1 0.9622 0.9671  0.0049
+        atk2 0.000      9 0.9211 0.9286  0.0075
+        atk2 0.003      1 0.9211 0.9234  0.0024
+sig_service0 0.000      9 0.8649 0.8754  0.0106
+sig_service0 0.003      1 0.8649 0.8418 -0.0230
+sig_service1 0.000     11 0.9338 0.9237 -0.0101
+sig_service1 0.003      1 0.9338 0.9247 -0.0091
+sig_service2 0.000     11 0.9158 0.9119 -0.0040
+sig_service2 0.003      1 0.9158 0.9090 -0.0068
+   sig_flag0 0.000     11 0.7284 0.8104  0.0820
+   sig_flag0 0.003      0 0.7284 0.7284  0.0000
+   sig_flag1 0.000     10 0.9206 0.9281  0.0075
+   sig_flag1 0.003      1 0.9206 0.9238  0.0032
+        tail 0.000     11 0.8560 0.8787  0.0228
+        tail 0.003      1 0.8560 0.8721  0.0162
+
+mean delta by thr:
+        n_sel  mean_delta  worst_delta  folds_improved
+thr                                                  
+0.000   10.0      0.0144      -0.0101               8
+0.003    0.9      0.0002      -0.0230               6

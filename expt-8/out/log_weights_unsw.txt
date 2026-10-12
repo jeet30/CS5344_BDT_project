@@ -1,0 +1,20 @@
+unsw folds by family: {'std': 1, 'atk': 3, 'sig': 6, 'tail': 1, 'combo': 3} cells: ['tcp|-|FIN', 'udp|dns|CON', 'tcp|http|FIN', 'udp|-|CON', 'udp|-|INT', 'tcp|ftp-data|FIN'] ...
+
+held-out ('sig', 'combo'): mean delta -0.0003, worst -0.0080, improved 5/9  [873s]
+         fold family   base    opt   delta heldout_families
+  sig_proto0    sig 0.2728 0.2758  0.0029        sig+combo
+  sig_proto1    sig 0.4933 0.4853 -0.0080        sig+combo
+  sig_proto2    sig 0.5583 0.5566 -0.0016        sig+combo
+sig_service0    sig 0.2459 0.2417 -0.0042        sig+combo
+sig_service1    sig 0.5594 0.5601  0.0008        sig+combo
+sig_service2    sig 0.5042 0.5064  0.0022        sig+combo
+      combo1  combo 0.5699 0.5768  0.0069        sig+combo
+      combo2  combo 0.5727 0.5758  0.0031        sig+combo
+      combo3  combo 0.5751 0.5705 -0.0046        sig+combo
+
+held-out ('atk',): mean delta +0.0038, worst -0.0092, improved 2/3  [1880s]
+ fold family   base    opt   delta heldout_families
+atk2    atk 0.6534 0.6442 -0.0092              atk
+atk1    atk 0.6496 0.6523  0.0028              atk
+atk0    atk 0.7310 0.7487  0.0177              atk
+final theta (all folds): {'tcp|-|FIN': np.float64(-0.19), 'udp|dns|CON': np.float64(-0.49), 'tcp|http|FIN': np.float64(-0.35), 'udp|-|CON': np.float64(0.52), 'udp|-|INT': np.float64(0.03), 'tcp|ftp-data|FIN': np.float64(-0.16), 'tcp|-|CON': np.float64(0.2), 'tcp|smtp|FIN': np.float64(-0.07), 'tcp|ftp|FIN': np.float64(-0.93), 'tcp|-|REQ': np.float64(-0.2), 'tcp|ssh|FIN': np.float64(-0.06), 'arp|-|INT': np.float64(-0.11), 'arp|-|CON': np.float64(0.0), 'ospf|-|REQ': np.float64(0.38)}

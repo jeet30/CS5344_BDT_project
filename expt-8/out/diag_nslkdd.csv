@@ -1,0 +1,4 @@
+file,mean_KS,max_KS,mean_W1_std,const_cols,TVdist_protocol_type,TVdist_service,TVdist_flag,classifier_AUC
+pipeline7=bootstrap,0.0017,0.0048,0.0043,3,0.0004,0.0036,0.0022,0.4752
+pipeline7_eb20,0.0017,0.0048,0.0043,3,0.0004,0.0041,0.0031,0.525
+pipeline_failed(11 const),0.0286,0.4782,0.0595,14,0.0004,0.4326,0.0022,0.8786

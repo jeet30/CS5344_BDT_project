@@ -1,0 +1,984 @@
+baseline real-normal per-fold (ECOD,IF): {-1: (0.5485680893338754, np.float64(0.6441285644022378)), 0: (0.5683393939034634, np.float64(0.6960344392758573)), 1: (0.16025426722970237, np.float64(0.3314978102898383)), 2: (0.2444055010067432, np.float64(0.3036406714953846)), 3: (0.045252735487020426, np.float64(0.10135090342005885))}
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+fold 0: heldout 0.4013 vs real-normal 0.6322  [1245s]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 2 leaked semaphore objects to clean up at shutdown: {'/loky-69638-8dtf1hfe', '/loky-69638-uhcn8q6c'}
+  warnings.warn(

@@ -1,0 +1,16 @@
+
+[unsw] held-out effect of neutralising features chosen from OTHER folds (11 folds)
+              n_sel    mean   worst   cvar3  improved
+rule                                                 
+v1_thr.003   4.5455  0.0148 -0.0134 -0.0017        10
+v1_thr0     10.7273  0.0166 -0.0212 -0.0073         9
+v2_thr.003   2.4545  0.0111 -0.0134 -0.0018        10
+v2_thr0      4.0000  0.0125 -0.0142 -0.0056         9
+
+full-data selections:
+  v1_thr.003  ['sinpkt', 'sjit', 'proto', 'state']
+  v2_thr.003  ['sinpkt', 'sjit']
+  v1_thr0     ['dur', 'dpkts', 'dload', 'sinpkt', 'dinpkt', 'sjit', 'dmean', 'proto', 'state']
+  v2_thr0     ['dur', 'sinpkt', 'sjit']
+
+protected by sparse-support guard (dominant value >= 90% of normals): ['response_body_len', 'ct_dst_sport_ltm', 'is_ftp_login', 'ct_ftp_cmd', 'is_sm_ips_ports']

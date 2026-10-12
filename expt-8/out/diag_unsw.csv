@@ -1,0 +1,5 @@
+file,mean_KS,max_KS,mean_W1_std,const_cols,TVdist_proto,TVdist_service,TVdist_state,classifier_AUC
+bootstrap-like (starter),0.2093,0.609,0.505,4,0.2378,0.1089,0.2946,1.0
+pipeline7,0.2093,0.609,0.505,2,0.045,0.1089,0.0807,1.0
+pipeline7_eb20,0.2093,0.609,0.505,2,0.045,0.1105,0.0807,1.0
+expt4_DVS,0.1892,0.4586,0.5029,0,0.045,0.1089,0.0807,1.0

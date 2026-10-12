@@ -1,0 +1,112 @@
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'bootstrap', 'ecod': 0.9176124331920318, 'iforest': 0.9647345636184009, 'S': 0.9411734984052164} 4s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'gate_bootstrap_q99', 'ecod': 0.9176124331920318, 'iforest': 0.9647345636184009, 'S': 0.9411734984052164} 3s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'gate_bootstrap_q95', 'ecod': 0.9163602480021692, 'iforest': 0.9654331249134179, 'S': 0.9408966864577936} 3s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'gate_bootstrap_q90', 'ecod': 0.9188987236291201, 'iforest': 0.9666649275321472, 'S': 0.9427818255806336} 3s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'gate_bootstrap_w15', 'ecod': 0.9179746665454555, 'iforest': 0.9655784385347701, 'S': 0.9417765525401127} 3s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'gate_bootstrap_w30', 'ecod': 0.9185983597478069, 'iforest': 0.9661487063936157, 'S': 0.9423735330707113} 3s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.9167276124767423, 'iforest': 0.9660887569626458, 'S': 0.941408184719694} 3s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.8510559840072762, 'iforest': 0.9902638880787693, 'S': 0.9206599360430228} 2s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'gate_bootstrap_q99', 'ecod': 0.8510559840072762, 'iforest': 0.9902638880787693, 'S': 0.9206599360430228} 3s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'gate_bootstrap_q95', 'ecod': 0.8507924737224275, 'iforest': 0.9904503153962798, 'S': 0.9206213945593537} 3s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'gate_bootstrap_q90', 'ecod': 0.8529406835804433, 'iforest': 0.9907095472622194, 'S': 0.9218251154213313} 3s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'gate_bootstrap_w15', 'ecod': 0.8510559840072762, 'iforest': 0.9902638880787693, 'S': 0.9206599360430228} 3s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'gate_bootstrap_w30', 'ecod': 0.8510559840072762, 'iforest': 0.9902638880787693, 'S': 0.9206599360430228} 3s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.8507924737224275, 'iforest': 0.9904503153962798, 'S': 0.9206213945593537} 3s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.9478881291869345, 'iforest': 0.9787415483856936, 'S': 0.9633148387863141} 2s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'gate_bootstrap_q99', 'ecod': 0.9478881291869345, 'iforest': 0.9787415483856936, 'S': 0.9633148387863141} 2s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'gate_bootstrap_q95', 'ecod': 0.9478043585501398, 'iforest': 0.97892043437344, 'S': 0.9633623964617899} 2s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'gate_bootstrap_q90', 'ecod': 0.9484028560711874, 'iforest': 0.9796202962119165, 'S': 0.964011576141552} 2s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'gate_bootstrap_w15', 'ecod': 0.9478881291869345, 'iforest': 0.9787415483856936, 'S': 0.9633148387863141} 2s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'gate_bootstrap_w30', 'ecod': 0.9478881291869345, 'iforest': 0.9787415483856936, 'S': 0.9633148387863141} 2s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.9478043585501398, 'iforest': 0.97892043437344, 'S': 0.9633623964617899} 2s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.892525025244869, 'iforest': 0.954989623960222, 'S': 0.9237573246025454} 1s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'gate_bootstrap_q99', 'ecod': 0.892525025244869, 'iforest': 0.954989623960222, 'S': 0.9237573246025454} 2s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'gate_bootstrap_q95', 'ecod': 0.891383730567405, 'iforest': 0.9564566007264762, 'S': 0.9239201656469407} 1s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'gate_bootstrap_q90', 'ecod': 0.8916281268090007, 'iforest': 0.9585443967924552, 'S': 0.925086261800728} 2s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'gate_bootstrap_w15', 'ecod': 0.8918169166640344, 'iforest': 0.9523215511511651, 'S': 0.9220692339075998} 2s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'gate_bootstrap_w30', 'ecod': 0.8909013027929972, 'iforest': 0.9500274685704043, 'S': 0.9204643856817007} 1s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.8907292850883457, 'iforest': 0.9533819900049502, 'S': 0.922055637546648} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.8201878785694051, 'iforest': 0.8865123898248815, 'S': 0.8533501341971432} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'gate_bootstrap_q99', 'ecod': 0.8201878785694051, 'iforest': 0.8865123898248815, 'S': 0.8533501341971432} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'gate_bootstrap_q95', 'ecod': 0.8207734881005063, 'iforest': 0.8844048007513399, 'S': 0.852589144425923} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'gate_bootstrap_q90', 'ecod': 0.8207563382322719, 'iforest': 0.8857151711290577, 'S': 0.8532357546806648} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'gate_bootstrap_w15', 'ecod': 0.8216405114927411, 'iforest': 0.8925905436526738, 'S': 0.8571155275727074} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'gate_bootstrap_w30', 'ecod': 0.8236254604639615, 'iforest': 0.8909668934708203, 'S': 0.8572961769673908} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.8222003993994099, 'iforest': 0.8907307200324411, 'S': 0.8564655597159255} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.9066929076782209, 'iforest': 0.9601854138972289, 'S': 0.9334391607877248} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'gate_bootstrap_q99', 'ecod': 0.9065241635567937, 'iforest': 0.9603329312045746, 'S': 0.9334285473806841} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'gate_bootstrap_q95', 'ecod': 0.9064265090883369, 'iforest': 0.9607010337581935, 'S': 0.9335637714232652} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'gate_bootstrap_q90', 'ecod': 0.9084229732103228, 'iforest': 0.9604399317671707, 'S': 0.9344314524887467} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'gate_bootstrap_w15', 'ecod': 0.9070660874603066, 'iforest': 0.9606041095450527, 'S': 0.9338350985026797} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'gate_bootstrap_w30', 'ecod': 0.9076828273305974, 'iforest': 0.9616758776867452, 'S': 0.9346793525086713} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.9067980370029918, 'iforest': 0.9611253538967065, 'S': 0.9339616954498491} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.8705374584824015, 'iforest': 0.960290984874701, 'S': 0.9154142216785512} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'gate_bootstrap_q99', 'ecod': 0.8705374584824015, 'iforest': 0.960290984874701, 'S': 0.9154142216785512} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'gate_bootstrap_q95', 'ecod': 0.8698034747980173, 'iforest': 0.9600269605410005, 'S': 0.9149152176695089} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'gate_bootstrap_q90', 'ecod': 0.8726027890698972, 'iforest': 0.961139695379492, 'S': 0.9168712422246945} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'gate_bootstrap_w15', 'ecod': 0.8713458393140856, 'iforest': 0.9610493991907382, 'S': 0.9161976192524119} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'gate_bootstrap_w30', 'ecod': 0.8726723303642169, 'iforest': 0.9609401342792685, 'S': 0.9168062323217427} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.8706124508278065, 'iforest': 0.9606214158170304, 'S': 0.9156169333224184} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.7162587187681243, 'iforest': 0.7234649147135234, 'S': 0.7198618167408238} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'gate_bootstrap_q99', 'ecod': 0.7162318109727409, 'iforest': 0.7393461363237307, 'S': 0.7277889736482358} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'gate_bootstrap_q95', 'ecod': 0.7159118871584761, 'iforest': 0.718570301839273, 'S': 0.7172410944988745} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'gate_bootstrap_q90', 'ecod': 0.7225124231428782, 'iforest': 0.6604887618185092, 'S': 0.6915005924806937} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'gate_bootstrap_w15', 'ecod': 0.7162587187681243, 'iforest': 0.7234649147135234, 'S': 0.7198618167408238} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'gate_bootstrap_w30', 'ecod': 0.7162587187681243, 'iforest': 0.7234649147135234, 'S': 0.7198618167408238} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.7159118871584761, 'iforest': 0.718570301839273, 'S': 0.7172410944988745} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.9036196184565125, 'iforest': 0.9396561017370013, 'S': 0.921637860096757} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'gate_bootstrap_q99', 'ecod': 0.9037518083500631, 'iforest': 0.9396854285973423, 'S': 0.9217186184737027} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'gate_bootstrap_q95', 'ecod': 0.9031138619053565, 'iforest': 0.9387264303864505, 'S': 0.9209201461459036} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'gate_bootstrap_q90', 'ecod': 0.9039018218664452, 'iforest': 0.9384310031503761, 'S': 0.9211664125084107} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'gate_bootstrap_w15', 'ecod': 0.9042071722300392, 'iforest': 0.9402529171470707, 'S': 0.922230044688555} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'gate_bootstrap_w30', 'ecod': 0.9050511031440968, 'iforest': 0.9399851970394127, 'S': 0.9225181500917548} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.9035369861365109, 'iforest': 0.9390522655603154, 'S': 0.9212946258484132} 1s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'bootstrap', 'ecod': 0.820101543009139, 'iforest': 0.8958465757352584, 'S': 0.8579740593721987} 1s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'gate_bootstrap_q99', 'ecod': 0.8197714432629648, 'iforest': 0.8969842833129452, 'S': 0.8583778632879551} 1s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'gate_bootstrap_q95', 'ecod': 0.8202281163267573, 'iforest': 0.8984953278072042, 'S': 0.8593617220669807} 1s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'gate_bootstrap_q90', 'ecod': 0.8233202717915588, 'iforest': 0.8891348956049444, 'S': 0.8562275836982516} 1s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'gate_bootstrap_w15', 'ecod': 0.8207284034053803, 'iforest': 0.898569430112539, 'S': 0.8596489167589596} 1s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'gate_bootstrap_w30', 'ecod': 0.8217769215313602, 'iforest': 0.9008169568591291, 'S': 0.8612969391952446} 1s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.8208430399770945, 'iforest': 0.9017795815041595, 'S': 0.861311310740627} 1s
+{'dataset': 'nslkdd', 'fold': 'combo1', 'family': 'combo', 'gen': 'bootstrap', 'ecod': 0.860776005031209, 'iforest': 0.9617373028690596, 'S': 0.9112566539501343} 1s
+{'dataset': 'nslkdd', 'fold': 'combo1', 'family': 'combo', 'gen': 'gate_bootstrap_q99', 'ecod': 0.860776005031209, 'iforest': 0.9614486721437597, 'S': 0.9111123385874844} 1s
+{'dataset': 'nslkdd', 'fold': 'combo1', 'family': 'combo', 'gen': 'gate_bootstrap_q95', 'ecod': 0.8602473732442957, 'iforest': 0.9601836629599477, 'S': 0.9102155181021216} 1s
+{'dataset': 'nslkdd', 'fold': 'combo1', 'family': 'combo', 'gen': 'gate_bootstrap_q90', 'ecod': 0.8627867417993863, 'iforest': 0.960782327021632, 'S': 0.9117845344105091} 1s
+{'dataset': 'nslkdd', 'fold': 'combo1', 'family': 'combo', 'gen': 'gate_bootstrap_w15', 'ecod': 0.8612253392844399, 'iforest': 0.9622709718098407, 'S': 0.9117481555471403} 1s
+{'dataset': 'nslkdd', 'fold': 'combo1', 'family': 'combo', 'gen': 'gate_bootstrap_w30', 'ecod': 0.8619943325908414, 'iforest': 0.9628786966419968, 'S': 0.9124365146164191} 1s
+{'dataset': 'nslkdd', 'fold': 'combo1', 'family': 'combo', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.860689469188836, 'iforest': 0.9608289050757476, 'S': 0.9107591871322918} 1s
+{'dataset': 'nslkdd', 'fold': 'combo2', 'family': 'combo', 'gen': 'bootstrap', 'ecod': 0.8574829238749132, 'iforest': 0.9552813052664232, 'S': 0.9063821145706682} 1s
+{'dataset': 'nslkdd', 'fold': 'combo2', 'family': 'combo', 'gen': 'gate_bootstrap_q99', 'ecod': 0.8574829238749132, 'iforest': 0.9552813052664232, 'S': 0.9063821145706682} 1s
+{'dataset': 'nslkdd', 'fold': 'combo2', 'family': 'combo', 'gen': 'gate_bootstrap_q95', 'ecod': 0.8568897066301571, 'iforest': 0.955874768386158, 'S': 0.9063822375081576} 1s
+{'dataset': 'nslkdd', 'fold': 'combo2', 'family': 'combo', 'gen': 'gate_bootstrap_q90', 'ecod': 0.8601004820753747, 'iforest': 0.9571616366382919, 'S': 0.9086310593568333} 1s
+{'dataset': 'nslkdd', 'fold': 'combo2', 'family': 'combo', 'gen': 'gate_bootstrap_w15', 'ecod': 0.8582015311093019, 'iforest': 0.9557535016940323, 'S': 0.9069775164016671} 1s
+{'dataset': 'nslkdd', 'fold': 'combo2', 'family': 'combo', 'gen': 'gate_bootstrap_w30', 'ecod': 0.8592717536117405, 'iforest': 0.956361247764049, 'S': 0.9078165006878947} 1s
+{'dataset': 'nslkdd', 'fold': 'combo2', 'family': 'combo', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.8576340012979042, 'iforest': 0.956404583340559, 'S': 0.9070192923192316} 1s
+{'dataset': 'nslkdd', 'fold': 'combo3', 'family': 'combo', 'gen': 'bootstrap', 'ecod': 0.8994977221843802, 'iforest': 0.9599236617546326, 'S': 0.9297106919695064} 1s
+{'dataset': 'nslkdd', 'fold': 'combo3', 'family': 'combo', 'gen': 'gate_bootstrap_q99', 'ecod': 0.8994977221843802, 'iforest': 0.9600138866765532, 'S': 0.9297558044304667} 2s
+{'dataset': 'nslkdd', 'fold': 'combo3', 'family': 'combo', 'gen': 'gate_bootstrap_q95', 'ecod': 0.8999007427992475, 'iforest': 0.9600311197667861, 'S': 0.9299659312830169} 1s
+{'dataset': 'nslkdd', 'fold': 'combo3', 'family': 'combo', 'gen': 'gate_bootstrap_q90', 'ecod': 0.9014394234798708, 'iforest': 0.958008152428893, 'S': 0.9297237879543819} 1s
+{'dataset': 'nslkdd', 'fold': 'combo3', 'family': 'combo', 'gen': 'gate_bootstrap_w15', 'ecod': 0.9000450306117997, 'iforest': 0.9602063716986926, 'S': 0.9301257011552462} 1s
+{'dataset': 'nslkdd', 'fold': 'combo3', 'family': 'combo', 'gen': 'gate_bootstrap_w30', 'ecod': 0.9009556713501108, 'iforest': 0.9605893826621728, 'S': 0.9307725270061418} 1s
+{'dataset': 'nslkdd', 'fold': 'combo3', 'family': 'combo', 'gen': 'gate_bootstrap_q95w15', 'ecod': 0.9004591232918508, 'iforest': 0.9605065217410075, 'S': 0.9304828225164292} 1s
+                       mean_S  worst_S     atk   combo     sig     std    tail      LB
+gen                                                                                   
+bootstrap              0.8998   0.7199  0.9359  0.9158  0.8687  0.9412  0.8580  0.9292
+gate_bootstrap_q90     0.8983   0.6915  0.9370  0.9167  0.8634  0.9428  0.8562     NaN
+gate_bootstrap_q95     0.8995   0.7172  0.9360  0.9155  0.8678  0.9409  0.8594     NaN
+gate_bootstrap_q95w15  0.9001   0.7172  0.9353  0.9161  0.8689  0.9414  0.8613     NaN
+gate_bootstrap_q99     0.9005   0.7278  0.9359  0.9158  0.8703  0.9412  0.8584     NaN
+gate_bootstrap_w15     0.9004   0.7199  0.9353  0.9163  0.8698  0.9418  0.8596     NaN
+gate_bootstrap_w30     0.9008   0.7199  0.9348  0.9170  0.8702  0.9424  0.8613     NaN
+Spearman vs LB: {'mean_S': nan, 'worst_S': nan, 'std': nan, 'atk': nan, 'sig': nan, 'tail': nan}
+
+by family + robust
+                           atk   combo     sig     std    tail    mean   worst   cvar3
+gen                                                                                  
+gate_bootstrap_w30     0.9348  0.9170  0.8702  0.9424  0.8613  0.9008  0.7199  0.8128
+gate_bootstrap_q99     0.9359  0.9158  0.8703  0.9412  0.8584  0.9005  0.7278  0.8132
+gate_bootstrap_w15     0.9353  0.9163  0.8698  0.9418  0.8596  0.9004  0.7199  0.8122
+gate_bootstrap_q95w15  0.9353  0.9161  0.8689  0.9414  0.8613  0.9001  0.7172  0.8117
+bootstrap              0.9359  0.9158  0.8687  0.9412  0.8580  0.8998  0.7199  0.8104
+gate_bootstrap_q95     0.9360  0.9155  0.8678  0.9409  0.8594  0.8995  0.7172  0.8097
+gate_bootstrap_q90     0.9370  0.9167  0.8634  0.9428  0.8562  0.8983  0.6915  0.8003

@@ -1,0 +1,135 @@
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'dvs', 'ecod': 0.5550132042416155, 'iforest': 0.6065980840505026, 'S': 0.5808056441460591} 6s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'eb_dvs_5', 'ecod': 0.5550166281443243, 'iforest': 0.6051473529238022, 'S': 0.5800819905340633} 5s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'eb_dvs_10', 'ecod': 0.5550247231017938, 'iforest': 0.6035241138287489, 'S': 0.5792744184652714} 5s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'eb_dvs_20', 'ecod': 0.555031476074896, 'iforest': 0.6053665845490929, 'S': 0.5801990303119944} 5s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'eb_dvs_40', 'ecod': 0.5550324261893429, 'iforest': 0.6033700866114672, 'S': 0.579201256400405} 5s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'bootstrap', 'ecod': 0.4658078336959761, 'iforest': 0.49680329333141743, 'S': 0.4813055635136968} 4s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'eb_bootstrap_10', 'ecod': 0.4658860065422553, 'iforest': 0.492587976537731, 'S': 0.47923699153999316} 3s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'eb_bootstrap_40', 'ecod': 0.46591091129209616, 'iforest': 0.5049476508245331, 'S': 0.4854292810583146} 3s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.597803146736322, 'iforest': 0.7003586492952141, 'S': 0.6490808980157681} 6s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'eb_dvs_5', 'ecod': 0.5978160336114712, 'iforest': 0.6992360719054473, 'S': 0.6485260527584593} 6s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'eb_dvs_10', 'ecod': 0.5977971204008772, 'iforest': 0.6954836543502436, 'S': 0.6466403873755604} 5s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'eb_dvs_20', 'ecod': 0.5977752770161033, 'iforest': 0.6943500562822148, 'S': 0.6460626666491591} 5s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'eb_dvs_40', 'ecod': 0.5978002227371229, 'iforest': 0.6934633972354424, 'S': 0.6456318099862826} 5s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.5148430721311169, 'iforest': 0.5758929497778306, 'S': 0.5453680109544737} 3s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'eb_bootstrap_10', 'ecod': 0.5148817317733534, 'iforest': 0.5724457105169299, 'S': 0.5436637211451416} 3s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'eb_bootstrap_40', 'ecod': 0.5149257924440208, 'iforest': 0.5827521294982635, 'S': 0.5488389609711422} 3s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.580374715931885, 'iforest': 0.7114076915724691, 'S': 0.6458912037521771} 4s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'eb_dvs_5', 'ecod': 0.5803711342003985, 'iforest': 0.7122988147669501, 'S': 0.6463349744836744} 4s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'eb_dvs_10', 'ecod': 0.5804075587425723, 'iforest': 0.7023250454034904, 'S': 0.6413663020730314} 5s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'eb_dvs_20', 'ecod': 0.5803951685390372, 'iforest': 0.7004986716561943, 'S': 0.6404469200976157} 5s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'eb_dvs_40', 'ecod': 0.5804026244727993, 'iforest': 0.7192700960298883, 'S': 0.6498363602513438} 4s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.4956530282405296, 'iforest': 0.6124922804432544, 'S': 0.554072654341892} 3s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'eb_bootstrap_10', 'ecod': 0.4957480681150274, 'iforest': 0.600617381348158, 'S': 0.5481827247315927} 3s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'eb_bootstrap_40', 'ecod': 0.49579940372780174, 'iforest': 0.6097560516102632, 'S': 0.5527777276690324} 3s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.7058513063417359, 'iforest': 0.7700630528662019, 'S': 0.7379571796039689} 4s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'eb_dvs_5', 'ecod': 0.705846188089884, 'iforest': 0.7771533000674401, 'S': 0.741499744078662} 4s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'eb_dvs_10', 'ecod': 0.7058040904013385, 'iforest': 0.764719599031238, 'S': 0.7352618447162882} 6s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'eb_dvs_20', 'ecod': 0.7057823973426527, 'iforest': 0.7683811389881715, 'S': 0.737081768165412} 4s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'eb_dvs_40', 'ecod': 0.7057323336503561, 'iforest': 0.7660649454887887, 'S': 0.7358986395695724} 3s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.680850992503606, 'iforest': 0.703725674885504, 'S': 0.692288333694555} 2s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'eb_bootstrap_10', 'ecod': 0.6809106985833433, 'iforest': 0.7020318244887669, 'S': 0.6914712615360551} 2s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'eb_bootstrap_40', 'ecod': 0.6809010661809699, 'iforest': 0.7130129539560942, 'S': 0.6969570100685321} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.26446128602044505, 'iforest': 0.26195854381290146, 'S': 0.2632099149166732} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'eb_dvs_5', 'ecod': 0.2644637029182658, 'iforest': 0.26187285010690914, 'S': 0.26316827651258745} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'eb_dvs_10', 'ecod': 0.2644281009297949, 'iforest': 0.2761552683633483, 'S': 0.2702916846465716} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'eb_dvs_20', 'ecod': 0.26447183491201576, 'iforest': 0.2729649412389196, 'S': 0.26871838807546766} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'eb_dvs_40', 'ecod': 0.2645045616478292, 'iforest': 0.27460377082944915, 'S': 0.26955416623863915} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.23633633397104467, 'iforest': 0.2052972132627258, 'S': 0.22081677361688523} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'eb_bootstrap_10', 'ecod': 0.2363302391766749, 'iforest': 0.23111024595439952, 'S': 0.2337202425655372} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'eb_bootstrap_40', 'ecod': 0.23629586200854744, 'iforest': 0.21150027993253936, 'S': 0.2238980709705434} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.4049972339369928, 'iforest': 0.5807134513835487, 'S': 0.49285534266027076} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'eb_dvs_5', 'ecod': 0.40503775916022466, 'iforest': 0.5746768538801031, 'S': 0.4898573065201639} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'eb_dvs_10', 'ecod': 0.40503447435951234, 'iforest': 0.5829050448439903, 'S': 0.4939697596017513} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'eb_dvs_20', 'ecod': 0.40500589774481516, 'iforest': 0.580944110170354, 'S': 0.49297500395758453} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'eb_dvs_40', 'ecod': 0.4050271413239575, 'iforest': 0.5806556694462985, 'S': 0.492841405385128} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.308036121281696, 'iforest': 0.2859312070363666, 'S': 0.2969836641590313} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'eb_bootstrap_10', 'ecod': 0.30799858289831683, 'iforest': 0.2813851928408054, 'S': 0.29469188786956113} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'eb_bootstrap_40', 'ecod': 0.30803810101814566, 'iforest': 0.2795362554810945, 'S': 0.2937871782496201} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.5114742012183425, 'iforest': 0.6006841969572069, 'S': 0.5560791990877747} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'eb_dvs_5', 'ecod': 0.5114743015491089, 'iforest': 0.59973498315157, 'S': 0.5556046423503395} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'eb_dvs_10', 'ecod': 0.5114554827650019, 'iforest': 0.5973534900765824, 'S': 0.5544044864207922} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'eb_dvs_20', 'ecod': 0.5114814349368365, 'iforest': 0.5921673209980516, 'S': 0.5518243779674441} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'eb_dvs_40', 'ecod': 0.511476588803719, 'iforest': 0.6075229840003685, 'S': 0.5594997864020438} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.42780464024823767, 'iforest': 0.46068391508591605, 'S': 0.44424427766707686} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'eb_bootstrap_10', 'ecod': 0.42783444450000496, 'iforest': 0.4688664449670024, 'S': 0.4483504447335037} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'eb_bootstrap_40', 'ecod': 0.42782542061182904, 'iforest': 0.47049181479903046, 'S': 0.44915861770542975} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.27217113880231414, 'iforest': 0.21185224683870682, 'S': 0.2420116928205105} 3s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'eb_dvs_5', 'ecod': 0.2721711704849756, 'iforest': 0.21779129542849116, 'S': 0.24498123295673335} 4s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'eb_dvs_10', 'ecod': 0.27216846763868285, 'iforest': 0.2121028551222138, 'S': 0.24213566138044834} 3s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'eb_dvs_20', 'ecod': 0.2721667638215465, 'iforest': 0.2150011865752548, 'S': 0.24358397519840064} 3s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'eb_dvs_40', 'ecod': 0.27217184660162885, 'iforest': 0.21776039477896714, 'S': 0.244966120690298} 3s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.25450963810309557, 'iforest': 0.23970345274512642, 'S': 0.24710654542411098} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'eb_bootstrap_10', 'ecod': 0.2545154175829688, 'iforest': 0.24223294711718543, 'S': 0.24837418235007713} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'eb_bootstrap_40', 'ecod': 0.2545153316141319, 'iforest': 0.2516432010566187, 'S': 0.2530792663353753} 2s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.5394947519596954, 'iforest': 0.5761837052358902, 'S': 0.5578392285977929} 3s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'eb_dvs_5', 'ecod': 0.539491573166944, 'iforest': 0.5670587391483058, 'S': 0.5532751561576249} 3s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'eb_dvs_10', 'ecod': 0.5394890211592029, 'iforest': 0.5773357107992984, 'S': 0.5584123659792506} 3s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'eb_dvs_20', 'ecod': 0.5394879465133972, 'iforest': 0.5698211708821779, 'S': 0.5546545586977876} 3s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'eb_dvs_40', 'ecod': 0.5394857240416681, 'iforest': 0.5635923210363698, 'S': 0.5515390225390189} 3s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.4026011452173999, 'iforest': 0.3620991440662493, 'S': 0.3823501446418246} 2s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'eb_bootstrap_10', 'ecod': 0.40266278902423536, 'iforest': 0.3707011731780776, 'S': 0.3866819811011565} 2s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'eb_bootstrap_40', 'ecod': 0.4025722282530994, 'iforest': 0.35772812591451375, 'S': 0.3801501770838066} 2s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.47264244351651363, 'iforest': 0.5427247217237788, 'S': 0.5076835826201462} 3s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'eb_dvs_5', 'ecod': 0.47264581793831123, 'iforest': 0.5402880694995781, 'S': 0.5064669437189446} 3s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'eb_dvs_10', 'ecod': 0.4726655360275655, 'iforest': 0.5338183928257241, 'S': 0.5032419644266448} 3s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'eb_dvs_20', 'ecod': 0.4726896649933106, 'iforest': 0.532880171429134, 'S': 0.5027849182112223} 3s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'eb_dvs_40', 'ecod': 0.472630339214903, 'iforest': 0.5274068317733471, 'S': 0.500018585494125} 3s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.407780755305278, 'iforest': 0.4011100871764574, 'S': 0.4044454212408677} 2s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'eb_bootstrap_10', 'ecod': 0.4077889368017674, 'iforest': 0.4085696407307422, 'S': 0.4081792887662548} 2s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'eb_bootstrap_40', 'ecod': 0.4077658286960517, 'iforest': 0.4024067410427102, 'S': 0.4050862848693809} 2s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'dvs', 'ecod': 0.42356649191385115, 'iforest': 0.3501781751236424, 'S': 0.3868723335187468} 3s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'eb_dvs_5', 'ecod': 0.4235504703461832, 'iforest': 0.3524430360264363, 'S': 0.3879967531863098} 3s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'eb_dvs_10', 'ecod': 0.42358194518145686, 'iforest': 0.3495076670355232, 'S': 0.38654480610849007} 3s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'eb_dvs_20', 'ecod': 0.42357271524466755, 'iforest': 0.36614236632445046, 'S': 0.39485754078455904} 4s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'eb_dvs_40', 'ecod': 0.4235459219823742, 'iforest': 0.35641515167062193, 'S': 0.389980536826498} 3s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'bootstrap', 'ecod': 0.3723149212373956, 'iforest': 0.2865049106859141, 'S': 0.32940991596165486} 2s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'eb_bootstrap_10', 'ecod': 0.3723156847211899, 'iforest': 0.2845856512044888, 'S': 0.3284506679628394} 2s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'eb_bootstrap_40', 'ecod': 0.37230304165115025, 'iforest': 0.28951165409546714, 'S': 0.33090734787330867} 2s
+{'dataset': 'unsw', 'fold': 'combo1', 'family': 'combo', 'gen': 'dvs', 'ecod': 0.5511679186330246, 'iforest': 0.5819187403944345, 'S': 0.5665433295137295} 3s
+{'dataset': 'unsw', 'fold': 'combo1', 'family': 'combo', 'gen': 'eb_dvs_5', 'ecod': 0.5511633638789737, 'iforest': 0.5829019550299913, 'S': 0.5670326594544826} 3s
+{'dataset': 'unsw', 'fold': 'combo1', 'family': 'combo', 'gen': 'eb_dvs_10', 'ecod': 0.5511581927333928, 'iforest': 0.5828956382670563, 'S': 0.5670269155002245} 3s
+{'dataset': 'unsw', 'fold': 'combo1', 'family': 'combo', 'gen': 'eb_dvs_20', 'ecod': 0.5511859138474025, 'iforest': 0.5831090966075726, 'S': 0.5671475052274875} 3s
+{'dataset': 'unsw', 'fold': 'combo1', 'family': 'combo', 'gen': 'eb_dvs_40', 'ecod': 0.5511083294431843, 'iforest': 0.5859783769691137, 'S': 0.568543353206149} 3s
+{'dataset': 'unsw', 'fold': 'combo1', 'family': 'combo', 'gen': 'bootstrap', 'ecod': 0.45957537675014587, 'iforest': 0.4823131498326452, 'S': 0.47094426329139555} 2s
+{'dataset': 'unsw', 'fold': 'combo1', 'family': 'combo', 'gen': 'eb_bootstrap_10', 'ecod': 0.45952222727995967, 'iforest': 0.49866575306097927, 'S': 0.4790939901704695} 2s
+{'dataset': 'unsw', 'fold': 'combo1', 'family': 'combo', 'gen': 'eb_bootstrap_40', 'ecod': 0.45949632248503586, 'iforest': 0.4906648205973075, 'S': 0.47508057154117167} 2s
+{'dataset': 'unsw', 'fold': 'combo2', 'family': 'combo', 'gen': 'dvs', 'ecod': 0.5509945570904395, 'iforest': 0.5811322776670467, 'S': 0.5660634173787431} 3s
+{'dataset': 'unsw', 'fold': 'combo2', 'family': 'combo', 'gen': 'eb_dvs_5', 'ecod': 0.5509652104458254, 'iforest': 0.5840324218662701, 'S': 0.5674988161560477} 3s
+{'dataset': 'unsw', 'fold': 'combo2', 'family': 'combo', 'gen': 'eb_dvs_10', 'ecod': 0.5509300411217103, 'iforest': 0.5891544681628297, 'S': 0.57004225464227} 3s
+{'dataset': 'unsw', 'fold': 'combo2', 'family': 'combo', 'gen': 'eb_dvs_20', 'ecod': 0.5509553925535734, 'iforest': 0.5795651471379342, 'S': 0.5652602698457538} 3s
+{'dataset': 'unsw', 'fold': 'combo2', 'family': 'combo', 'gen': 'eb_dvs_40', 'ecod': 0.5509815525241643, 'iforest': 0.591343424804642, 'S': 0.5711624886644031} 3s
+{'dataset': 'unsw', 'fold': 'combo2', 'family': 'combo', 'gen': 'bootstrap', 'ecod': 0.4586844821441026, 'iforest': 0.4990493846208654, 'S': 0.478866933382484} 2s
+{'dataset': 'unsw', 'fold': 'combo2', 'family': 'combo', 'gen': 'eb_bootstrap_10', 'ecod': 0.45872249947715743, 'iforest': 0.4990156693460261, 'S': 0.47886908441159176} 2s
+{'dataset': 'unsw', 'fold': 'combo2', 'family': 'combo', 'gen': 'eb_bootstrap_40', 'ecod': 0.4587053355046484, 'iforest': 0.4919960744393516, 'S': 0.47535070497200005} 2s
+{'dataset': 'unsw', 'fold': 'combo3', 'family': 'combo', 'gen': 'dvs', 'ecod': 0.5458483717985124, 'iforest': 0.5804081268700093, 'S': 0.5631282493342609} 3s
+{'dataset': 'unsw', 'fold': 'combo3', 'family': 'combo', 'gen': 'eb_dvs_5', 'ecod': 0.5458520132544556, 'iforest': 0.5794013563023054, 'S': 0.5626266847783805} 3s
+{'dataset': 'unsw', 'fold': 'combo3', 'family': 'combo', 'gen': 'eb_dvs_10', 'ecod': 0.5458260286463656, 'iforest': 0.5884993957308434, 'S': 0.5671627121886045} 3s
+{'dataset': 'unsw', 'fold': 'combo3', 'family': 'combo', 'gen': 'eb_dvs_20', 'ecod': 0.5458436391796466, 'iforest': 0.5942568205002937, 'S': 0.5700502298399701} 3s
+{'dataset': 'unsw', 'fold': 'combo3', 'family': 'combo', 'gen': 'eb_dvs_40', 'ecod': 0.5458590638198701, 'iforest': 0.5832516517633923, 'S': 0.5645553577916312} 3s
+{'dataset': 'unsw', 'fold': 'combo3', 'family': 'combo', 'gen': 'bootstrap', 'ecod': 0.45376311886786047, 'iforest': 0.4757631384769844, 'S': 0.4647631286724224} 2s
+{'dataset': 'unsw', 'fold': 'combo3', 'family': 'combo', 'gen': 'eb_bootstrap_10', 'ecod': 0.45371305292752817, 'iforest': 0.4764511086536123, 'S': 0.46508208079057023} 2s
+{'dataset': 'unsw', 'fold': 'combo3', 'family': 'combo', 'gen': 'eb_bootstrap_40', 'ecod': 0.4536181418747759, 'iforest': 0.4716177217416872, 'S': 0.4626179318082315} 2s
+                 mean_S  worst_S     atk   combo     sig     std    tail      LB
+gen                                                                             
+bootstrap        0.4295   0.2208  0.5972  0.4715  0.3327  0.4813  0.3294  0.4210
+dvs              0.5226   0.2420  0.6776  0.5652  0.4366  0.5808  0.3869  0.5331
+eb_bootstrap_10  0.4310   0.2337  0.5944  0.4743  0.3367  0.4792  0.3285     NaN
+eb_bootstrap_40  0.4309   0.2239  0.5995  0.4710  0.3342  0.4854  0.3309     NaN
+eb_dvs_10        0.5226   0.2421  0.6744  0.5681  0.4371  0.5793  0.3865     NaN
+eb_dvs_20        0.5225   0.2436  0.6745  0.5675  0.4358  0.5802  0.3949     NaN
+eb_dvs_40        0.5231   0.2450  0.6771  0.5681  0.4364  0.5792  0.3900     NaN
+eb_dvs_5         0.5225   0.2450  0.6788  0.5657  0.4356  0.5801  0.3880     NaN
+Spearman vs LB: {'mean_S': np.float64(1.0), 'worst_S': np.float64(1.0), 'std': np.float64(1.0), 'atk': np.float64(1.0), 'sig': np.float64(1.0), 'tail': np.float64(1.0)}
+
+by family + robust
+                     atk   combo     sig     std    tail    mean   worst   cvar3
+gen                                                                            
+bootstrap        0.5972  0.4715  0.3327  0.4813  0.3294  0.4295  0.2208  0.2550
+dvs              0.6776  0.5652  0.4366  0.5808  0.3869  0.5226  0.2420  0.2974
+eb_bootstrap_10  0.5944  0.4743  0.3367  0.4792  0.3285  0.4310  0.2337  0.2589
+eb_bootstrap_40  0.5995  0.4710  0.3342  0.4854  0.3309  0.4309  0.2239  0.2569
+eb_dvs_10        0.6744  0.5681  0.4371  0.5793  0.3865  0.5226  0.2421  0.2997
+eb_dvs_20        0.6745  0.5675  0.4358  0.5802  0.3949  0.5225  0.2436  0.3024
+eb_dvs_40        0.6771  0.5681  0.4364  0.5792  0.3900  0.5231  0.2450  0.3015
+eb_dvs_5         0.6788  0.5657  0.4356  0.5801  0.3880  0.5225  0.2450  0.2987

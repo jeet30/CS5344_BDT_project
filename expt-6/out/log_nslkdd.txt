@@ -1,0 +1,120 @@
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'bootstrap', 'ecod': 0.9176124331920318, 'iforest': 0.9647345636184009, 'S': 0.9411734984052164} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'starter', 'ecod': 0.8517453643927297, 'iforest': 0.9394500600320304, 'S': 0.89559771221238} 1s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'cpb', 'ecod': 0.894217135054784, 'iforest': 0.9467490769640282, 'S': 0.9204831060094061} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'dvs', 'ecod': 0.9232754172134537, 'iforest': 0.9591251912784357, 'S': 0.9412003042459447} 3s
+{'dataset': 'nslkdd', 'fold': 'std', 'family': 'std', 'gen': 'coverage', 'ecod': 0.9273974505548547, 'iforest': 0.9671216233003013, 'S': 0.947259536927578} 2s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.8510559840072762, 'iforest': 0.9902638880787693, 'S': 0.9206599360430228} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'starter', 'ecod': 0.7757980177650762, 'iforest': 0.9787244849995361, 'S': 0.8772612513823062} 2s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'cpb', 'ecod': 0.8252908589293224, 'iforest': 0.986680871230444, 'S': 0.9059858650798832} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.824143893501908, 'iforest': 0.9907953912081431, 'S': 0.9074696423550255} 2s
+{'dataset': 'nslkdd', 'fold': 'atk0', 'family': 'atk', 'gen': 'coverage', 'ecod': 0.8508716107966482, 'iforest': 0.9903934997170807, 'S': 0.9206325552568644} 3s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.9478881291869345, 'iforest': 0.9787415483856936, 'S': 0.9633148387863141} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'starter', 'ecod': 0.9175672627563903, 'iforest': 0.9679192992409842, 'S': 0.9427432809986873} 2s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'cpb', 'ecod': 0.9260684594730595, 'iforest': 0.9667568577669142, 'S': 0.9464126586199868} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.9554831198760647, 'iforest': 0.9793780381731833, 'S': 0.967430579024624} 2s
+{'dataset': 'nslkdd', 'fold': 'atk1', 'family': 'atk', 'gen': 'coverage', 'ecod': 0.9525951332837925, 'iforest': 0.9804077743528404, 'S': 0.9665014538183165} 3s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'bootstrap', 'ecod': 0.892525025244869, 'iforest': 0.954989623960222, 'S': 0.9237573246025454} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'starter', 'ecod': 0.8511109945638026, 'iforest': 0.9215977779514367, 'S': 0.8863543862576196} 2s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'cpb', 'ecod': 0.877512564624256, 'iforest': 0.9239564170274024, 'S': 0.9007344908258292} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.8840303553154342, 'iforest': 0.9259980006486345, 'S': 0.9050141779820343} 2s
+{'dataset': 'nslkdd', 'fold': 'atk2', 'family': 'atk', 'gen': 'coverage', 'ecod': 0.9053770871102397, 'iforest': 0.9602180798526935, 'S': 0.9327975834814666} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.8201878785694051, 'iforest': 0.8865123898248815, 'S': 0.8533501341971432} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'starter', 'ecod': 0.7644139682147271, 'iforest': 0.7799442848363434, 'S': 0.7721791265255352} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'cpb', 'ecod': 0.8081814092189936, 'iforest': 0.915999051384153, 'S': 0.8620902303015734} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.9194480692982389, 'iforest': 0.9267689781239247, 'S': 0.9231085237110818} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'coverage', 'ecod': 0.8557832369071339, 'iforest': 0.7665605751670697, 'S': 0.8111719060371018} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.9066929076782209, 'iforest': 0.9601854138972289, 'S': 0.9334391607877248} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'starter', 'ecod': 0.882153370432832, 'iforest': 0.9402500854439614, 'S': 0.9112017279383967} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'cpb', 'ecod': 0.8959155191801184, 'iforest': 0.9354888945381878, 'S': 0.9157022068591532} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.9064402644467097, 'iforest': 0.9348769683663719, 'S': 0.9206586164065408} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'coverage', 'ecod': 0.918686723888005, 'iforest': 0.9590001749321401, 'S': 0.9388434494100726} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.8705374584824015, 'iforest': 0.960290984874701, 'S': 0.9154142216785512} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'starter', 'ecod': 0.8252175838812484, 'iforest': 0.9238153466798781, 'S': 0.8745164652805633} 1s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'cpb', 'ecod': 0.8594263622464298, 'iforest': 0.9273636719835844, 'S': 0.8933950171150071} 1s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.8834260761012153, 'iforest': 0.9433776197945843, 'S': 0.9134018479478998} 3s
+{'dataset': 'nslkdd', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'coverage', 'ecod': 0.8782419473953799, 'iforest': 0.9630994444955018, 'S': 0.9206706959454408} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.7162587187681243, 'iforest': 0.7234649147135234, 'S': 0.7198618167408238} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'starter', 'ecod': 0.8142993201348463, 'iforest': 0.7456869327806461, 'S': 0.7799931264577462} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'cpb', 'ecod': 0.6754886683515517, 'iforest': 0.6739066690325558, 'S': 0.6746976686920538} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.8440892663053089, 'iforest': 0.7332892115896197, 'S': 0.7886892389474642} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'sig_flag0', 'family': 'sig', 'gen': 'coverage', 'ecod': 0.7590829993913354, 'iforest': 0.8158564449215087, 'S': 0.787469722156422} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'bootstrap', 'ecod': 0.9036196184565125, 'iforest': 0.9396561017370013, 'S': 0.921637860096757} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'starter', 'ecod': 0.8243531816428693, 'iforest': 0.914934893251446, 'S': 0.8696440374471577} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'cpb', 'ecod': 0.8859110904718321, 'iforest': 0.9334304724724066, 'S': 0.9096707814721194} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.9115414745666687, 'iforest': 0.9447692710214919, 'S': 0.9281553727940803} 2s
+{'dataset': 'nslkdd', 'fold': 'sig_flag1', 'family': 'sig', 'gen': 'coverage', 'ecod': 0.8981829728889329, 'iforest': 0.8475862223751447, 'S': 0.8728845976320387} 2s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'bootstrap', 'ecod': 0.820101543009139, 'iforest': 0.8958465757352584, 'S': 0.8579740593721987} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'starter', 'ecod': 0.7989496362976868, 'iforest': 0.8404825049492574, 'S': 0.8197160706234721} 2s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'cpb', 'ecod': 0.8263216927465193, 'iforest': 0.8951218022768789, 'S': 0.860721747511699} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'dvs', 'ecod': 0.8536974150290273, 'iforest': 0.896044161274307, 'S': 0.8748707881516671} 2s
+{'dataset': 'nslkdd', 'fold': 'tail', 'family': 'tail', 'gen': 'coverage', 'ecod': 0.819034224396996, 'iforest': 0.8292116842386216, 'S': 0.8241229543178088} 2s
+           mean_S  worst_S     atk     sig     std    tail      LB
+gen                                                               
+bootstrap  0.8951   0.7199  0.9359  0.8687  0.9412  0.8580  0.8950
+coverage   0.8922   0.7875  0.9400  0.8662  0.9473  0.8241     NaN
+cpb        0.8790   0.6747  0.9177  0.8511  0.9205  0.8607  0.9299
+dvs        0.9070   0.7887  0.9266  0.8948  0.9412  0.8749  0.8990
+starter    0.8629   0.7722  0.9021  0.8415  0.8956  0.8197  0.9316
+Spearman vs LB: {'mean_S': np.float64(-0.8), 'worst_S': np.float64(0.0), 'std': np.float64(-0.8), 'atk': np.float64(-1.0), 'sig': np.float64(-0.8), 'tail': np.float64(-0.4)}

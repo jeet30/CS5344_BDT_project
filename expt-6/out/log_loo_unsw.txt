@@ -1,0 +1,13 @@
+std base 0.5797
+atk2 base 0.6485
+atk1 base 0.655
+atk0 base 0.7375
+sig_proto0 base 0.2573
+sig_proto1 base 0.4946
+sig_proto2 base 0.5545
+sig_service0 base 0.2467
+sig_service1 base 0.5506
+sig_service2 base 0.4989
+tail base 0.3855
+/Library/Frameworks/Python.framework/Versions/3.14/lib/python3.14/multiprocessing/resource_tracker.py:396: UserWarning: resource_tracker: There appear to be 2 leaked semaphore objects to clean up at shutdown: {'/loky-80425-ouwotiv_', '/loky-80425-i674cn3u'}
+  warnings.warn(

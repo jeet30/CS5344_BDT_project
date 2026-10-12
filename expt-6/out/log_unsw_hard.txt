@@ -1,0 +1,151 @@
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'dvs', 'ecod': 0.5550132042416155, 'iforest': 0.6065980840505026, 'S': 0.5808056441460591} 7s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'hard0', 'ecod': 0.5341579809916941, 'iforest': 0.5725572274036701, 'S': 0.5533576041976821} 2s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'hard_n2', 'ecod': 0.508441902356394, 'iforest': 0.5426322311101964, 'S': 0.5255370667332953} 2s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'hard2', 'ecod': 0.5451596691555962, 'iforest': 0.5835009641983918, 'S': 0.564330316676994} 2s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'hard5', 'ecod': 0.5467493956078902, 'iforest': 0.5758205540189194, 'S': 0.5612849748134048} 2s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'hard0_nocat', 'ecod': 0.5356724610990135, 'iforest': 0.5811467818575543, 'S': 0.5584096214782839} 2s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'hard_top50', 'ecod': 0.5414995025007411, 'iforest': 0.580744843390625, 'S': 0.561122172945683} 2s
+{'dataset': 'unsw', 'fold': 'std', 'family': 'std', 'gen': 'hard_top70', 'ecod': 0.5458427415088739, 'iforest': 0.5922371457742807, 'S': 0.5690399436415773} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.597803146736322, 'iforest': 0.7003586492952141, 'S': 0.6490808980157681} 3s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'hard0', 'ecod': 0.5206723616204323, 'iforest': 0.569254220658516, 'S': 0.5449632911394742} 2s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'hard_n2', 'ecod': 0.5153823814622387, 'iforest': 0.573106014068859, 'S': 0.5442441977655488} 2s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'hard2', 'ecod': 0.5309897947094707, 'iforest': 0.581574852525178, 'S': 0.5562823236173244} 2s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'hard5', 'ecod': 0.5789663670227745, 'iforest': 0.6828912133464237, 'S': 0.630928790184599} 2s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'hard0_nocat', 'ecod': 0.5301885870112978, 'iforest': 0.587962833185085, 'S': 0.5590757100981913} 2s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'hard_top50', 'ecod': 0.5946849189279698, 'iforest': 0.7715645343066614, 'S': 0.6831247266173156} 3s
+{'dataset': 'unsw', 'fold': 'atk2', 'family': 'atk', 'gen': 'hard_top70', 'ecod': 0.5904725240322544, 'iforest': 0.6741750450989866, 'S': 0.6323237845656204} 3s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.580374715931885, 'iforest': 0.7114076915724691, 'S': 0.6458912037521771} 3s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'hard0', 'ecod': 0.5531223713642747, 'iforest': 0.6486509899682392, 'S': 0.600886680666257} 2s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'hard_n2', 'ecod': 0.5277725325432432, 'iforest': 0.604113604164232, 'S': 0.5659430683537376} 2s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'hard2', 'ecod': 0.5596353492383401, 'iforest': 0.6329508948521528, 'S': 0.5962931220452465} 2s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'hard5', 'ecod': 0.5584654797485957, 'iforest': 0.6161506781035248, 'S': 0.5873080789260603} 2s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'hard0_nocat', 'ecod': 0.5561279572229947, 'iforest': 0.6366423137403651, 'S': 0.5963851354816798} 2s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'hard_top50', 'ecod': 0.5798221071280376, 'iforest': 0.7150487670415687, 'S': 0.6474354370848032} 2s
+{'dataset': 'unsw', 'fold': 'atk1', 'family': 'atk', 'gen': 'hard_top70', 'ecod': 0.5615671060149616, 'iforest': 0.6089603582113617, 'S': 0.5852637321131617} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'dvs', 'ecod': 0.7058513063417359, 'iforest': 0.7700630528662019, 'S': 0.7379571796039689} 3s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'hard0', 'ecod': 0.7009202209525015, 'iforest': 0.7266844822742068, 'S': 0.7138023516133541} 2s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'hard_n2', 'ecod': 0.6981202707144195, 'iforest': 0.7181765657107747, 'S': 0.7081484182125971} 2s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'hard2', 'ecod': 0.6982953704776276, 'iforest': 0.7045661109938578, 'S': 0.7014307407357427} 2s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'hard5', 'ecod': 0.6947548591814656, 'iforest': 0.6807393499107937, 'S': 0.6877471045461296} 2s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'hard0_nocat', 'ecod': 0.6984723143753491, 'iforest': 0.7143866722766061, 'S': 0.7064294933259776} 2s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'hard_top50', 'ecod': 0.6334583470948589, 'iforest': 0.6576896948811654, 'S': 0.6455740209880121} 2s
+{'dataset': 'unsw', 'fold': 'atk0', 'family': 'atk', 'gen': 'hard_top70', 'ecod': 0.6802425761920012, 'iforest': 0.6933116354043561, 'S': 0.6867771057981786} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.26446128602044505, 'iforest': 0.26195854381290146, 'S': 0.2632099149166732} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'hard0', 'ecod': 0.23844182257406937, 'iforest': 0.20509403105745436, 'S': 0.22176792681576185} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'hard_n2', 'ecod': 0.23855636228086136, 'iforest': 0.20374091319817378, 'S': 0.22114863773951757} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'hard2', 'ecod': 0.24333724406547977, 'iforest': 0.2133066043065659, 'S': 0.22832192418602282} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'hard5', 'ecod': 0.26877865841936627, 'iforest': 0.2263010661830606, 'S': 0.24753986230121344} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'hard0_nocat', 'ecod': 0.2415086194774505, 'iforest': 0.21492154268154195, 'S': 0.22821508107949623} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'hard_top50', 'ecod': 0.2910042213045278, 'iforest': 0.2245804403783487, 'S': 0.25779233084143827} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'unsw', 'fold': 'sig_proto0', 'family': 'sig', 'gen': 'hard_top70', 'ecod': 0.28115082569769034, 'iforest': 0.2195567485876356, 'S': 0.250353787142663} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.4049972339369928, 'iforest': 0.5807134513835487, 'S': 0.49285534266027076} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'hard0', 'ecod': 0.34418045149330795, 'iforest': 0.30959648324400896, 'S': 0.32688846736865845} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'hard_n2', 'ecod': 0.32202111949574563, 'iforest': 0.29346618849008255, 'S': 0.3077436539929141} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'hard2', 'ecod': 0.3760726449237961, 'iforest': 0.30959898660795815, 'S': 0.3428358157658771} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'hard5', 'ecod': 0.380212767953301, 'iforest': 0.4283097695435596, 'S': 0.40426126874843027} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'hard0_nocat', 'ecod': 0.35516485617271576, 'iforest': 0.32514340046591444, 'S': 0.34015412831931513} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/pyod/models/ecod.py:23: RuntimeWarning: Precision loss occurred in moment calculation due to catastrophic cancellation. This occurs when the data are nearly identical. Results may be unreliable.
+  return np.nan_to_num(skew_sp(X, axis=axis))
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'hard_top50', 'ecod': 0.40256694073046156, 'iforest': 0.5739971761114405, 'S': 0.48828205842095107} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto1', 'family': 'sig', 'gen': 'hard_top70', 'ecod': 0.38544664440678394, 'iforest': 0.3250380315964176, 'S': 0.35524233800160077} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.5114742012183425, 'iforest': 0.6006841969572069, 'S': 0.5560791990877747} 3s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'hard0', 'ecod': 0.4929628232588422, 'iforest': 0.5505408224090432, 'S': 0.5217518228339427} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'hard_n2', 'ecod': 0.47072710960347713, 'iforest': 0.5152925692896785, 'S': 0.49300983944657784} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'hard2', 'ecod': 0.5027516357019477, 'iforest': 0.5636910016999428, 'S': 0.5332213187009452} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'hard5', 'ecod': 0.506314872400167, 'iforest': 0.5671217918652848, 'S': 0.5367183321327259} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'hard0_nocat', 'ecod': 0.4949014079648798, 'iforest': 0.5500454051302311, 'S': 0.5224734065475555} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'hard_top50', 'ecod': 0.5138689029978624, 'iforest': 0.5788966150069847, 'S': 0.5463827590024235} 2s
+{'dataset': 'unsw', 'fold': 'sig_proto2', 'family': 'sig', 'gen': 'hard_top70', 'ecod': 0.5057010471680615, 'iforest': 0.5752011915188385, 'S': 0.54045111934345} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.27217113880231414, 'iforest': 0.21185224683870682, 'S': 0.2420116928205105} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'hard0', 'ecod': 0.27534537138716797, 'iforest': 0.24520405585326946, 'S': 0.2602747136202187} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'hard_n2', 'ecod': 0.27435937652363684, 'iforest': 0.27723127774774015, 'S': 0.2757953271356885} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'hard2', 'ecod': 0.27617661949969113, 'iforest': 0.2565875877045833, 'S': 0.2663821036021372} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'hard5', 'ecod': 0.27144134197108344, 'iforest': 0.20658508662390349, 'S': 0.23901321429749345} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'hard0_nocat', 'ecod': 0.275186205266835, 'iforest': 0.26788725501577965, 'S': 0.2715367301413073} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'hard_top50', 'ecod': 0.2838357164607628, 'iforest': 0.22137956923699417, 'S': 0.2526076428488785} 2s
+{'dataset': 'unsw', 'fold': 'sig_service0', 'family': 'sig', 'gen': 'hard_top70', 'ecod': 0.2741804807719562, 'iforest': 0.23721033724469742, 'S': 0.2556954090083268} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.5394947519596954, 'iforest': 0.5761837052358902, 'S': 0.5578392285977929} 3s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'hard0', 'ecod': 0.46053974783833906, 'iforest': 0.42335542103407003, 'S': 0.4419475844362045} 2s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'hard_n2', 'ecod': 0.4300253221265042, 'iforest': 0.42286579947838066, 'S': 0.42644556080244245} 2s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'hard2', 'ecod': 0.48757581118849075, 'iforest': 0.4821765762986902, 'S': 0.4848761937435905} 2s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'hard5', 'ecod': 0.5037834949851693, 'iforest': 0.5147336361512814, 'S': 0.5092585655682254} 2s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'hard0_nocat', 'ecod': 0.4781960061890469, 'iforest': 0.46658151225447037, 'S': 0.4723887592217586} 2s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'hard_top50', 'ecod': 0.5101694296820906, 'iforest': 0.5249089575424868, 'S': 0.5175391936122886} 2s
+{'dataset': 'unsw', 'fold': 'sig_service1', 'family': 'sig', 'gen': 'hard_top70', 'ecod': 0.4836142483496234, 'iforest': 0.47434159404532245, 'S': 0.47897792119747296} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'dvs', 'ecod': 0.47264244351651363, 'iforest': 0.5427247217237788, 'S': 0.5076835826201462} 3s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'hard0', 'ecod': 0.4559844948820773, 'iforest': 0.5027134228888577, 'S': 0.47934895888546747} 2s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'hard_n2', 'ecod': 0.4363703479119731, 'iforest': 0.4565377325131142, 'S': 0.44645404021254365} 2s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'hard2', 'ecod': 0.4701131640920151, 'iforest': 0.5249423599842792, 'S': 0.49752776203814714} 2s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'hard5', 'ecod': 0.47765653504550654, 'iforest': 0.5367639792577427, 'S': 0.5072102571516246} 2s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'hard0_nocat', 'ecod': 0.456715945608403, 'iforest': 0.5069938616058915, 'S': 0.4818549036071473} 2s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'hard_top50', 'ecod': 0.4716144084890237, 'iforest': 0.5178168694632458, 'S': 0.49471563897613474} 2s
+{'dataset': 'unsw', 'fold': 'sig_service2', 'family': 'sig', 'gen': 'hard_top70', 'ecod': 0.4766900045598921, 'iforest': 0.5409934629779861, 'S': 0.508841733768939} 2s
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'dvs', 'ecod': 0.42356649191385115, 'iforest': 0.3501781751236424, 'S': 0.3868723335187468} 3s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'hard0', 'ecod': 0.41310546009699184, 'iforest': 0.33270050033502635, 'S': 0.3729029802160091} 2s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'hard_n2', 'ecod': 0.40033568011056186, 'iforest': 0.29773853233524417, 'S': 0.349037106222903} 2s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'hard2', 'ecod': 0.42374282649611106, 'iforest': 0.3612304068041627, 'S': 0.39248661665013684} 2s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'hard5', 'ecod': 0.4329804922908085, 'iforest': 0.39162498009221874, 'S': 0.4123027361915136} 2s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'hard0_nocat', 'ecod': 0.41248580431683657, 'iforest': 0.3196457626693144, 'S': 0.3660657834930755} 2s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'hard_top50', 'ecod': 0.4309249431893054, 'iforest': 0.4305844172557154, 'S': 0.4307546802225104} 2s
+{'dataset': 'unsw', 'fold': 'tail', 'family': 'tail', 'gen': 'hard_top70', 'ecod': 0.433705600513331, 'iforest': 0.38102543383472093, 'S': 0.40736551717402597} 2s
+             mean_S  worst_S     atk     sig     std    tail      LB
+gen                                                                 
+dvs          0.5109   0.2420  0.6776  0.4366  0.5808  0.3869  0.5331
+hard0        0.4580   0.2218  0.6199  0.3753  0.5534  0.3729     NaN
+hard0_nocat  0.4639   0.2282  0.6206  0.3861  0.5584  0.3661     NaN
+hard2        0.4695   0.2283  0.6180  0.3922  0.5643  0.3925     NaN
+hard5        0.4840   0.2390  0.6353  0.4073  0.5613  0.4123     NaN
+hard_n2      0.4421   0.2211  0.6061  0.3618  0.5255  0.3490     NaN
+hard_top50   0.5023   0.2526  0.6587  0.4262  0.5611  0.4308     NaN
+hard_top70   0.4791   0.2504  0.6348  0.3983  0.5690  0.4074     NaN
+Spearman vs LB: {'mean_S': nan, 'worst_S': nan, 'std': nan, 'atk': nan, 'sig': nan, 'tail': nan}
