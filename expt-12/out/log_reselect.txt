@@ -1,0 +1,40 @@
+std base 0.5884 | old 2 constants +0.0103  [54s]
+atk2 base 0.6805 | old 2 constants +0.0050  [112s]
+atk1 base 0.6835 | old 2 constants +0.0022  [169s]
+atk0 base 0.6805 | old 2 constants +0.0140  [225s]
+sig_proto0 base 0.2932 | old 2 constants +0.0368  [286s]
+sig_proto1 base 0.4919 | old 2 constants +0.0030  [343s]
+sig_proto2 base 0.5771 | old 2 constants +0.0289  [397s]
+sig_service0 base 0.2463 | old 2 constants +0.0030  [465s]
+sig_service1 base 0.5580 | old 2 constants +0.0215  [520s]
+sig_service2 base 0.4998 | old 2 constants +0.0313  [577s]
+tail base 0.3790 | old 2 constants +0.0340  [634s]
+combo1 base 0.5831 | old 2 constants +0.0140  [688s]
+combo2 base 0.5868 | old 2 constants +0.0113  [743s]
+combo3 base 0.5748 | old 2 constants +0.0112  [797s]
+
+selection on the weighted base (same rule/params as pipeline7): ['sinpkt', 'sjit']
+selection with thr=0 (looser): ['sinpkt', 'sjit']
+old selection (unweighted base): ['sinpkt', 'sjit']
+
+columns with the largest mean gain from being constant (weighted base):
+ feat
+sinpkt              0.0091
+sjit                0.0068
+proto               0.0062
+dur                 0.0026
+djit                0.0022
+dinpkt              0.0017
+trans_depth         0.0016
+ct_flw_http_mthd    0.0013
+state               0.0013
+dwin                0.0009
+
+held-out effect (change in S vs no constants), mean over folds:  old pair +0.0162 | reselected +0.0153 ; worst: old +0.0022 reselected +0.0011 ; folds improved: old 14 reselected 14 / 14
+        old_pair  reselected
+family                      
+atk       0.0071      0.0028
+combo     0.0122      0.0122
+sig       0.0208      0.0208
+std       0.0103      0.0103
+tail      0.0340      0.0340

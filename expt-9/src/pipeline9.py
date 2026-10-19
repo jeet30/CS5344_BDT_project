@@ -18,7 +18,9 @@ def widen_gated2(s, df, nums, widen, min_auc, min_agree, seed=42):
         s[c] = v
     return s, touched
 
-def run(name, widen, scale=1.0, nodup=True, pool=2, min_auc=0.58, min_agree=0.75, tag=""):
+CAPS = {"ct_dst_ltm": 100, "ct_src_ltm": 100, "dmean": 1500}   # ct_* count the last 100 connections; dmean <= MTU
+
+def run(name, widen, scale=1.0, nodup=True, pool=2, min_auc=0.58, min_agree=0.75, tag="", cap=False):
     cfg = p7.GEN[name]; df, cats, nums = h.load(name); normals = df[df.is_anomaly == 0]
     T = p6.loo_table(name, cfg, p7.R7 + f"loo_const_{name}_pipeline.csv"); M = T[T.feat != "_base"].pivot(index="feat", columns="fold", values="d")
     sel = p7.select_v2(M, nums + cats, normals, **p7.SHARED); n = cfg["n"]
@@ -28,6 +30,8 @@ def run(name, widen, scale=1.0, nodup=True, pool=2, min_auc=0.58, min_agree=0.75
         k = s[cats].astype(str).agg("|".join, axis=1).map(idx).fillna(len(W["theta"])).astype(int).to_numpy(); w = np.exp(scale * th[k]); w /= w.sum()
         s = s.iloc[np.random.default_rng(42).choice(len(s), size=n, replace=not nodup, p=w)].reset_index(drop=True)
     s, touched = widen_gated2(s, df, nums, widen, min_auc, min_agree)
+    if cap:
+        for c, m in CAPS.items(): s[c] = np.minimum(s[c], m)
     if cfg["constraints"] == "unsw":
         from constraints import enforce_unsw_constraints; s = enforce_unsw_constraints(s)
     for c in sel: s[c] = p6.neutral_value(s, c, cats)

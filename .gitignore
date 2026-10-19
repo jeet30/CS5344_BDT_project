@@ -18,3 +18,8 @@ cs-5344-data-augmentation-for-anomaly-detection-*.zip
 # local_proxy_results.csv) are kept and tracked.
 eda_outputs/*_scrubbed_normal.csv
 submissions/submission_*.csv
+
+# Expt 8-13 / final pipeline: large candidate submission CSVs and regenerable outputs (the two scored finals live in final_pipeline/scored/)
+final_pipeline/out/
+expt-[89]/submissions/*.csv
+expt-1[0-3]/submissions/*.csv

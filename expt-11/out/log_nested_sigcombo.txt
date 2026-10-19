@@ -1,0 +1,33 @@
+levels: {'proto': ['tcp', 'udp', 'arp', 'ospf'], 'service': ['-', 'dns', 'http', 'ftp-data', 'smtp', 'ftp', 'ssh', 'radius'], 'state': ['FIN', 'CON', 'INT', 'REQ', 'RST']}
+warm start beta: {'proto=tcp': np.float64(-0.65), 'proto=udp': np.float64(0.01), 'proto=arp': np.float64(-0.85), 'proto=ospf': np.float64(0.88), 'service=-': np.float64(0.61), 'service=dns': np.float64(-1.81), 'service=http': np.float64(0.02), 'service=ftp-data': np.float64(0.54), 'service=smtp': np.float64(0.78), 'service=ftp': np.float64(-1.56), 'service=ssh': np.float64(0.81), 'service=radius': np.float64(0.0), 'state=FIN': np.float64(-0.42), 'state=CON': np.float64(0.53), 'state=INT': np.float64(-0.29), 'state=REQ': np.float64(-0.43), 'state=RST': np.float64(0.0)}
+  start 0.6079
+  gen 0 best 0.6194
+  gen 1 best 0.6194
+  gen 2 best 0.6194
+  gen 3 best 0.6240
+  gen 4 best 0.6240
+  gen 5 best 0.6240
+  gen 6 best 0.6240
+  gen 7 best 0.6240
+  gen 8 best 0.6240
+  gen 9 best 0.6240
+  gen 10 best 0.6241
+  gen 11 best 0.6241
+  gen 12 best 0.6241
+  gen 13 best 0.6241
+  gen 14 best 0.6241
+  gen 15 best 0.6241
+  gen 16 best 0.6255
+  gen 17 best 0.6255
+
+held-out ['sig', 'combo']: mean delta -0.0007 worst -0.0184 improved 5/9 [4137s]
+         fold family  baseline_x3  refit   delta
+  sig_proto0    sig       0.3258 0.3200 -0.0059
+  sig_proto1    sig       0.4925 0.4972  0.0048
+  sig_proto2    sig       0.5901 0.5911  0.0011
+sig_service0    sig       0.2501 0.2570  0.0069
+sig_service1    sig       0.5658 0.5616 -0.0042
+sig_service2    sig       0.5297 0.5274 -0.0023
+      combo1  combo       0.6083 0.5900 -0.0184
+      combo2  combo       0.5954 0.6015  0.0061
+      combo3  combo       0.5962 0.6020  0.0058
