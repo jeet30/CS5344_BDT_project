@@ -8,8 +8,8 @@ from config import ROOT
 HERE = Path(__file__).resolve().parent
 
 REFERENCE = {   # dataset -> (scored file, public score)
-    "unsw": (HERE / "scored/unsw_uniform__0.57698.csv", 0.57698),
-    "nslkdd": (HERE / "scored/nsl_hybrid_unif4__0.93331.csv", 0.93331),
+    "unsw": (HERE / "scored/unsw_sel4_dupjit__0.60905.csv", 0.60905),
+    "nslkdd": (HERE / "scored/nsl_hybrid_unif6__0.93674.csv", 0.93674),
 }
 
 if __name__ == "__main__":

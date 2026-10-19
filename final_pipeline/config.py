@@ -65,3 +65,9 @@ CONFIG["nslkdd_unif6_db"] = {**CONFIG["nslkdd_unif6"], "neutralize": {**CONFIG["
 
 # EXPERIMENT (not default): sel4_dupjit (LB 0.60905) + a THIRD selection round (expt-16/round3.py) which adds trans_depth. Harness held-out +0.0064 (12/14 folds). Untested.
 CONFIG["unsw_sel5_dupjit"] = {**CONFIG["unsw_sel4_dupjit"], "neutralize": {**CONFIG["unsw_sel4_dupjit"]["neutralize"], "extra_columns": ["ct_dst_ltm", "trans_depth"]}}
+
+# ---- DEFAULTS PROMOTED (2026-10-20), each confirmed on the public leaderboard --------------------------------------------------------------
+CONFIG["unsw_prev_0.57698"] = CONFIG["unsw"]          # previous default (uniform fill of sinpkt, sjit only)
+CONFIG["nslkdd_prev_0.93331"] = CONFIG["nslkdd"]      # previous default (4 uniform-filled columns)
+CONFIG["unsw"] = CONFIG["unsw_sel4_dupjit"]           # 0.60905: selection round 1+2 with uniform fill (sinpkt, sjit, ct_dst_src_ltm, ct_dst_ltm) + jitter of repeated rows
+CONFIG["nslkdd"] = CONFIG["nslkdd_unif6"]             # 0.93674: hybrid + uniform fill of 6 columns (lift <= 0.10, minus dst_host_srv_diff_host_rate which hurt)
