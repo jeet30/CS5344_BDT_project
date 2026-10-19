@@ -1,1 +1,40 @@
 std base 0.5884 | old pair (uniform) +0.0182 [67s]
+atk2 base 0.6805 | old pair (uniform) -0.0140 [127s]
+atk1 base 0.6835 | old pair (uniform) +0.0171 [185s]
+atk0 base 0.6805 | old pair (uniform) +0.0299 [243s]
+sig_proto0 base 0.2932 | old pair (uniform) +0.0448 [306s]
+sig_proto1 base 0.4919 | old pair (uniform) +0.0023 [364s]
+sig_proto2 base 0.5771 | old pair (uniform) +0.0217 [421s]
+sig_service0 base 0.2463 | old pair (uniform) +0.0090 [489s]
+sig_service1 base 0.5580 | old pair (uniform) +0.0164 [544s]
+sig_service2 base 0.4998 | old pair (uniform) +0.0414 [603s]
+tail base 0.3790 | old pair (uniform) +0.0296 [661s]
+combo1 base 0.5831 | old pair (uniform) +0.0131 [2951s]
+combo2 base 0.5868 | old pair (uniform) +0.0142 [3008s]
+combo3 base 0.5748 | old pair (uniform) +0.0123 [3074s]
+
+selection with uniform fill (pipeline rule): ['sinpkt', 'sjit', 'ct_dst_src_ltm']
+looser thr=0: ['sinpkt', 'sjit', 'stcpb', 'ct_dst_ltm', 'ct_dst_src_ltm']
+columns with the largest mean gain from uniform fill:
+ feat
+sinpkt            0.0103
+sjit              0.0091
+proto             0.0062
+ct_dst_src_ltm    0.0058
+dur               0.0037
+ct_dst_ltm        0.0029
+dtcpb             0.0021
+ct_srv_dst        0.0018
+ct_srv_src        0.0018
+trans_depth       0.0017
+stcpb             0.0015
+state             0.0013
+
+held-out (select from other folds): mean change vs untouched: old pair +0.0183 | reselected +0.0279 ; worst -0.0140 | -0.0024 ; improved 13 | 13 of 14
+        old_pair  reselected
+family                      
+atk       0.0110      0.0220
+combo     0.0132      0.0284
+sig       0.0226      0.0318
+std       0.0182      0.0318
+tail      0.0296      0.0172

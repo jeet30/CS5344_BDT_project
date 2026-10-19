@@ -41,3 +41,6 @@ CONFIG = {
 
 # EXPERIMENT (not default): relax the single-feature lift cutoff to 0.04 -> also fills dst_host_srv_diff_host_rate (lift 0.036). Leaderboard-untested.
 CONFIG["nslkdd_lift04"] = {**CONFIG["nslkdd"], "neutralize": {**CONFIG["nslkdd"]["neutralize"], "lift_max": 0.04}}
+
+# EXPERIMENT (not default): UNSW column selection re-run with UNIFORM fill (expt-13) -> sinpkt, sjit, ct_dst_src_ltm. Harness held-out gain +0.0279 vs +0.0183; leaderboard-untested.
+CONFIG["unsw_sel3"] = {**CONFIG["unsw"], "neutralize": {**CONFIG["unsw"]["neutralize"], "table": ART / "loo_uniform_unsw.csv"}}

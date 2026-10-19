@@ -50,6 +50,15 @@ NSL-KDD:
 | 11 constant columns incl. `service`, `logged_in` | 0.91799 (the guard now prevents this) |
 | teammate's itemset-copula hybrid alone | 0.93092 |
 
+## Leaderboard-untested experimental configs (not the defaults)
+
+| Config | Change vs the scored default | Evidence so far |
+|---|---|---|
+| `unsw_sel3` | also fills `ct_dst_src_ltm` (uniform) - selection re-run with uniform fill, `artifacts/loo_uniform_unsw.csv` | harness, held-out folds: +0.0279 vs +0.0183, worst fold -0.0024 vs -0.0140, attack folds +0.0220 vs +0.0110 |
+| `nslkdd_lift04` | lift cutoff 0.04: also fills `dst_host_srv_diff_host_rate` (lift 0.036) | single-feature ECOD only (the NSL-KDD harness is unreliable) |
+
+Run with `python final_pipeline/pipeline.py unsw_sel3` / `nslkdd_lift04`. Promote to the default (and re-point `verify.py` and `scored/`) only after a leaderboard confirmation.
+
 ## Honest limitations
 
 * **Different selectors per dataset.** UNSW picks constants with the leave-one-fold-out harness; NSL-KDD cannot use that harness (it
