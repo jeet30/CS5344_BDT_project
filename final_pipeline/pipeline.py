@@ -62,6 +62,17 @@ def apply_weights(s, cats, cfg):
     return s.iloc[np.random.default_rng(cfg["seed"]).choice(len(s), size=len(s), p=w)].reset_index(drop=True)
 
 
+# ----------------------------------------------------------------------------- stage 2b (optional)
+def jitter_duplicates(s, df, cfg):
+    """tiny Gaussian jitter on the REPEATED rows only (repeats come from the with-replacement weighting); continuous columns, never below the observed minimum."""
+    jc = cfg.get("jitter")
+    if not jc: return s
+    nm = df[df[LABEL] == 0]; cont = [c for c in nm.columns if c != LABEL and pd.api.types.is_numeric_dtype(nm[c]) and nm[c].nunique() > 100 and not np.allclose(nm[c], np.rint(nm[c]))]
+    mask = s.duplicated(keep="first").to_numpy() if jc.get("duplicates_only", True) else np.ones(len(s), bool); rng = np.random.default_rng(jc.get("seed", cfg["seed"])); s = s.copy()
+    for c in cont: s.loc[mask, c] = np.maximum(s.loc[mask, c].to_numpy() + rng.normal(0, jc["sigma"] * nm[c].std(), int(mask.sum())), nm[c].min())
+    return s
+
+
 # ----------------------------------------------------------------------------- stage 3
 def feature_direction(df, nums, K, min_auc, min_agree, seed, max_norm=6000):
     """{col: +1 (attacks consistently higher) | -1 (consistently lower)} when the direction agrees across attack clusters."""
@@ -153,6 +164,7 @@ def neutralize(s, df, cats, nums, cfg):
     nc = cfg["neutralize"]
     if nc is None or nc.get("selector") is None: return s, []
     sel = {"loo_table": select_loo_table, "single_feature_ecod": select_single_feature}[nc["selector"]](df, cats, nums, nc)
+    sel = sel + [c for c in nc.get("extra_columns", []) if c not in sel]          # later selection rounds (appended last so earlier uniform draws are unchanged)
     return fill_columns(s, df, cats, sel, nc.get("fill", "constant"), cfg["seed"]), sel
 
 
@@ -161,6 +173,7 @@ def run(name, out=None, verbose=True):
     cfg = CONFIG[name]; df, cats, nums = load(cfg)
     s = generate(df, cats, nums, cfg)
     s = apply_weights(s, cats, cfg)
+    s = jitter_duplicates(s, df, cfg)
     s, stretched = stretch_tails(s, df, nums, cfg)
     s = apply_constraints(s, cfg)
     s, const = neutralize(s, df, cats, nums, cfg)

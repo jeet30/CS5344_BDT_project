@@ -1,0 +1,36 @@
+                        col  oob_R2  zero_share  n_unique  pct_rank
+                     urgent  -0.064       1.000         2     0.029
+                       land   0.066       1.000         2     0.057
+                 num_shells   0.082       0.999         2     0.086
+          num_failed_logins   0.094       0.999         3     0.114
+         num_file_creations   0.128       0.997        10     0.143
+                 root_shell   0.314       0.998         2     0.171
+           num_access_files   0.415       0.995         3     0.200
+   dst_host_srv_serror_rate   0.419       0.917        59     0.229
+               su_attempted   0.461       0.999         3     0.257
+            num_compromised   0.527       0.996        12     0.286
+                   num_root   0.552       0.991        11     0.314
+       dst_host_serror_rate   0.610       0.907        84     0.343
+                   duration   0.696       0.884       309     0.371
+                        hot   0.752       0.982        17     0.400
+                  src_bytes   0.753       0.056      1220     0.429
+                  dst_bytes   0.785       0.163      2814     0.457
+       dst_host_rerror_rate   0.791       0.890        90     0.486
+   dst_host_srv_rerror_rate   0.809       0.906        84     0.514
+            srv_serror_rate   0.831       0.962        33     0.543
+dst_host_srv_diff_host_rate   0.848       0.501        52     0.571
+         srv_diff_host_rate   0.901       0.630        51     0.600
+                serror_rate   0.911       0.964        25     0.629
+                  logged_in   0.919       0.293         2     0.657
+         dst_host_srv_count   0.919       0.000       256     0.686
+            srv_rerror_rate   0.926       0.943        37     0.714
+                      count   0.933       0.000       323     0.743
+              diff_srv_rate   0.937       0.931        47     0.771
+dst_host_same_src_port_rate   0.969       0.333       101     0.800
+                rerror_rate   0.973       0.948        30     0.829
+             dst_host_count   0.974       0.000       256     0.857
+             is_guest_login   0.983       0.988         2     0.886
+                  srv_count   0.986       0.000       323     0.914
+     dst_host_diff_srv_rate   0.990       0.607        93     0.943
+              same_srv_rate   0.992       0.000        44     0.971
+     dst_host_same_srv_rate   0.996       0.015       101     1.000

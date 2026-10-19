@@ -1,0 +1,35 @@
+std base 0.6171
+atk2 base 0.6743
+atk1 base 0.7138
+atk0 base 0.7207
+sig_proto0 base 0.3527
+sig_proto1 base 0.5021
+sig_proto2 base 0.6134
+sig_service0 base 0.2831
+sig_service1 base 0.5965
+sig_service2 base 0.5665
+tail base 0.4257
+combo1 base 0.6157
+combo2 base 0.6217
+combo3 base 0.6140
+
+round-2 selection (pipeline rule): ['ct_dst_ltm']
+looser thr=0: ['dload', 'smean', 'ct_dst_ltm']
+largest mean gains:
+ feat
+proto                0.0053
+ct_flw_http_mthd     0.0051
+trans_depth          0.0049
+ct_dst_ltm           0.0047
+response_body_len    0.0046
+ct_src_dport_ltm     0.0035
+ct_srv_src           0.0035
+ct_srv_dst           0.0033
+
+held-out gain of extra columns chosen from other folds: mean +0.0037 worst -0.0060 improved 11/14 | avg extra columns 1.1
+family
+atk      0.0043
+combo    0.0067
+sig      0.0019
+std      0.0049
+tail     0.0032

@@ -57,6 +57,12 @@ NSL-KDD:
 | `unsw_sel3` | also fills `ct_dst_src_ltm` (uniform) - selection re-run with uniform fill, `artifacts/loo_uniform_unsw.csv` | harness, held-out folds: +0.0279 vs +0.0183, worst fold -0.0024 vs -0.0140, attack folds +0.0220 vs +0.0110 |
 | `nslkdd_lift04` | lift cutoff 0.04: also fills `dst_host_srv_diff_host_rate` (lift 0.036) | single-feature ECOD only (the NSL-KDD harness is unreliable) |
 
+| `unsw_dupjit` | jitter of the repeated rows, 0.10 x std on 11 continuous columns | **LB 0.58806** vs scored 0.57698 (harness had said +0.0057) |
+| `unsw_sel3` | (above) | **LB 0.59066** vs scored 0.57698 (harness had said +0.0096) |
+| `unsw_sel3_dupjit` | both together | untested; expected to combine (they touch different columns) |
+| `unsw_sel4_dupjit` | both + a second selection round adds `ct_dst_ltm` | harness +0.0037 on held-out folds; untested |
+| `nslkdd_lift10` | lift cutoff 0.10 -> 7 uniform-filled columns | single-feature ECOD only; untested |
+
 Run with `python final_pipeline/pipeline.py unsw_sel3` / `nslkdd_lift04`. Promote to the default (and re-point `verify.py` and `scored/`) only after a leaderboard confirmation.
 
 ## Honest limitations

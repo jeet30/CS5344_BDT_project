@@ -44,3 +44,15 @@ CONFIG["nslkdd_lift04"] = {**CONFIG["nslkdd"], "neutralize": {**CONFIG["nslkdd"]
 
 # EXPERIMENT (not default): UNSW column selection re-run with UNIFORM fill (expt-13) -> sinpkt, sjit, ct_dst_src_ltm. Harness held-out gain +0.0279 vs +0.0183; leaderboard-untested.
 CONFIG["unsw_sel3"] = {**CONFIG["unsw"], "neutralize": {**CONFIG["unsw"]["neutralize"], "table": ART / "loo_uniform_unsw.csv"}}
+
+# EXPERIMENT (not default): jitter the repeated rows (sigma = 0.10 x column std, 11 continuous columns). Harness: +0.0057 mean, 9/14 folds improved; leaderboard-untested.
+CONFIG["unsw_dupjit"] = {**CONFIG["unsw"], "jitter": dict(sigma=0.10, duplicates_only=True)}
+
+# EXPERIMENT (not default): both leaderboard-confirmed improvements together (unsw_sel3 0.59066, unsw_dupjit 0.58806, each vs scored 0.57698). Combined: untested.
+CONFIG["unsw_sel3_dupjit"] = {**CONFIG["unsw_sel3"], "jitter": dict(sigma=0.10, duplicates_only=True)}
+
+# EXPERIMENT (not default): lift cutoff 0.10 -> 7 uniform-filled columns (adds dst_host_same_src_port_rate, dst_host_rerror_rate to the 0.04 set). Leaderboard-untested.
+CONFIG["nslkdd_lift10"] = {**CONFIG["nslkdd"], "neutralize": {**CONFIG["nslkdd"]["neutralize"], "lift_max": 0.10}}
+
+# EXPERIMENT (not default): sel3 + dup-jitter + a SECOND selection round (expt-16, uniform fill on top of the sel3 set) which adds ct_dst_ltm. Harness held-out +0.0037; untested.
+CONFIG["unsw_sel4_dupjit"] = {**CONFIG["unsw_sel3_dupjit"], "neutralize": {**CONFIG["unsw_sel3_dupjit"]["neutralize"], "extra_columns": ["ct_dst_ltm"]}}

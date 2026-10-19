@@ -1,0 +1,33 @@
+continuous columns jittered: 11
+std dup share 0.52 | {'dupjit_002': -0.0008, 'dupjit_010': -0.0027, 'jitall_005': -0.0059, 'blend10': -0.0076, 'blend25': -0.0123}
+atk2 dup share 0.53 | {'dupjit_002': 0.0037, 'dupjit_010': -0.0051, 'jitall_005': -0.0045, 'blend10': 0.0014, 'blend25': -0.0083}
+atk1 dup share 0.53 | {'dupjit_002': -0.0014, 'dupjit_010': -0.0027, 'jitall_005': -0.0055, 'blend10': -0.0015, 'blend25': -0.0143}
+atk0 dup share 0.53 | {'dupjit_002': 0.0163, 'dupjit_010': 0.0222, 'jitall_005': 0.0236, 'blend10': 0.011, 'blend25': 0.0319}
+sig_proto0 dup share 0.59 | {'dupjit_002': -0.016, 'dupjit_010': -0.0009, 'jitall_005': 0.0277, 'blend10': -0.0065, 'blend25': -0.0253}
+sig_proto1 dup share 0.38 | {'dupjit_002': -0.0039, 'dupjit_010': -0.0063, 'jitall_005': -0.0114, 'blend10': -0.0039, 'blend25': -0.0062}
+sig_proto2 dup share 0.53 | {'dupjit_002': 0.0052, 'dupjit_010': 0.0022, 'jitall_005': -0.0029, 'blend10': -0.0011, 'blend25': -0.0097}
+sig_service0 dup share 0.42 | {'dupjit_002': 0.026, 'dupjit_010': 0.0337, 'jitall_005': 0.0271, 'blend10': 0.0203, 'blend25': 0.0083}
+sig_service1 dup share 0.53 | {'dupjit_002': -0.0001, 'dupjit_010': 0.0087, 'jitall_005': -0.0066, 'blend10': 0.0085, 'blend25': -0.009}
+sig_service2 dup share 0.50 | {'dupjit_002': 0.015, 'dupjit_010': 0.0104, 'jitall_005': 0.0125, 'blend10': 0.0057, 'blend25': 0.0048}
+tail dup share 0.54 | {'dupjit_002': 0.0028, 'dupjit_010': 0.0065, 'jitall_005': -0.0081, 'blend10': -0.0028, 'blend25': -0.0068}
+combo1 dup share 0.53 | {'dupjit_002': 0.0067, 'dupjit_010': 0.0016, 'jitall_005': 0.0039, 'blend10': 0.0015, 'blend25': -0.0053}
+combo2 dup share 0.53 | {'dupjit_002': -0.0, 'dupjit_010': 0.0051, 'jitall_005': -0.0056, 'blend10': -0.002, 'blend25': -0.0034}
+combo3 dup share 0.53 | {'dupjit_002': 0.0055, 'dupjit_010': 0.0071, 'jitall_005': 0.0036, 'blend10': 0.0059, 'blend25': -0.005}
+
+change in S vs current post-processing (mean / worst fold / folds improved of 14):
+              mean   worst  improved
+variant                             
+blend10     0.0021 -0.0076         7
+blend25    -0.0043 -0.0253         3
+dupjit_002  0.0042 -0.0160         8
+dupjit_010  0.0057 -0.0063         9
+jitall_005  0.0034 -0.0114         6
+
+by family:
+         blend10  blend25  dupjit_002  dupjit_010  jitall_005
+family                                                      
+atk      0.0037   0.0031      0.0062      0.0048      0.0045
+combo    0.0018  -0.0046      0.0040      0.0046      0.0006
+sig      0.0038  -0.0062      0.0043      0.0080      0.0077
+std     -0.0076  -0.0123     -0.0008     -0.0027     -0.0059
+tail    -0.0028  -0.0068      0.0028      0.0065     -0.0081
