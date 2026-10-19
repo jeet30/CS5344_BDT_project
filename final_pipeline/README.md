@@ -1,12 +1,12 @@
 # Common pipeline for NSL-KDD and UNSW-NB15
 
 One code path (`pipeline.py`), one parameter block per dataset (`config.py`). A stage is switched off by its parameter
-(weights `scale=0`, stretch `factor=1.0`, `constraints=None`), never by separate code.
+(weights `scale=0`, stretch `factor=1.0`, `constraints=None`, `jitter` absent), never by separate code.
 
 ```
-python final_pipeline/pipeline.py unsw      # -> final_pipeline/out/final_unsw.csv   (70,000 rows)
-python final_pipeline/pipeline.py nslkdd    # -> final_pipeline/out/final_nslkdd.csv (40,000 rows)
-python final_pipeline/verify.py             # regenerates both and checks them against the scored files
+python final_pipeline/pipeline.py unsw      # -> final_pipeline/out/final_unsw.csv   (70,000 rows)  public score 0.60905
+python final_pipeline/pipeline.py nslkdd    # -> final_pipeline/out/final_nslkdd.csv (40,000 rows)  public score 0.93674
+python final_pipeline/verify.py             # regenerates both and checks them against the scored files in scored/
 ```
 `verify.py` compares numeric cells with a 1e-9 relative tolerance: the copula's linear algebra is not bit-reproducible (differences of ~1e-23 in a few cells of the NSL-KDD hybrid).
 Needs `train_unsw.csv` / `train_nslkdd.csv` in the repo root, plus pandas, numpy, scipy, scikit-learn, pyod. Seeds are fixed (42).
@@ -15,73 +15,72 @@ Needs `train_unsw.csv` / `train_nslkdd.csv` in the repo root, plus pandas, numpy
 
 | # | Stage | UNSW-NB15 | NSL-KDD |
 |---|---|---|---|
-| 1 | generate | `dvs_copula`: contrastive reweighting of normals, protocol-conditioned Gaussian copula, dispersion on low-utility columns, 5 bags | `itemset_copula_hybrid` (teammate Vadiraj Rao, vendored): all 19,600 scrubbed real normals + itemset-cluster copula rows with tail slack 1.05 |
+| 1 | generate | `dvs_copula`: contrastive reweighting of normals, protocol-conditioned Gaussian copula, dispersion on low-utility columns, 5 bags | `itemset_copula_hybrid` (teammate Vadiraj Rao, vendored in `vendor/generators/`): 19,600 scrubbed real normals + itemset-cluster copula rows, tail slack 1.05 |
 | 2 | category weights | cell weights from `artifacts/weights_theta_unsw.json`, scale 3, sampled with replacement | off |
+| 2b | jitter repeated rows | 0.10 x std on 11 continuous columns, only on repeated rows | off (the hybrid has no repeated rows) |
 | 3 | gated tail stretch | 10x on the opposite tail of columns whose attack direction agrees across attack clusters (never below the observed minimum) | off |
 | 4 | physical constraints | `vendor/constraints.py` (`tcprtt = synack + ackdat`, TTL, protocol zeroing) | NSL-KDD rules (`vendor/constraints.py`) |
-| 5 | neutralise columns (`fill`: constant or uniform) | stability-gated leave-one-fold-out table (`artifacts/loo_const_unsw.csv`) -> `sinpkt`, `sjit`, filled with uniform draws | single-feature ECOD lift <= 0.01 on non-sparse columns -> `srv_count`, `srv_diff_host_rate`, `duration`, `dst_host_count`, each filled with an independent uniform draw on the normals' [q01, q99] |
+| 5 | neutralise columns by **uniform fill** (independent uniform draw on the normals' [q01, q99]) | stability-gated leave-one-fold-out tables (`artifacts/loo_*_unsw.csv`) -> `sinpkt`, `sjit`, `ct_dst_src_ltm`, plus `ct_dst_ltm` from a second selection round | single-feature ECOD lift <= 0.10 on non-sparse columns, minus `dst_host_srv_diff_host_rate` (hurt in a leaderboard test) -> `srv_count`, `srv_diff_host_rate`, `duration`, `dst_host_count`, `dst_host_same_src_port_rate`, `dst_host_rerror_rate` |
 | 6 | hard bounds | `ct_dst_ltm`, `ct_src_ltm` <= 100 (they count the last 100 connections), `dmean` <= 1500 (MTU) | none |
 
-## Evidence for each setting (public leaderboard)
+## Evidence (public leaderboard = validation split)
 
-UNSW-NB15, each row one change on the previous best:
+UNSW-NB15, each row one change (the first rows are from the earlier experiments):
 
 | Step | Score |
 |---|---|
-| DVS copula, as first submitted (expt-4) | 0.53263 |
+| DVS copula as first submitted (expt-4) | 0.53263 |
 | + stability-gated constants (`sinpkt`, `sjit`) | 0.54803 |
-| + gated tail stretch 1.5x / 3x / 6x | 0.54861 / 0.54991 / 0.55048 |
-| + category weights x1 / x2 / x3 / x4 (6x stretch) | 0.55468 / 0.56254 / **0.56940** / 0.56106 |
-| stretch 8x (uncapped) | 0.57037 |
-| stretch 10x with physical bounds, `sinpkt`/`sjit` constant | 0.57067 |
-| **same, `sinpkt`/`sjit` filled uniform instead of constant (this pipeline)** | **0.57698** |
-| same without duplicates (16x pool, no replacement) | 0.56630 (worse; kept with replacement) |
+| + category weights x1 / x2 / **x3** / x4 (6x stretch) | 0.55468 / 0.56254 / **0.56940** / 0.56106 |
+| + stretch 10x with physical bounds | 0.57067 |
+| + uniform instead of constant fill | 0.57698 |
+| + `ct_dst_src_ltm` (selection re-run with uniform fill) | 0.59066 |
+| jitter of repeated rows instead (alone, vs 0.57698) | 0.58806 |
+| selection round 1 + jitter | 0.60782 |
+| **+ `ct_dst_ltm` (selection round 2) = default** | **0.60905** |
+| no duplicates (16x pool, no replacement) | 0.56630 (worse; sampling with replacement kept) |
 
 NSL-KDD:
 
 | File | Score |
 |---|---|
 | bootstrap of real normals | 0.92919 |
-| bootstrap + `srv_count`, `srv_diff_host_rate` constant | 0.93006 |
-| bootstrap + those 2 plus `duration`, `dst_host_count` constant | 0.92895 |
-| bootstrap + the same 4 columns uniform | 0.93094 |
-| **teammate's hybrid + the same 4 columns uniform (this pipeline)** | **0.93331** |
-| category weights kappa -0.5 / +0.5 | 0.92901 / 0.92197 (weights off) |
-| 11 constant columns incl. `service`, `logged_in` | 0.91799 (the guard now prevents this) |
-| teammate's itemset-copula hybrid alone | 0.93092 |
+| bootstrap + `srv_count`, `srv_diff_host_rate` constant / + `duration`, `dst_host_count` constant | 0.93006 / 0.92895 |
+| bootstrap + those 4 columns uniform | 0.93094 |
+| teammate's hybrid alone | 0.93092 |
+| hybrid + 4 uniform columns | 0.93331 |
+| + `dst_host_srv_diff_host_rate` (5 columns) | 0.93192 (that column hurts) |
+| + `dst_host_same_src_port_rate`, `dst_host_rerror_rate` (7 columns) | 0.93512 |
+| **7 columns minus the harmful one (6 columns) = default** | **0.93674** |
+| 6 columns + `dst_bytes` | 0.93643 (no gain) |
+| category weights kappa -0.5 / +0.5 | 0.92901 / 0.92197 (off) |
+| 11 constant columns incl. `service`, `logged_in` | 0.91799 (the sparse-column guard prevents this) |
 
-## Leaderboard-untested experimental configs (not the defaults)
+## Other configs
 
-| Config | Change vs the scored default | Evidence so far |
+| Config | Change | Status |
 |---|---|---|
-| `unsw_sel3` | also fills `ct_dst_src_ltm` (uniform) - selection re-run with uniform fill, `artifacts/loo_uniform_unsw.csv` | harness, held-out folds: +0.0279 vs +0.0183, worst fold -0.0024 vs -0.0140, attack folds +0.0220 vs +0.0110 |
-| `nslkdd_lift04` | lift cutoff 0.04: also fills `dst_host_srv_diff_host_rate` (lift 0.036) | single-feature ECOD only (the NSL-KDD harness is unreliable) |
+| `unsw_sel5_dupjit` | default + `trans_depth` filled (third selection round) | harness held-out +0.0064, 12/14 folds; leaderboard result being clarified |
+| `nslkdd_unif6_db` | default + `dst_bytes` | scored 0.93643 (no gain) |
+| `unsw_prev_0.57698`, `nslkdd_prev_0.93331` | the previous defaults | scored |
 
-| `unsw_dupjit` | jitter of the repeated rows, 0.10 x std on 11 continuous columns | **LB 0.58806** vs scored 0.57698 (harness had said +0.0057) |
-| `unsw_sel3` | (above) | **LB 0.59066** vs scored 0.57698 (harness had said +0.0096) |
-| `unsw_sel3_dupjit` | both together | **LB 0.60782** (more than additive) |
-| `unsw_sel4_dupjit` | both + a second selection round adds `ct_dst_ltm` | **LB 0.60905** (best UNSW) |
-| `nslkdd_lift04` | lift cutoff 0.04 (5 columns) | **LB 0.93192** (worse than 0.93331: `dst_host_srv_diff_host_rate` hurts) |
-| `nslkdd_lift10` | lift cutoff 0.10 -> 7 uniform-filled columns | **LB 0.93512** (best NSL-KDD) |
-| `nslkdd_unif6` | lift10 minus `dst_host_srv_diff_host_rate` | projection ~0.9365; untested |
-| `nslkdd_unif6_db` | unif6 + `dst_bytes` (lift 0.128) | untested |
-
-Run with `python final_pipeline/pipeline.py unsw_sel3` / `nslkdd_lift04`. Promote to the default (and re-point `verify.py` and `scored/`) only after a leaderboard confirmation.
+Run any config with `python final_pipeline/pipeline.py <config>`. Promote one only after a leaderboard confirmation, and re-point `verify.py` and `scored/`.
 
 ## Honest limitations
 
-* **Different selectors per dataset.** UNSW picks constants with the leave-one-fold-out harness; NSL-KDD cannot use that harness (it
-  disagreed with the leaderboard on every neutralisation test), so it uses a label-based single-feature rule instead. The same rule hurts on UNSW
-  (10 columns, harness mean -0.007). One neutralisation stage with a dataset-calibrated criterion is how we describe this; whether that counts as one
-  "transferable pipeline" is a question for the course staff.
-* **Pre-computed artifacts.** `weights_theta_unsw.json` (evolution search, `expt-8/src/weights.py`) and `loo_const_unsw.csv`
-  (leave-one-fold-out table, `expt-6/src/pipeline.py`) are shipped, not recomputed here.
-* **Mechanism of the weights is not understood.** The fitted weights do not follow the attack/normal category ratio (rank correlation 0.03).
-  The evidence is the leaderboard curve (peak near scale 3.05 by a quadratic fit) and agreement of the validation harness on its direction.
-* **Uniform fill is deliberately unrealistic.** An uninformative column is replaced by flat noise between its 1st and 99th percentile (e.g. `sinpkt` up to ~10,000 ms), so its ECDF is flat for ECOD and IForest wastes only random splits on it.
-  The `unsw_uniform` config (harness: +0.0185 vs +0.0162 for constants, worse worst-fold) is not yet leaderboard-tested.
-* **Stretch needs bounds.** Without the stage-6 caps the stretch produces impossible values (`ct_*` up to 151, `dmean` up to 6,529); the capped
-  file scored higher, so the caps are kept.
-* **The NSL-KDD generator is the teammate's hybrid, vendored** (`vendor/generators/`, from branch `vadi/nslkdd`, unmodified); its scrubbed-normal
-  foundation is shipped as `artifacts/nslkdd_scrubbed_normal.csv` (2% isolation-forest scrub from the expt-2 EDA). `scored/` holds the exact files that reached 0.57698 and 0.93331.
-* The public leaderboard covers only the validation split; the private test adds attack types never seen in training.
+* **Different selectors per dataset.** UNSW picks columns with a leave-one-fold-out harness (reliable on UNSW); NSL-KDD cannot use that harness
+  (it disagreed with the leaderboard on every neutralisation test), so it uses a label-based single-feature rule and leaderboard feedback.
+  The single-feature rule hurts on UNSW. We describe this as one neutralisation stage with a dataset-calibrated criterion; whether that satisfies
+  "one transferable pipeline" is a question for the course staff.
+* **Public-leaderboard tuning.** Many column decisions (especially the NSL-KDD ones: adding / dropping columns by public score) were tuned against the
+  validation split. The private test adds attack types never seen in training, so the ranking can change.
+* **Pre-computed artifacts.** `weights_theta_unsw.json` (evolution search, `expt-8/src/weights.py`) and the leave-one-fold-out tables
+  (`expt-6/src/pipeline.py`, `expt-13/src/reselect_uniform.py`) are shipped, not recomputed here. The extra UNSW column from the second selection round
+  (`expt-16/src/round2.py`) is listed in the config.
+* **Mechanisms are not fully understood.** The fitted category weights do not follow the attack/normal category ratio (rank correlation 0.03). Uniform fill beats
+  constant fill on both datasets, and the column effects are heterogeneous (one NSL-KDD column hurt); a random-forest predictability probe (expt-14) did not explain which columns help.
+* **Uniform fill is deliberately unrealistic.** An uninformative column becomes flat noise between its 1st and 99th percentile, so its ECDF is flat for ECOD and IForest
+  wastes only random splits on it. The jitter stage and the tail stretch likewise break exact physical relations between columns (e.g. `dload` vs `dbytes`/`dur`).
+* **The stretch needs bounds.** Without the stage-6 caps it produces impossible values (`ct_*` up to 151, `dmean` up to 6,529); the capped file scored higher.
+* The NSL-KDD generator is the teammate's hybrid, vendored unmodified from branch `vadi/nslkdd`; its scrubbed-normal foundation is
+  `artifacts/nslkdd_scrubbed_normal.csv` (2% isolation-forest scrub from the expt-2 EDA). `scored/` holds the exact files behind the defaults' scores.
