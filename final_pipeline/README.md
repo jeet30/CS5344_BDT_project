@@ -59,9 +59,12 @@ NSL-KDD:
 
 | `unsw_dupjit` | jitter of the repeated rows, 0.10 x std on 11 continuous columns | **LB 0.58806** vs scored 0.57698 (harness had said +0.0057) |
 | `unsw_sel3` | (above) | **LB 0.59066** vs scored 0.57698 (harness had said +0.0096) |
-| `unsw_sel3_dupjit` | both together | untested; expected to combine (they touch different columns) |
-| `unsw_sel4_dupjit` | both + a second selection round adds `ct_dst_ltm` | harness +0.0037 on held-out folds; untested |
-| `nslkdd_lift10` | lift cutoff 0.10 -> 7 uniform-filled columns | single-feature ECOD only; untested |
+| `unsw_sel3_dupjit` | both together | **LB 0.60782** (more than additive) |
+| `unsw_sel4_dupjit` | both + a second selection round adds `ct_dst_ltm` | **LB 0.60905** (best UNSW) |
+| `nslkdd_lift04` | lift cutoff 0.04 (5 columns) | **LB 0.93192** (worse than 0.93331: `dst_host_srv_diff_host_rate` hurts) |
+| `nslkdd_lift10` | lift cutoff 0.10 -> 7 uniform-filled columns | **LB 0.93512** (best NSL-KDD) |
+| `nslkdd_unif6` | lift10 minus `dst_host_srv_diff_host_rate` | projection ~0.9365; untested |
+| `nslkdd_unif6_db` | unif6 + `dst_bytes` (lift 0.128) | untested |
 
 Run with `python final_pipeline/pipeline.py unsw_sel3` / `nslkdd_lift04`. Promote to the default (and re-point `verify.py` and `scored/`) only after a leaderboard confirmation.
 

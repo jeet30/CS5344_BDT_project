@@ -56,3 +56,12 @@ CONFIG["nslkdd_lift10"] = {**CONFIG["nslkdd"], "neutralize": {**CONFIG["nslkdd"]
 
 # EXPERIMENT (not default): sel3 + dup-jitter + a SECOND selection round (expt-16, uniform fill on top of the sel3 set) which adds ct_dst_ltm. Harness held-out +0.0037; untested.
 CONFIG["unsw_sel4_dupjit"] = {**CONFIG["unsw_sel3_dupjit"], "neutralize": {**CONFIG["unsw_sel3_dupjit"]["neutralize"], "extra_columns": ["ct_dst_ltm"]}}
+
+# EXPERIMENT (not default): unif7 (LB 0.93512) minus the column that hurt in unif5 (dst_host_srv_diff_host_rate; unif5 0.93192 vs unif4 0.93331). Draws of all other columns identical to unif7. Projection ~0.9365, untested.
+CONFIG["nslkdd_unif6"] = {**CONFIG["nslkdd_lift10"], "neutralize": {**CONFIG["nslkdd_lift10"]["neutralize"], "skip_columns": ["dst_host_srv_diff_host_rate"]}}
+
+# EXPERIMENT (not default): unif6 + dst_bytes (lift 0.128, the next-lowest non-sparse column). Earlier columns' draws unchanged. Untested.
+CONFIG["nslkdd_unif6_db"] = {**CONFIG["nslkdd_unif6"], "neutralize": {**CONFIG["nslkdd_unif6"]["neutralize"], "lift_max": 0.13}}
+
+# EXPERIMENT (not default): sel4_dupjit (LB 0.60905) + a THIRD selection round (expt-16/round3.py) which adds trans_depth. Harness held-out +0.0064 (12/14 folds). Untested.
+CONFIG["unsw_sel5_dupjit"] = {**CONFIG["unsw_sel4_dupjit"], "neutralize": {**CONFIG["unsw_sel4_dupjit"]["neutralize"], "extra_columns": ["ct_dst_ltm", "trans_depth"]}}

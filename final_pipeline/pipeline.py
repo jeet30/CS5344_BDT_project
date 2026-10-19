@@ -147,13 +147,15 @@ def select_single_feature(df, cats, nums, nc):
     return [c for _, c in sorted(out)]                                      # ascending lift => fixed order
 
 
-def fill_columns(s, df, cats, cols, how, seed):
+def fill_columns(s, df, cats, cols, how, seed, skip=()):
     """neutralise columns: 'constant' = median (mode for categoricals); 'uniform' = independent uniform draw on the real normals' [q01, q99]."""
     s = s.copy(); nm = df[df[LABEL] == 0]; rng = np.random.default_rng(seed)
     for c in cols:
         dtype = s[c].dtype
         if how == "uniform" and c not in cats:
-            x = rng.uniform(nm[c].quantile(.01), nm[c].quantile(.99), len(s)); s[c] = np.rint(x) if np.allclose(nm[c], np.rint(nm[c])) else x
+            x = rng.uniform(nm[c].quantile(.01), nm[c].quantile(.99), len(s))           # always drawn, so skipping a column leaves every other column's draws unchanged
+            if c in skip: continue
+            s[c] = np.rint(x) if np.allclose(nm[c], np.rint(nm[c])) else x
         else:
             s[c] = s[c].mode().iloc[0] if c in cats else s[c].median()
         if dtype.kind in "iu" or np.allclose(nm[c], np.rint(nm[c])) and c not in cats: s[c] = s[c].round().astype(dtype)   # keep integer columns integer
@@ -165,7 +167,8 @@ def neutralize(s, df, cats, nums, cfg):
     if nc is None or nc.get("selector") is None: return s, []
     sel = {"loo_table": select_loo_table, "single_feature_ecod": select_single_feature}[nc["selector"]](df, cats, nums, nc)
     sel = sel + [c for c in nc.get("extra_columns", []) if c not in sel]          # later selection rounds (appended last so earlier uniform draws are unchanged)
-    return fill_columns(s, df, cats, sel, nc.get("fill", "constant"), cfg["seed"]), sel
+    skip = set(nc.get("skip_columns", []))
+    return fill_columns(s, df, cats, sel, nc.get("fill", "constant"), cfg["seed"], skip), [c for c in sel if c not in skip]
 
 
 # ----------------------------------------------------------------------------- driver
