@@ -64,6 +64,11 @@ NSL-KDD:
 | `nslkdd_unif6_db` | default + `dst_bytes` | scored 0.93643 (no gain) |
 | `unsw_prev_0.57698`, `nslkdd_prev_0.93331` | the previous defaults | scored |
 
+| `nslkdd_loguniform`, `nslkdd_partial50` | default with log1p-uniform / 50% partial fill | not submitted; the UNSW harness found both clearly worse (log1p-uniform -0.0149, partial 50% -0.0137) |
+| `nslkdd_slack12` | hybrid tail slack 1.2 instead of 1.05 | untested (generator-side) |
+
+The fill options `shape` (uniform, uniform_wide, uniform_narrow, loguniform, quantile) and `frac` live in `fill_columns`; on UNSW the default (U[q01,q99], all rows) beat every alternative (expt-17).
+
 Run any config with `python final_pipeline/pipeline.py <config>`. Promote one only after a leaderboard confirmation, and re-point `verify.py` and `scored/`.
 
 ## Honest limitations

@@ -1,0 +1,141 @@
+fold,family,variant,S
+std,std,uniform (current),0.6257961822491518
+std,std,loguniform,0.6076110453650831
+std,std,quantile (real marginal),0.5952806985091645
+std,std,"uniform_wide [min,max]",0.6224893180289565
+std,std,"uniform_narrow [q05,q95]",0.6154451775556202
+std,std,partial 50%,0.6104760929792663
+std,std,partial 75%,0.6175144077720127
+std,std,loguniform 75%,0.6029788112007668
+std,std,weights x2.5,0.6275711395290746
+std,std,weights x3.5,0.6235819167247988
+atk2,atk,uniform (current),0.6882059184662308
+atk2,atk,loguniform,0.6820244534434181
+atk2,atk,quantile (real marginal),0.6779244262448282
+atk2,atk,"uniform_wide [min,max]",0.6828151539032165
+atk2,atk,"uniform_narrow [q05,q95]",0.6826867119226738
+atk2,atk,partial 50%,0.6830430380529338
+atk2,atk,partial 75%,0.6863479762592848
+atk2,atk,loguniform 75%,0.6809148975978325
+atk2,atk,weights x2.5,0.6844652405271126
+atk2,atk,weights x3.5,0.6882209591122984
+atk1,atk,uniform (current),0.7236871029144807
+atk1,atk,loguniform,0.7092812251869627
+atk1,atk,quantile (real marginal),0.6939413863242219
+atk1,atk,"uniform_wide [min,max]",0.7212960441805234
+atk1,atk,"uniform_narrow [q05,q95]",0.7157429867770844
+atk1,atk,partial 50%,0.7147370797775562
+atk1,atk,partial 75%,0.7206255272101582
+atk1,atk,loguniform 75%,0.7011810364968658
+atk1,atk,weights x2.5,0.7177199196577251
+atk1,atk,weights x3.5,0.7242972410069944
+atk0,atk,uniform (current),0.7398752312603242
+atk0,atk,loguniform,0.7327963964906354
+atk0,atk,quantile (real marginal),0.7203256409715489
+atk0,atk,"uniform_wide [min,max]",0.7226797405867369
+atk0,atk,"uniform_narrow [q05,q95]",0.7241352994006758
+atk0,atk,partial 50%,0.7221969873188757
+atk0,atk,partial 75%,0.7278910823756373
+atk0,atk,loguniform 75%,0.7096335383524812
+atk0,atk,weights x2.5,0.7264337357060825
+atk0,atk,weights x3.5,0.7076531731528298
+sig_proto0,sig,uniform (current),0.3805532050406053
+sig_proto0,sig,loguniform,0.3508664668497765
+sig_proto0,sig,quantile (real marginal),0.3363895259198026
+sig_proto0,sig,"uniform_wide [min,max]",0.34186415464971237
+sig_proto0,sig,"uniform_narrow [q05,q95]",0.3829384332810415
+sig_proto0,sig,partial 50%,0.3484194489353279
+sig_proto0,sig,partial 75%,0.35297858062980275
+sig_proto0,sig,loguniform 75%,0.33813705608607214
+sig_proto0,sig,weights x2.5,0.37343932040512967
+sig_proto0,sig,weights x3.5,0.38762342255987614
+sig_proto1,sig,uniform (current),0.5086753210211508
+sig_proto1,sig,loguniform,0.4951181332535183
+sig_proto1,sig,quantile (real marginal),0.48552378854729467
+sig_proto1,sig,"uniform_wide [min,max]",0.5073069107823693
+sig_proto1,sig,"uniform_narrow [q05,q95]",0.5044661902700038
+sig_proto1,sig,partial 50%,0.5012842834104116
+sig_proto1,sig,partial 75%,0.5066978641834775
+sig_proto1,sig,loguniform 75%,0.49499352580749645
+sig_proto1,sig,weights x2.5,0.5150880044954065
+sig_proto1,sig,weights x3.5,0.5143900494367011
+sig_proto2,sig,uniform (current),0.614438428575505
+sig_proto2,sig,loguniform,0.6077256474401813
+sig_proto2,sig,quantile (real marginal),0.599965099186357
+sig_proto2,sig,"uniform_wide [min,max]",0.6046112379981015
+sig_proto2,sig,"uniform_narrow [q05,q95]",0.6108959768762074
+sig_proto2,sig,partial 50%,0.6068305055021646
+sig_proto2,sig,partial 75%,0.6097210800434072
+sig_proto2,sig,loguniform 75%,0.6053075868836056
+sig_proto2,sig,weights x2.5,0.6173628539789657
+sig_proto2,sig,weights x3.5,0.6139651952377324
+sig_service0,sig,uniform (current),0.29402874018644953
+sig_service0,sig,loguniform,0.28262502578157506
+sig_service0,sig,quantile (real marginal),0.278378195783497
+sig_service0,sig,"uniform_wide [min,max]",0.2891397759963594
+sig_service0,sig,"uniform_narrow [q05,q95]",0.29100691822317437
+sig_service0,sig,partial 50%,0.28407661511494553
+sig_service0,sig,partial 75%,0.2885402761931104
+sig_service0,sig,loguniform 75%,0.2791348440836996
+sig_service0,sig,weights x2.5,0.2872146140893768
+sig_service0,sig,weights x3.5,0.2935408609540646
+sig_service1,sig,uniform (current),0.6044653925910588
+sig_service1,sig,loguniform,0.5839479642210721
+sig_service1,sig,quantile (real marginal),0.5775005593307188
+sig_service1,sig,"uniform_wide [min,max]",0.6037353172321538
+sig_service1,sig,"uniform_narrow [q05,q95]",0.5907105282566195
+sig_service1,sig,partial 50%,0.5932263206390438
+sig_service1,sig,partial 75%,0.5967088925275339
+sig_service1,sig,loguniform 75%,0.5865661685664154
+sig_service1,sig,weights x2.5,0.5981945442157877
+sig_service1,sig,weights x3.5,0.6037408487334912
+sig_service2,sig,uniform (current),0.5715677627230162
+sig_service2,sig,loguniform,0.5472963984022092
+sig_service2,sig,quantile (real marginal),0.531200324490623
+sig_service2,sig,"uniform_wide [min,max]",0.5641374087860407
+sig_service2,sig,"uniform_narrow [q05,q95]",0.5680000982513029
+sig_service2,sig,partial 50%,0.5482731410583296
+sig_service2,sig,partial 75%,0.5565693119313276
+sig_service2,sig,loguniform 75%,0.5410737783427324
+sig_service2,sig,weights x2.5,0.5604143507725564
+sig_service2,sig,weights x3.5,0.5723900618426009
+tail,tail,uniform (current),0.4231490784209528
+tail,tail,loguniform,0.4294828647071627
+tail,tail,quantile (real marginal),0.42148585999642557
+tail,tail,"uniform_wide [min,max]",0.41917606581340916
+tail,tail,"uniform_narrow [q05,q95]",0.41787647605620837
+tail,tail,partial 50%,0.4180176283811796
+tail,tail,partial 75%,0.42409089716889964
+tail,tail,loguniform 75%,0.4203257002603594
+tail,tail,weights x2.5,0.40921903546251115
+tail,tail,weights x3.5,0.420032267577352
+combo1,combo,uniform (current),0.6257948659621004
+combo1,combo,loguniform,0.6038549900024694
+combo1,combo,quantile (real marginal),0.5929426349724306
+combo1,combo,"uniform_wide [min,max]",0.622775607667868
+combo1,combo,"uniform_narrow [q05,q95]",0.6115084580757564
+combo1,combo,partial 50%,0.6116983614475204
+combo1,combo,partial 75%,0.6207676685481631
+combo1,combo,loguniform 75%,0.60310040862525
+combo1,combo,weights x2.5,0.6283970501781377
+combo1,combo,weights x3.5,0.620394458860373
+combo2,combo,uniform (current),0.6256509677322739
+combo2,combo,loguniform,0.609237348396374
+combo2,combo,quantile (real marginal),0.5987122079651457
+combo2,combo,"uniform_wide [min,max]",0.6212920892210767
+combo2,combo,"uniform_narrow [q05,q95]",0.6180683137518656
+combo2,combo,partial 50%,0.6112657504697332
+combo2,combo,partial 75%,0.6166720318874372
+combo2,combo,loguniform 75%,0.6060162593399361
+combo2,combo,weights x2.5,0.6241585752105726
+combo2,combo,weights x3.5,0.6147357804019531
+combo3,combo,uniform (current),0.6241198347967282
+combo3,combo,loguniform,0.5990616489923521
+combo3,combo,quantile (real marginal),0.5889554093593663
+combo3,combo,"uniform_wide [min,max]",0.6187275057064225
+combo3,combo,"uniform_narrow [q05,q95]",0.6119344369559898
+combo3,combo,partial 50%,0.6050949859992556
+combo3,combo,partial 75%,0.6157549698772973
+combo3,combo,loguniform 75%,0.6037692076224029
+combo3,combo,weights x2.5,0.6142583657876028
+combo3,combo,weights x3.5,0.6198655117948066

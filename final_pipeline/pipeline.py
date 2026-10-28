@@ -147,18 +147,29 @@ def select_single_feature(df, cats, nums, nc):
     return [c for _, c in sorted(out)]                                      # ascending lift => fixed order
 
 
-def fill_columns(s, df, cats, cols, how, seed, skip=()):
-    """neutralise columns: 'constant' = median (mode for categoricals); 'uniform' = independent uniform draw on the real normals' [q01, q99]."""
-    s = s.copy(); nm = df[df[LABEL] == 0]; rng = np.random.default_rng(seed)
+def fill_columns(s, df, cats, cols, how, seed, skip=(), shape="uniform", frac=1.0):
+    """neutralise columns. how='constant': median (mode for categoricals). how='uniform': an independent draw per column from a flat-ish distribution on the real normals' range:
+       shape 'uniform' = U[q01,q99] (default) | 'uniform_wide' = U[min,max] | 'uniform_narrow' = U[q05,q95] | 'loguniform' = uniform on log1p scale over [q01,q99] |
+       'quantile' = the real normals' own marginal (independent resample).  frac < 1 fills only that share of rows (random mask from a separate stream)."""
+    s = s.copy(); nm = df[df[LABEL] == 0]; rng = np.random.default_rng(seed); mrng = np.random.default_rng(seed + 1); n = len(s)
     for c in cols:
-        dtype = s[c].dtype
+        dtype = s[c].dtype; integer_like = np.allclose(nm[c], np.rint(nm[c])) and c not in cats
         if how == "uniform" and c not in cats:
-            x = rng.uniform(nm[c].quantile(.01), nm[c].quantile(.99), len(s))           # always drawn, so skipping a column leaves every other column's draws unchanged
+            q = lambda p_: nm[c].quantile(p_)
+            if shape == "uniform": x = rng.uniform(q(.01), q(.99), n)
+            elif shape == "uniform_wide": x = rng.uniform(nm[c].min(), nm[c].max(), n)
+            elif shape == "uniform_narrow": x = rng.uniform(q(.05), q(.95), n)
+            elif shape == "loguniform":
+                lo, hi = q(.01), q(.99); x = np.expm1(rng.uniform(np.log1p(lo), np.log1p(hi), n)) if lo >= 0 else rng.uniform(lo, hi, n)
+            elif shape == "quantile": x = np.quantile(nm[c].to_numpy(float), rng.uniform(0, 1, n))
+            else: raise ValueError(shape)                                                # (every shape draws n values, so skipping a column leaves other columns' draws unchanged)
             if c in skip: continue
-            s[c] = np.rint(x) if np.allclose(nm[c], np.rint(nm[c])) else x
+            v = np.rint(x) if integer_like else x
+            if frac < 1.0: v = np.where(mrng.random(n) < frac, v, s[c].to_numpy(float))
+            s[c] = v
         else:
             s[c] = s[c].mode().iloc[0] if c in cats else s[c].median()
-        if dtype.kind in "iu" or np.allclose(nm[c], np.rint(nm[c])) and c not in cats: s[c] = s[c].round().astype(dtype)   # keep integer columns integer
+        if dtype.kind in "iu" or integer_like: s[c] = s[c].round().astype(dtype)          # keep integer columns integer
     return s
 
 
@@ -168,7 +179,7 @@ def neutralize(s, df, cats, nums, cfg):
     sel = {"loo_table": select_loo_table, "single_feature_ecod": select_single_feature}[nc["selector"]](df, cats, nums, nc)
     sel = sel + [c for c in nc.get("extra_columns", []) if c not in sel]          # later selection rounds (appended last so earlier uniform draws are unchanged)
     skip = set(nc.get("skip_columns", []))
-    return fill_columns(s, df, cats, sel, nc.get("fill", "constant"), cfg["seed"], skip), [c for c in sel if c not in skip]
+    return fill_columns(s, df, cats, sel, nc.get("fill", "constant"), cfg["seed"], skip, nc.get("shape", "uniform"), nc.get("frac", 1.0)), [c for c in sel if c not in skip]
 
 
 # ----------------------------------------------------------------------------- driver

@@ -71,3 +71,9 @@ CONFIG["unsw_prev_0.57698"] = CONFIG["unsw"]          # previous default (unifor
 CONFIG["nslkdd_prev_0.93331"] = CONFIG["nslkdd"]      # previous default (4 uniform-filled columns)
 CONFIG["unsw"] = CONFIG["unsw_sel4_dupjit"]           # 0.60905: selection round 1+2 with uniform fill (sinpkt, sjit, ct_dst_src_ltm, ct_dst_ltm) + jitter of repeated rows
 CONFIG["nslkdd"] = CONFIG["nslkdd_unif6"]             # 0.93674: hybrid + uniform fill of 6 columns (lift <= 0.10, minus dst_host_srv_diff_host_rate which hurt)
+
+# ---- EXPERIMENTS on the promoted defaults (expt-17); none leaderboard-tested yet --------------------------------------------------------------
+_nsl = CONFIG["nslkdd"]
+CONFIG["nslkdd_loguniform"] = {**_nsl, "neutralize": {**_nsl["neutralize"], "shape": "loguniform"}}          # same 6 columns, log1p-uniform fill
+CONFIG["nslkdd_partial50"] = {**_nsl, "neutralize": {**_nsl["neutralize"], "frac": 0.5}}                    # same 6 columns, uniform fill on a random 50% of rows
+CONFIG["nslkdd_slack12"] = {**_nsl, "hybrid": {**_nsl["hybrid"], "tail_slack_gamma": 1.2}}                  # hybrid tail slack 1.05 -> 1.2
