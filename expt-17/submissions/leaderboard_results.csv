@@ -1,0 +1,3 @@
+dataset,submission_file,public_leaderboard_score,configuration
+NSL-KDD,submission_nslkdd_v3_k20_cf35.csv,0.93734,"SILK k-FreqItems k=20; center_frequency=0.35; min_cluster_size=500"
+UNSW-NB15,submission_unsw_v3_state50.csv,0.61316,"DVS blend: 50% protocol-conditioned; 50% state-conditioned"
