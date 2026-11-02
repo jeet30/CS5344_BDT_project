@@ -1,0 +1,7 @@
+held-out ('sig', 'combo'): mean delta -0.0015 worst -0.0187 improved 5/9 [1242s]
+held-out ('atk',): mean delta +0.0131 worst +0.0057 improved 3/3 [3138s]
+theta new: [0.23, -0.47, -0.03, 1.07, -0.71, 0.28, -0.24, -0.59, -0.92, -0.34, -0.01, 0.16, -1.02, 0.41] 
+theta old: [-0.19, -0.49, -0.35, 0.52, 0.03, -0.16, 0.2, -0.07, -0.93, -0.2, -0.06, -0.11, 0.0, 0.38] 
+corr 0.5692603521941532
+old theta: mean 0.5237 (scale 1, no fill)
+new theta: mean 0.5321 (scale 1, no fill)

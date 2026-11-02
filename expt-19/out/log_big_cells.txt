@@ -1,0 +1,4 @@
+cells cover 100.0% of normals
+m=40 held-out ('sig', 'combo'): mean delta +0.0069 worst -0.0037 improved 6/9 [2643s]
+m=40 held-out ('atk',): mean delta +0.0127 worst -0.0015 improved 2/3 [5704s]
+m=40 in-sample all folds: mean delta +0.0172 worst +0.0034 improved 14/14

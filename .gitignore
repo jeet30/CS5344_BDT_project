@@ -23,3 +23,7 @@ submissions/submission_*.csv
 final_pipeline/out/
 expt-[89]/submissions/*.csv
 expt-1[0-3]/submissions/*.csv
+expt-18/submissions/*.csv
+expt-18/out/
+expt-19/submissions/*.csv
+expt-19/out/*.pkl

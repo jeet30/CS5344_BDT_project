@@ -1,0 +1,19 @@
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3036: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[:, None]
+/Users/aayushmajumdar/Desktop/CS5344_BDTechrel/.venv/lib/python3.14/site-packages/numpy/lib/_function_base_impl.py:3037: RuntimeWarning: invalid value encountered in divide
+  c /= stddev[None, :]
+[unsw_blend_sel5] stretched=['dload', 'dmean', 'ct_dst_ltm', 'ct_src_ltm'] neutralized=['sinpkt', 'sjit', 'ct_dst_src_ltm', 'ct_dst_ltm', 'trans_depth'] -> /Users/aayushmajumdar/Desktop/CS5344_BDTechrel/expt-19/submissions/unsw_blend_sel5.csv (70000, 43)
+[unsw] SILK clusters: {'silk_00': 4202, 'silk_01': 1349, 'silk_02': 1893, 'silk_03': 1696, 'silk_04': 1423, 'silk_05': 4600, 'silk_06': 693, 'silk_07': 1919, 'silk_08': 2215, 'silk_09': 2233, 'silk_10': 1251, 'silk_11': 4674, 'silk_12': 2728, 'silk_13': 758, 'silk_14': 501, 'silk_15': 1216, 'silk_16': 1079, 'silk_17': 570}
+[unsw_state50_silk50] stretched=['dload', 'dmean', 'ct_dst_ltm', 'ct_src_ltm'] neutralized=['sinpkt', 'sjit', 'ct_dst_src_ltm', 'ct_dst_ltm'] -> /Users/aayushmajumdar/Desktop/CS5344_BDTechrel/expt-19/submissions/unsw_state50_silk50.csv (70000, 43)

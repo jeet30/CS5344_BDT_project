@@ -1,0 +1,34 @@
+std done [20s]
+atk2 done [39s]
+atk1 done [59s]
+atk0 done [78s]
+sig_proto0 done [98s]
+sig_proto1 done [116s]
+sig_proto2 done [135s]
+sig_service0 done [155s]
+sig_service1 done [172s]
+sig_service2 done [191s]
+tail done [211s]
+combo1 done [230s]
+combo2 done [248s]
+combo3 done [267s]
+
+mean S and delta vs beta=0 (current recipe), 14 folds
+                  S       d   worst  up
+kind   beta                            
+oracle 0.25  0.5671 -0.0065 -0.0209   4
+       0.50  0.5672 -0.0064 -0.0245   3
+       1.00  0.5734 -0.0001 -0.0166   7
+       2.00  0.5710 -0.0026 -0.0170   7
+train  0.00  0.5736  0.0000  0.0000   0
+       0.25  0.5692 -0.0044 -0.0313   5
+       0.50  0.5705 -0.0031 -0.0168   3
+       1.00  0.5712 -0.0023 -0.0150   4
+       2.00  0.5689 -0.0046 -0.0600   4
+beta    0.00    0.25    0.50    1.00    2.00
+family                                      
+atk      0.0  0.0026 -0.0054 -0.0081 -0.0058
+combo    0.0 -0.0054 -0.0073 -0.0007 -0.0017
+sig      0.0 -0.0085 -0.0003 -0.0031 -0.0117
+std      0.0  0.0016  0.0023 -0.0134  0.0159
+tail     0.0 -0.0035 -0.0053  0.0256  0.0122

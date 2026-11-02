@@ -1,0 +1,27 @@
+std base 0.6157 gated=['dbytes', 'sttl', 'dload', 'dloss', 'dmean', 'ct_src_ltm'] [14s]
+atk2 base 0.6920 gated=['dpkts', 'dbytes', 'sttl', 'dload', 'dloss', 'dmean', 'ct_src_ltm'] [22s]
+atk1 base 0.7224 gated=['sttl', 'dload', 'dmean', 'ct_src_ltm'] [29s]
+atk0 base 0.7261 gated=['dur', 'rate', 'sttl', 'sload', 'dload', 'dinpkt', 'djit', 'stcpb', 'dtcpb', 'tcprtt', 'synack', 'ackdat', 'dmean', 'ct_srv_src', 'ct_src_dport_ltm', 'ct_src_ltm', 'ct_srv_dst'] [35s]
+sig_proto0 base 0.3660 gated=['dload', 'dmean', 'ct_src_ltm'] [42s]
+sig_proto1 base 0.5102 gated=['spkts', 'dpkts', 'sbytes', 'dbytes', 'dload', 'sloss', 'dloss', 'dmean'] [48s]
+sig_proto2 base 0.6069 gated=['dpkts', 'dbytes', 'dload', 'dloss', 'dmean', 'ct_src_ltm'] [55s]
+sig_service0 base 0.2868 gated=['dload', 'dmean', 'response_body_len'] [62s]
+sig_service1 base 0.5957 gated=['spkts', 'dpkts', 'sbytes', 'dbytes', 'sttl', 'dload', 'sloss', 'dloss', 'dmean', 'ct_src_ltm'] [69s]
+sig_service2 base 0.5748 gated=['sttl', 'dload', 'dmean', 'ct_src_ltm'] [79s]
+tail base 0.4030 gated=['sttl', 'dload', 'dmean', 'ct_src_ltm'] [87s]
+combo1 base 0.6182 gated=['dpkts', 'dbytes', 'sttl', 'dload', 'dloss', 'dmean', 'ct_src_ltm'] [96s]
+combo2 base 0.6334 gated=['dbytes', 'sttl', 'dload', 'dloss', 'dmean', 'ct_src_ltm'] [106s]
+combo3 base 0.6239 gated=['dbytes', 'sttl', 'dload', 'dloss', 'dmean', 'ct_src_ltm'] [113s]
+        mean   worst  up
+lam                     
+0.10 -0.0077 -0.0481   2
+0.25 -0.0068 -0.0381   2
+0.50 -0.0055 -0.0383   4
+1.00 -0.0073 -0.0560   4
+lam       0.10    0.25    0.50    1.00
+family                                
+atk    -0.0195 -0.0163 -0.0168 -0.0229
+combo  -0.0068 -0.0064 -0.0026 -0.0039
+sig    -0.0040 -0.0037 -0.0029 -0.0035
+std    -0.0054 -0.0049 -0.0040 -0.0030
+tail   -0.0000 -0.0004  0.0031  0.0023

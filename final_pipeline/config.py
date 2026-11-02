@@ -77,3 +77,22 @@ _nsl = CONFIG["nslkdd"]
 CONFIG["nslkdd_loguniform"] = {**_nsl, "neutralize": {**_nsl["neutralize"], "shape": "loguniform"}}          # same 6 columns, log1p-uniform fill
 CONFIG["nslkdd_partial50"] = {**_nsl, "neutralize": {**_nsl["neutralize"], "frac": 0.5}}                    # same 6 columns, uniform fill on a random 50% of rows
 CONFIG["nslkdd_slack12"] = {**_nsl, "hybrid": {**_nsl["hybrid"], "tail_slack_gamma": 1.2}}                  # hybrid tail slack 1.05 -> 1.2
+
+# ---- NEW GENERATORS (teammate Vadiraj Rao's expt-17 + our expt-19), every one leaderboard-confirmed; stages 2-6 unchanged ---------------------
+_u, _n = CONFIG["unsw"], CONFIG["nslkdd"]                                    # still the 0.60905 / 0.93674 defaults at this point
+CONFIG["unsw_prev_0.60905"], CONFIG["nslkdd_prev_0.93674"] = _u, _n
+_dvs = lambda *conds: {**_u, "conditions": [dict(cols=c, frac=f) for c, f in conds]}
+CONFIG["unsw_blend_proto_state"] = _dvs((["proto"], 0.5), (["state"], 0.5))                       # 0.61316 (teammate): 50% protocol-conditioned + 50% state-conditioned DVS
+CONFIG["unsw_product_proto_state"] = _dvs((["proto", "state"], 1.0))                              # 0.61392: ONE model on the joint proto|state
+CONFIG["unsw_product3"] = _dvs((["proto", "service", "state"], 1.0))                              # 0.61452: ONE model on the joint proto|service|state
+CONFIG["nslkdd_silk"] = {**_n, "generator": "silk_copula_hybrid", "silk": dict(k=20, center_frequency=0.35, min_cluster_size=500)}   # 0.93734 (teammate)
+CONFIG["unsw"] = CONFIG["unsw_product3"]                                                          # default: 0.61452
+CONFIG["nslkdd"] = CONFIG["nslkdd_silk"]                                                          # default: 0.93734
+
+# EXPERIMENT (not default): unsw_product3 (0.61452) with the 40-cell category weights fitted on the DVS-blend base (expt-19/src/big.py; harness held-out +0.0069 / +0.0127 on the two family splits).
+# Scale 2 chosen in the harness (x1 +0.0028, x2 +0.0071, x3 -0.0041 vs the 14-cell x3 recipe; in-sample). LEADERBOARD: 0.59394 (-0.0206 vs unsw_product3 0.61452) -> does not transfer.
+CONFIG["unsw_product3_w40"] = {**CONFIG["unsw_product3"], "weights": dict(theta=ART / "weights_theta_unsw_40cell.json", scale=2.0)}
+
+# EXPERIMENT (not default): unsw_product3 with an extra x0.5 weight on the four attack-overlapping tcp cells (tcp|-|FIN, tcp|http|FIN, tcp|smtp|FIN, tcp|ftp|FIN) on top of the 14-cell theta x3.
+# Motivated by the leaderboard drop of the 40-cell weights (0.59394), which UPweighted those cells. LEADERBOARD: 0.59746 (-0.0171 vs unsw_product3) -> also worse: the old 14-cell theta x3 is a sharp optimum in both directions.
+CONFIG["unsw_product3_shared05"] = {**CONFIG["unsw_product3"], "weights": dict(theta=ART / "weights_theta_unsw_shared05.json", scale=3.0)}

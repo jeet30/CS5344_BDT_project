@@ -39,13 +39,28 @@ def load(cfg):
 def generate(df, cats, nums, cfg):
     if cfg["generator"] == "dvs_copula":
         from dvs_copula_v2 import ContrastiveDVSCopulaGenerator
-        with contextlib.redirect_stdout(io.StringIO()):
-            g = ContrastiveDVSCopulaGenerator(random_state=cfg["seed"], **cfg["dvs"]).fit(df)
-        return g.sample(cfg["n"])
+        conds = cfg.get("conditions")          # optional: one DVS model per entry, conditioned on the JOINT of its categorical columns; entries are mixed by `frac`
+        if not conds:
+            with contextlib.redirect_stdout(io.StringIO()):
+                g = ContrastiveDVSCopulaGenerator(random_state=cfg["seed"], **cfg["dvs"]).fit(df)
+            return g.sample(cfg["n"])
+        ns = [int(round(cfg["n"] * c["frac"])) for c in conds]; ns[0] += cfg["n"] - sum(ns); frames = []
+        for k, (c, n) in enumerate(zip(conds, ns)):
+            key = "|".join(c["cols"]); d = df if len(c["cols"]) == 1 else df.assign(**{key: df[c["cols"]].astype(str).agg("|".join, axis=1)})
+            with contextlib.redirect_stdout(io.StringIO()):
+                g = ContrastiveDVSCopulaGenerator(random_state=cfg["seed"] + c.get("seed_offset", 1000 * k), **cfg["dvs"]).fit(d, primary_cat_col=key)
+            frames.append(g.sample(n).drop(columns=[key] if len(c["cols"]) > 1 else []))
+        return pd.concat(frames, ignore_index=True).sample(frac=1, random_state=cfg["seed"]).reset_index(drop=True)
     if cfg["generator"] == "itemset_copula_hybrid":            # teammate's generator (vendor/generators/): all scrubbed real normals + per-itemset-cluster copula rows with tail slack
         from generators.itemset_copula_hybrid import ItemsetCopulaHybridSampler
         normal = pd.read_csv(cfg["foundation_csv"])
         return ItemsetCopulaHybridSampler(random_state=cfg["seed"], **cfg["hybrid"]).fit(normal).sample(cfg["n"])
+    if cfg["generator"] == "silk_copula_hybrid":               # same hybrid, but the clusters come from teammate's SILK-seeded k-FreqItems (vendor/generators/silk_kfreq.py)
+        from generators.itemset_copula_hybrid import ItemsetCopulaHybridSampler
+        from generators.silk_kfreq import SILKKFreqClusterer
+        normal = pd.read_csv(cfg["foundation_csv"]); m = ItemsetCopulaHybridSampler(random_state=cfg["seed"], **cfg["hybrid"]); sk = cfg["silk"]
+        m.cluster_sampler = SILKKFreqClusterer(k=sk["k"], center_frequency=sk["center_frequency"], min_cluster_size=max(sk["min_cluster_size"], m.min_copula_rows), random_state=m.random_state)
+        return m.fit(normal).sample(cfg["n"])
     if cfg["generator"] == "real_resample":
         nm = df[df[LABEL] == 0].drop(columns=LABEL)
         return nm.sample(cfg["n"], replace=True, random_state=cfg["seed"]).reset_index(drop=True)

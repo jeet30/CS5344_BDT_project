@@ -7,9 +7,11 @@ import pipeline
 from config import ROOT
 HERE = Path(__file__).resolve().parent
 
-REFERENCE = {   # dataset -> (scored file, public score)
-    "unsw": (HERE / "scored/unsw_sel4_dupjit__0.60905.csv", 0.60905),
-    "nslkdd": (HERE / "scored/nsl_hybrid_unif6__0.93674.csv", 0.93674),
+REFERENCE = {   # config -> (scored file, public score)
+    "unsw": (HERE / "scored/unsw_product3__0.61452.csv", 0.61452),                                    # the file that was submitted
+    "nslkdd": (HERE / "scored/nsl_silk_unif6__0.93734_regenerated.csv", 0.93734),                     # regenerated: identical (1e-9) to the output of the teammate's own runner, whose submitted CSV is not in the repo
+    "unsw_prev_0.60905": (HERE / "scored/unsw_sel4_dupjit__0.60905.csv", 0.60905),                    # previous defaults must still reproduce (regression check)
+    "nslkdd_prev_0.93674": (HERE / "scored/nsl_hybrid_unif6__0.93674.csv", 0.93674),
 }
 
 if __name__ == "__main__":
