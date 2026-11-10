@@ -1,0 +1,72 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{ecod}
+\citation{iforest}
+\citation{nsl}
+\citation{unsw}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2}Data Findings and Exploratory Analysis}{1}{section.2}\protected@file@percent }
+\newlabel{sec:eda}{{2}{1}{Data Findings and Exploratory Analysis}{section.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Datasets. ``Real-normals AUPRC'' is the public score of a bootstrap of the real normal rows, our baseline.}}{1}{table.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{tab:data}{{1}{1}{Datasets. ``Real-normals AUPRC'' is the public score of a bootstrap of the real normal rows, our baseline}{table.caption.1}{}}
+\@writefile{toc}{\contentsline {paragraph}{UNSW-NB15: heterogeneous regimes and a weak baseline.}{1}{section*.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces UNSW-NB15. (a) Attack share of the nine largest proto$|$service$|$state cells. (b) Source TTL: log counts show normals at 31/32 and no attacks there. (c) The six best and six worst columns by single-feature ECOD AUPRC (teal: above chance, red: below chance; dashed line: base rate 0.30).}}{2}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:edau}{{1}{2}{UNSW-NB15. (a) Attack share of the nine largest proto$|$service$|$state cells. (b) Source TTL: log counts show normals at 31/32 and no attacks there. (c) The six best and six worst columns by single-feature ECOD AUPRC (teal: above chance, red: below chance; dashed line: base rate 0.30)}{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces NSL-KDD. (a) Attack share by \texttt  {logged\_in}, protocol and flag. (b) \texttt  {srv\_count} has virtually the same distribution for normals and attacks. (c) Six best and worst columns by single-feature ECOD AUPRC (dashed line: base rate 0.333).}}{2}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:edan}{{2}{2}{NSL-KDD. (a) Attack share by \texttt {logged\_in}, protocol and flag. (b) \texttt {srv\_count} has virtually the same distribution for normals and attacks. (c) Six best and worst columns by single-feature ECOD AUPRC (dashed line: base rate 0.333)}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{NSL-KDD: strong normals, content features that matter.}{2}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Engineering implications.}{2}{section*.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The shared pipeline. Final audit: row count, schema order, NaN/Inf, unique IDs, constraint violations, comparison with a reference file.}}{3}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:pipe}{{3}{3}{The shared pipeline. Final audit: row count, schema order, NaN/Inf, unique IDs, constraint violations, comparison with a reference file}{figure.caption.7}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Final configuration of the common pipeline (\texttt  {final\_pipeline/config.py}).}}{3}{table.caption.8}\protected@file@percent }
+\newlabel{tab:cfg}{{2}{3}{Final configuration of the common pipeline (\texttt {final\_pipeline/config.py})}{table.caption.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Methodology}{3}{section.3}\protected@file@percent }
+\newlabel{sec:method}{{3}{3}{Methodology}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Pipeline overview}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}UNSW-NB15 generator: contrastive DVS copula}{3}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}UNSW-NB15 post-processing}{3}{subsection.3.3}\protected@file@percent }
+\citation{minhash}
+\citation{kmpp}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces What shaping does to marginals (real normals, real attacks, and our final file). Tail stretch moves normal mass to large \texttt  {dload}; uniform fill replaces \texttt  {sinpkt}, \texttt  {dst\_host\_count} and \texttt  {duration} by a near-linear (flat-density) ECDF, which is deliberately unrealistic.}}{4}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:shape}{{4}{4}{What shaping does to marginals (real normals, real attacks, and our final file). Tail stretch moves normal mass to large \texttt {dload}; uniform fill replaces \texttt {sinpkt}, \texttt {dst\_host\_count} and \texttt {duration} by a near-linear (flat-density) ECDF, which is deliberately unrealistic}{figure.caption.9}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}NSL-KDD generator and neutralization}{4}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}Experiments and Results}{4}{section.4}\protected@file@percent }
+\newlabel{sec:exp}{{4}{4}{Experiments and Results}{section.4}{}}
+\@writefile{toc}{\contentsline {paragraph}{Protocol.}{4}{section*.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}What worked: the progression}{4}{subsection.4.1}\protected@file@percent }
+\citation{ctgan}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Public AUPRC before the reveal for the cumulative improvements (grey: real normals; teal: intermediate steps; navy: final defaults).}}{5}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:journey}{{5}{5}{Public AUPRC before the reveal for the cumulative improvements (grey: real normals; teal: intermediate steps; navy: final defaults)}{figure.caption.11}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces UNSW-NB15 cumulative ablation (pre-reveal public scores).}}{5}{table.caption.12}\protected@file@percent }
+\newlabel{tab:uns}{{3}{5}{UNSW-NB15 cumulative ablation (pre-reveal public scores)}{table.caption.12}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Final result on the hidden data}{5}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}What did not work, and why}{5}{subsection.4.3}\protected@file@percent }
+\citation{ctgan}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces NSL-KDD cumulative ablation (pre-reveal public scores). The last step is within noise.}}{6}{table.caption.13}\protected@file@percent }
+\newlabel{tab:nsl}{{4}{6}{NSL-KDD cumulative ablation (pre-reveal public scores). The last step is within noise}{table.caption.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Sensitivity around the final UNSW recipe. (a) Leaderboard AUPRC against the cell-weight scale (6$\times $ stretch base): a sharp peak at $s=3$. (b) Harness change from the final recipe for alternative fill ranges, fill fractions, fill shapes and weight scales; none improves on it.}}{6}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:sens}{{6}{6}{Sensitivity around the final UNSW recipe. (a) Leaderboard AUPRC against the cell-weight scale (6$\times $ stretch base): a sharp peak at $s=3$. (b) Harness change from the final recipe for alternative fill ranges, fill fractions, fill shapes and weight scales; none improves on it}{figure.caption.14}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Where the remaining error sits, and how reliable was our validation?}{6}{subsection.4.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces AUROC of each attack cluster vs.\ all normals (in-sample, UNSW).}}{6}{figure.7}\protected@file@percent }
+\newlabel{fig:clu}{{7}{6}{AUROC of each attack cluster vs.\ all normals (in-sample, UNSW)}{figure.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Lessons Learned and Discussion}{6}{section.5}\protected@file@percent }
+\newlabel{sec:lessons}{{5}{6}{Lessons Learned and Discussion}{section.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Selected submissions. The two score columns use different scales.}}{7}{table.caption.15}\protected@file@percent }
+\newlabel{tab:final}{{5}{7}{Selected submissions. The two score columns use different scales}{table.caption.15}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Negative results (pre-reveal public AUPRC).}}{7}{table.caption.16}\protected@file@percent }
+\newlabel{tab:neg}{{6}{7}{Negative results (pre-reveal public AUPRC)}{table.caption.16}{}}
+\bibcite{ecod}{1}
+\bibcite{iforest}{2}
+\bibcite{nsl}{3}
+\bibcite{unsw}{4}
+\bibcite{ctgan}{5}
+\bibcite{minhash}{6}
+\bibcite{kmpp}{7}
+\@writefile{lot}{\contentsline {table}{\numberline {7}{\ignorespaces Harness vs.\ leaderboard on individual decisions. Disagreements on weights and NSL fill made the leaderboard the arbiter.}}{8}{table.caption.17}\protected@file@percent }
+\newlabel{tab:har}{{7}{8}{Harness vs.\ leaderboard on individual decisions. Disagreements on weights and NSL fill made the leaderboard the arbiter}{table.caption.17}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Conclusion}{8}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reproducibility and AI use.}{8}{section*.18}\protected@file@percent }
+\gdef \@abspage@last{9}

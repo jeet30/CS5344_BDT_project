@@ -1,0 +1,21 @@
+
+== real normals (bootstrap): AUPRC 0.4666  AUROC 0.6488
+
+== unsw_product3 (best): AUPRC 0.6589  AUROC 0.8391
+
+by attack cluster (AUROC of that cluster vs all normals)
+ attack_cluster  n_attacks  share                       top_cells  AUROC real normals  AUROC unsw_product3
+              0       3406  0.227  tcp|http|FIN 96%, tcp|-|FIN 4%               0.718                0.939
+              1       2041  0.136  udp|-|INT 67%, udp|dns|INT 17%               0.913                0.827
+              2       1385  0.092  udp|dns|INT 81%, udp|-|INT 16%               0.991                0.991
+              3       8168  0.545 tcp|-|FIN 67%, tcp|smtp|FIN 13%               0.496                0.775
+
+by category cell (attacks vs normals in the SAME cell)
+        cell  attacks  normals  within-cell AUROC real normals  within-cell AUROC unsw_product3
+   tcp|-|FIN     5619    17212                           0.607                            0.795
+tcp|http|FIN     3696     3661                           0.486                            0.722
+   udp|-|INT     1604     1833                           0.418                            0.406
+ udp|dns|INT     1472       15                             NaN                              NaN
+tcp|smtp|FIN     1076      931                           0.848                            0.996
+ tcp|ftp|FIN      479      815                           0.601                            0.838
+tcp|pop3|FIN      344        1                             NaN                              NaN

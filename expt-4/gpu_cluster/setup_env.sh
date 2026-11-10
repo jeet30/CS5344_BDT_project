@@ -141,6 +141,7 @@ python3 -m pip install \
     --upgrade pip
 
 # Check if PyTorch is already available and functional
+if python3 -c "import torch; assert hasattr(torch, '__version__'); print('PyTorch is already functional:', torch.__version__)" 2>/dev/null; then
 if python3 -c "import torch; assert hasattr(torch, '__version__'); print('PyTorch is functional:', torch.__version__)" 2>/dev/null; then
     echo "[+] PyTorch is already functional. Skipping download to save bandwidth and storage."
 elif python3 -m pip show torch >/dev/null 2>&1; then
@@ -172,6 +173,7 @@ rm -rf ~/.cache/pip ~/.cache/torch "$SCRATCH_TMP"/* 2>/dev/null || true
 echo -e "\n[Step 4/4] Verifying Environment Integrity..."
 python3 -c "
 import sys
+import torch
 import sklearn
 import pyod
 import pandas
@@ -195,6 +197,8 @@ print('=' * 70)
 print('ENVIRONMENT VERIFICATION SUCCESSFUL!')
 print(f'Active Python:      {sys.executable}')
 print(f'Python Version:     {sys.version.split()[0]}')
+print(f'PyTorch:            {torch.__version__} (CUDA built-in: {torch.version.cuda})')
+print(f'CUDA Available:     {torch.cuda.is_available()}')
 print(f'PyTorch:            {torch_status}')
 print(f'Scikit-Learn:       {sklearn.__version__}')
 print(f'PyOD:               {pyod.__version__}')
