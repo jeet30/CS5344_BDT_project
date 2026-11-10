@@ -1,0 +1,80 @@
+{
+  "total_pages": 12,
+  "main_content_pages": 10,
+  "pages": [
+    {
+      "pdf_page": 1,
+      "words": 41,
+      "opening": "CS5344\n|\nFinal Project Report\nDetector-Aware Data Augmentation\nfor Network Intrusion Detec",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 2,
+      "words": 493,
+      "opening": "Detector-Aware Data Augmentation for Network Intrusion\nDetection\nConditional Copulas and M",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 3,
+      "words": 419,
+      "opening": "2\nDataset Characteristics and Exploratory Analysis\nBoth supplied datasets contain mixed nu",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 4,
+      "words": 437,
+      "opening": "3\nMethodology\n3.1\nShared Processing Architecture\nThe pipeline separates statistical genera",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 5,
+      "words": 500,
+      "opening": "3.3\nUNSW-NB15: Contrastive Conditional Copula Generation\n3.3.1\nInput Preparation and Featu",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 6,
+      "words": 518,
+      "opening": "3.4\nNSL-KDD: Mixed-Attribute Clustering and Local Copula Generation\n3.4.1\nInput Preparatio",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 7,
+      "words": 489,
+      "opening": "4\nImplementation and Reproducibility\n4.1\nCode Organization and Artifact Flow\nfinal_pipelin",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 8,
+      "words": 366,
+      "opening": "5\nExperimental Design and Comparative Results\n5.1\nEvaluation Protocol and Score Provenance",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 9,
+      "words": 488,
+      "opening": "5.3\nSensitivity Analysis and Unsuccessful Alternatives\nNegative experiments delimit the us",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 10,
+      "words": 402,
+      "opening": "5.4\nFinal Scores and Evaluation Provenance\nTable 6 reports the selected con\ufb01gurations and ",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 11,
+      "words": 554,
+      "opening": "6\nLessons Learned and Research Limitations\n1. Downstream utility and distribution \ufb01delity ",
+      "outside_safe_page_area": []
+    },
+    {
+      "pdf_page": 12,
+      "words": 126,
+      "opening": "References\n[1] Z. Li, Y. Zhao, X. Hu, N. Botta, C. Ionescu, G. Chen. ECOD: Unsupervised ou",
+      "outside_safe_page_area": []
+    }
+  ],
+  "original_report.pdf_sha256": "80201d5546b34402dc17c2aa7abcc1d0a7d6278898fe03b31dd7a89b6785adf1",
+  "original_report.tex_sha256": "2753f24482a740f4aa587c8aebd62c50b07af4f2b06d3b94b1c7ed5233a58b86"
+}

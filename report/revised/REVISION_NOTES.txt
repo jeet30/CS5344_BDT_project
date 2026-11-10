@@ -1,0 +1,45 @@
+Revised CS5344 final report
+==========================
+
+Primary deliverables:
+  report_revised.pdf -- revised report
+  report_revised.tex -- editable LaTeX source
+
+The original report/report.pdf and report/report.tex are not modified.
+The revision retains the original A4 geometry, 10-point Latin Modern font,
+single-column publication layout, booktabs tables, and existing vector figures.
+Figures are referenced from ../figs/.
+Verified pagination: 12 PDF pages = 1 cover + 10 main-content pages + 1 reference page.
+The final LaTeX build has no overfull boxes or unresolved references.
+
+Changes:
+- Formal research title and section headings.
+- Identical five-part methodology structure for UNSW-NB15 and NSL-KDD.
+- Mathematical mechanics accompanied by plain-language explanations.
+- Dedicated implementation section with numbered algorithm pseudocode.
+- Separate historical public, selected final, and later variant results.
+- Explicit distinction between empirical regressions and causal hypotheses.
+- Expanded lessons, uncertainty, validation limitations, and reproducibility.
+
+Results:
+The user confirmed 0.68508 as the official UNSW final result, superseding
+the earlier presentation's 0.66897. NSL-KDD final result is 0.95247.
+The supplied report's selected configurations (joint-conditioned UNSW DVS;
+NSL SILK k=20, centre frequency=0.35) are distinguished from later variants
+(state share 35%; k=18, centre frequency=0.30).
+
+Evidence:
+The original report, its figure outputs, the shared pipeline and configuration,
+vendored generators, Expt-17 runner, and local training-table sizes were inspected.
+No model retraining, new leaderboard evaluation, or new hidden PR curve was
+performed. Methodological caveats about ECDF shape, copula dependence after
+perturbation, export assertions, and statistical uncertainty were corrected.
+
+Build from the repository root:
+  tectonic -k --keep-logs report/revised/report_revised.tex
+Inspect page count and render previews:
+  .venv/bin/python report/revised/check_layout.py
+
+The build_revision.py helper in the parent directory reconstructs the source
+from the original report plus the revision text. Direct edits to the revised
+LaTeX file are supported; rerunning that helper overwrites those direct edits.
